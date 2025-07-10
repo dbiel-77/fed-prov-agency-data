@@ -6,6 +6,7 @@ url1 = "https://www.quebec.ca/gouvernement/ministeres-organismes/affaires-munici
 url2 = "https://www.quebec.ca/gouvernement/ministeres-organismes/agriculture-pecheries-alimentation"
 url3 = "https://www.quebec.ca/gouvernement/ministere/conseil-executif"
 url4 = "https://www.quebec.ca/en/government/ministere/emploi-solidarite-sociale"
+BASE_URL = "https://www.quebec.ca/en/government/departments-agencies"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -29,6 +30,7 @@ def get_dep_links(index_url):
             links.append(full_url)
     
     print(f"Found {len(links)} departments")
+    return links
 
 def scrape_ministries(url):
     resp = requests.get(url, headers=HEADERS)
@@ -138,6 +140,13 @@ def scrape_ministries(url):
         print("Contact URL: ", contact_url)
         print("Agenda URL: ", agenda_url)
 
+all_dept_links = get_dep_links(BASE_URL)
+
+for idx, link in enumerate(all_dept_links):
+    print(f"\n--- Department #{idx + 1} ---")
+    scrape_ministries(link)
+
+'''
 print("----- URL 1 -----") #format 1: mult members
 scrape_ministries(url1) 
 print("----- URL 2 -----") #format 1: one members
@@ -146,5 +155,5 @@ print("----- URL 3 -----") #format 2: one member
 scrape_ministries(url3)
 print("----- URL 4 -----") #format 2: mult members
 scrape_ministries(url4)
-
+'''
 
