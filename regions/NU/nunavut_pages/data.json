@@ -1,0 +1,4507 @@
+{
+	"meta": {
+		"total_hits": 3758
+	},
+	"items": [
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.41879185,
+			"expiration_date": "2025-08-31",
+			"employeur": "GARDERIE ET PRÉMATERNELLE RIRES ET CÂLINS",
+			"ide_affch": 496524,
+			"longitude": -71.87171772
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "cook",
+			"latitude": 45.55586204,
+			"expiration_date": "2025-08-30",
+			"employeur": "RESIDENCE SAINT-THEODORE INC.",
+			"ide_affch": 496523,
+			"longitude": -73.5297874
+		},
+		{
+			"nom_ville": "Dorval",
+			"titre": "office receptionist",
+			"latitude": 45.48929418,
+			"expiration_date": "2025-08-08",
+			"employeur": "CENTRE D'INTEGRATION MULTI-   SERVICES OUEST ILE CIMOI",
+			"ide_affch": 496522,
+			"longitude": -73.77570431
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "service rig helper OR service rig operator helper",
+			"latitude": 45.4793296,
+			"expiration_date": "2025-08-25",
+			"employeur": "EXCEL PERSONNEL INC.",
+			"ide_affch": 496521,
+			"longitude": -73.5822293
+		},
+		{
+			"nom_ville": "La Malbaie",
+			"titre": "administrative assistant",
+			"latitude": 47.6821003,
+			"expiration_date": "2025-09-06",
+			"employeur": "TISSUS CHARLEVOIX INC.",
+			"ide_affch": 496520,
+			"longitude": -70.19905898
+		},
+		{
+			"nom_ville": "Saint-Patrice-de-Beaurivage",
+			"titre": "feed miller - food and beverage processing",
+			"latitude": 46.41231835,
+			"expiration_date": "2025-08-23",
+			"employeur": "Meunerie St-Patrice inc.",
+			"ide_affch": 496519,
+			"longitude": -71.23593049
+		},
+		{
+			"nom_ville": "Potton",
+			"titre": "production clerks supervisor",
+			"latitude": 45.02558897,
+			"expiration_date": "2025-07-31",
+			"employeur": "8688958 CANADA INC.",
+			"ide_affch": 496518,
+			"longitude": -72.42066125
+		},
+		{
+			"nom_ville": "La Malbaie",
+			"titre": "managing supervisor - retail",
+			"latitude": 47.6821003,
+			"expiration_date": "2025-08-15",
+			"employeur": "TISSUS CHARLEVOIX INC.",
+			"ide_affch": 496517,
+			"longitude": -70.19905898
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "parts delivery driver",
+			"latitude": 45.31196763,
+			"expiration_date": "2025-07-31",
+			"employeur": "PIECES D'AUTOS USAGEES (SHERBROOKE) INC.",
+			"ide_affch": 496515,
+			"longitude": -71.99072035
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "administrative assistant - office OR office administrative assistant",
+			"latitude": 45.48268934,
+			"expiration_date": "2025-09-06",
+			"employeur": "FRANCOIS WANG INC.",
+			"ide_affch": 496514,
+			"longitude": -73.6980321
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "automobile mechanic OR automotive mechanic",
+			"latitude": 46.79713499,
+			"expiration_date": "2025-09-06",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496512,
+			"longitude": -71.26573695
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "truck driver OR trucker",
+			"latitude": 45.64206885,
+			"expiration_date": "2025-09-06",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496509,
+			"longitude": -73.51346466
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "daycare supervisor",
+			"latitude": 45.48268934,
+			"expiration_date": "2025-09-06",
+			"employeur": "FRANCOIS WANG INC.",
+			"ide_affch": 496508,
+			"longitude": -73.6980321
+		},
+		{
+			"nom_ville": "Chelsea",
+			"titre": "managing supervisor - retail",
+			"latitude": 45.48476931,
+			"expiration_date": "2025-08-23",
+			"employeur": "CENTRE JARDIN CLOUTIER LTEE",
+			"ide_affch": 496505,
+			"longitude": -75.75142978
+		},
+		{
+			"nom_ville": "Bromont",
+			"titre": "design draftsperson",
+			"latitude": 45.30297766,
+			"expiration_date": "2025-08-22",
+			"employeur": "Duo Display",
+			"ide_affch": 496502,
+			"longitude": -72.72229272
+		},
+		{
+			"nom_ville": "Saint-Jean-Port-Joli",
+			"titre": "community animator OR community worker",
+			"latitude": 47.20241439,
+			"expiration_date": "2025-09-02",
+			"employeur": "Service de placement du C.A.R.E. Montmagny-L'Islet",
+			"ide_affch": 496501,
+			"longitude": -70.25336869
+		},
+		{
+			"nom_ville": "Bromont",
+			"titre": "sales administrator",
+			"latitude": 45.30297766,
+			"expiration_date": "2025-08-22",
+			"employeur": "Duo Display",
+			"ide_affch": 496500,
+			"longitude": -72.72229272
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "customer service adviser",
+			"latitude": 45.54802938,
+			"expiration_date": "2025-08-31",
+			"employeur": "LABORATOIRE PIERRE MARCHILDON INC",
+			"ide_affch": 496498,
+			"longitude": -73.66223076
+		},
+		{
+			"nom_ville": "Bromont",
+			"titre": "logistics lead",
+			"latitude": 45.30297766,
+			"expiration_date": "2025-08-22",
+			"employeur": "Duo Display",
+			"ide_affch": 496489,
+			"longitude": -72.72229272
+		},
+		{
+			"nom_ville": "Bromont",
+			"titre": "dressmaker OR seamstress",
+			"latitude": 45.30297766,
+			"expiration_date": "2025-08-22",
+			"employeur": "Duo Display",
+			"ide_affch": 496486,
+			"longitude": -72.72229272
+		},
+		{
+			"nom_ville": "Longueuil",
+			"titre": "daycare aide OR daycare helper",
+			"latitude": 45.49914209,
+			"expiration_date": "2025-09-06",
+			"employeur": "FRANCOIS WANG INC.",
+			"ide_affch": 496485,
+			"longitude": -73.40761527
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496481,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496480,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "dispatch logistician",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496479,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "construction labourer",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496478,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Bromont",
+			"titre": "logistics clerk - transportation",
+			"latitude": 45.30297766,
+			"expiration_date": "2025-08-22",
+			"employeur": "Duo Display",
+			"ide_affch": 496477,
+			"longitude": -72.72229272
+		},
+		{
+			"nom_ville": "Terrebonne",
+			"titre": "computer numerical control (CNC) machining tool operator",
+			"latitude": 45.68594589,
+			"expiration_date": "2025-08-13",
+			"employeur": "GROUPE ADF INC.",
+			"ide_affch": 496476,
+			"longitude": -73.76343973
+		},
+		{
+			"nom_ville": "Terrebonne",
+			"titre": "power brake operator - metal fabrication OR press brake operator OR press brake operator - metal products manufacturing",
+			"latitude": 45.68594589,
+			"expiration_date": "2025-08-13",
+			"employeur": "GROUPE ADF INC.",
+			"ide_affch": 496475,
+			"longitude": -73.76343973
+		},
+		{
+			"nom_ville": "Bromont",
+			"titre": "production agent OR production officer",
+			"latitude": 45.30297766,
+			"expiration_date": "2025-08-22",
+			"employeur": "Duo Display",
+			"ide_affch": 496473,
+			"longitude": -72.72229272
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "material handler",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496472,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Terrebonne",
+			"titre": "general labourer - manufacturing",
+			"latitude": 45.68594589,
+			"expiration_date": "2025-08-15",
+			"employeur": "GROUPE ADF INC.",
+			"ide_affch": 496470,
+			"longitude": -73.76343973
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496469,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Terrebonne",
+			"titre": "assembler tack welder OR tack welder",
+			"latitude": 45.68594589,
+			"expiration_date": "2025-08-13",
+			"employeur": "GROUPE ADF INC.",
+			"ide_affch": 496468,
+			"longitude": -73.76343973
+		},
+		{
+			"nom_ville": "Val-d'Or",
+			"titre": "accountant",
+			"latitude": 48.0978544,
+			"expiration_date": "2025-08-31",
+			"employeur": "TAKTIK, AGENCE DE PLACEMENT DE MAIN D'OEUVRE INC.",
+			"ide_affch": 496467,
+			"longitude": -77.77578196
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496466,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496465,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496463,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496462,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496461,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496459,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "tractor-trailer truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496458,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "clinical services manager",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-06",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496457,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "tractor-trailer truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496456,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Mirabel",
+			"titre": "greenhouse labourer",
+			"latitude": 45.6237874,
+			"expiration_date": "2025-09-06",
+			"employeur": "Fédération UPA Outaouais-Laurentides (CEA) (Voir le nom de l'employeur dans le titre du poste)",
+			"ide_affch": 496455,
+			"longitude": -73.99752968
+		},
+		{
+			"nom_ville": "Saint-Joseph-de-Coleraine",
+			"titre": "helicopter pilot",
+			"latitude": 45.9572333,
+			"expiration_date": "2025-08-07",
+			"employeur": "Laflamme Aéro inc",
+			"ide_affch": 496454,
+			"longitude": -71.36748462
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "industrial machinery maintenance mechanic",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496453,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Saint-Joseph-de-Coleraine",
+			"titre": "computer numerically controlled coordinate measuring machine (CNC/CMM) programmer",
+			"latitude": 45.9572333,
+			"expiration_date": "2025-08-07",
+			"employeur": "Laflamme Aéro inc",
+			"ide_affch": 496452,
+			"longitude": -71.36748462
+		},
+		{
+			"nom_ville": "Saint-Joseph-de-Coleraine",
+			"titre": "systems engineer - manufacturing",
+			"latitude": 45.9572333,
+			"expiration_date": "2025-08-07",
+			"employeur": "Laflamme Aéro inc",
+			"ide_affch": 496451,
+			"longitude": -71.36748462
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "bus mechanic",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496450,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Cookshire-Eaton",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 45.41270836,
+			"expiration_date": "2025-08-05",
+			"employeur": "RESIDENCE COOKSHIRE-EATON INC.",
+			"ide_affch": 496449,
+			"longitude": -71.62620473
+		},
+		{
+			"nom_ville": "Saint-Joseph-de-Coleraine",
+			"titre": "systems engineer - manufacturing",
+			"latitude": 45.9572333,
+			"expiration_date": "2025-08-07",
+			"employeur": "Laflamme Aéro inc",
+			"ide_affch": 496448,
+			"longitude": -71.36748462
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "delivery driver OR route driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496447,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "receptionist-secretary",
+			"latitude": 46.82092732,
+			"expiration_date": "2025-08-02",
+			"employeur": "IPQ inc.",
+			"ide_affch": 496446,
+			"longitude": -71.23129591
+		},
+		{
+			"nom_ville": "Saint-Joseph-de-Coleraine",
+			"titre": "millwright helper",
+			"latitude": 45.9572333,
+			"expiration_date": "2025-08-07",
+			"employeur": "Laflamme Aéro inc",
+			"ide_affch": 496444,
+			"longitude": -71.36748462
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496443,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "tractor-trailer truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496442,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "administrative clerk",
+			"latitude": 45.54319998,
+			"expiration_date": "2025-07-31",
+			"employeur": "Institut national de la recherche scientifique",
+			"ide_affch": 496441,
+			"longitude": -73.72114995
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "administration officer OR administrative officer",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496440,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "occupational hygiene officer",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496439,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "dietitian-nutritionist",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496438,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "physical therapist OR physiotherapist",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496437,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "physical therapist OR physiotherapist",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496436,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "dietitian-nutritionist",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496435,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496434,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "occupational therapist (OT)",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496433,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Louiseville",
+			"titre": "documentation technician",
+			"latitude": 46.25783678,
+			"expiration_date": "2025-08-22",
+			"employeur": "MRC de Maskinongé",
+			"ide_affch": 496432,
+			"longitude": -72.92299166
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "physical therapy technician OR physiotherapy technician",
+			"latitude": 45.88000989,
+			"expiration_date": "2025-08-13",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496430,
+			"longitude": -72.47730435
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496429,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "building handyman/woman OR building handyperson",
+			"latitude": 46.82382728,
+			"expiration_date": "2025-08-31",
+			"employeur": "GESTION IMMOBILIERE GESTIPRO  INC.",
+			"ide_affch": 496427,
+			"longitude": -71.2425371
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496426,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "delivery driver OR route driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496425,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "environmental impact analyst",
+			"latitude": 45.40009298,
+			"expiration_date": "2025-08-08",
+			"employeur": "ADDERE Service-Conseil",
+			"ide_affch": 496424,
+			"longitude": -71.88908314
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "welder-assembler",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496423,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "tractor-trailer truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496422,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496421,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496420,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "heavy equipment combination mechanic",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496419,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "fabrication shop helper - metal products",
+			"latitude": 45.62487367,
+			"expiration_date": "2025-08-22",
+			"employeur": "VISQUE INC.",
+			"ide_affch": 496418,
+			"longitude": -73.57753533
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "tractor-trailer truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496417,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "tractor-trailer truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496416,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "forklift operator OR forklift truck operator",
+			"latitude": 45.62487367,
+			"expiration_date": "2025-08-22",
+			"employeur": "VISQUE INC.",
+			"ide_affch": 496415,
+			"longitude": -73.57753533
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "growers' advisor",
+			"latitude": 45.38134086,
+			"expiration_date": "2025-09-06",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496414,
+			"longitude": -71.96887339
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "tractor-trailer truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496413,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "computer numerical control (CNC) machining tool operator",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496412,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "computer numerical control (CNC) machinist",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496411,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496410,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496409,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "truck driver",
+			"latitude": 46.7974414,
+			"expiration_date": "2025-08-23",
+			"employeur": "162069 CANADA INC.",
+			"ide_affch": 496408,
+			"longitude": -71.28030868
+		},
+		{
+			"nom_ville": "Blainville",
+			"titre": "cook",
+			"latitude": 45.668782,
+			"expiration_date": "2025-07-31",
+			"employeur": "GARDERIE AQUA NEMO INC.",
+			"ide_affch": 496406,
+			"longitude": -73.88365311
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "stockroom clerk - retail",
+			"latitude": 46.82157576,
+			"expiration_date": "2025-08-10",
+			"employeur": "LABORATOIRE HYGIENEX INC.",
+			"ide_affch": 496405,
+			"longitude": -71.33800975
+		},
+		{
+			"nom_ville": "Delson",
+			"titre": "dental office receptionist OR dental receptionist",
+			"latitude": 45.40050434,
+			"expiration_date": "2025-08-23",
+			"employeur": "CENTRE DENTAIRE LE RIVERAIN   INC.",
+			"ide_affch": 496404,
+			"longitude": -73.54092868
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "executive assistant",
+			"latitude": 48.4493609,
+			"expiration_date": "2025-07-28",
+			"employeur": "L'ENFANT DU FLEUVE INC.",
+			"ide_affch": 496403,
+			"longitude": -68.52816924
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "administrative assistant",
+			"latitude": 45.56332475,
+			"expiration_date": "2025-08-31",
+			"employeur": "TECHNOLOGIES KAAYU INC.",
+			"ide_affch": 496401,
+			"longitude": -73.7576868
+		},
+		{
+			"nom_ville": "Saint-Henri",
+			"titre": "tire changer - automotive service",
+			"latitude": 46.68530162,
+			"expiration_date": "2025-08-31",
+			"employeur": "NADEAU PNEUMATIQUE INC.",
+			"ide_affch": 496399,
+			"longitude": -71.05301292
+		},
+		{
+			"nom_ville": "Saint-Henri",
+			"titre": "service advisor - auto repair",
+			"latitude": 46.68530162,
+			"expiration_date": "2025-08-31",
+			"employeur": "NADEAU PNEUMATIQUE INC.",
+			"ide_affch": 496398,
+			"longitude": -71.05301292
+		},
+		{
+			"nom_ville": "Dollard-des-Ormeaux",
+			"titre": "administrative clerk",
+			"latitude": 45.49126056,
+			"expiration_date": "2025-08-19",
+			"employeur": "CONSULTATION 3DZ INC.",
+			"ide_affch": 496397,
+			"longitude": -73.80579318
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "communications adviser",
+			"latitude": 46.81425364,
+			"expiration_date": "2025-08-20",
+			"employeur": "FONDATION MONIQUE FITZ-BACK",
+			"ide_affch": 496395,
+			"longitude": -71.22593333
+		},
+		{
+			"nom_ville": "New Richmond",
+			"titre": "journeyman/woman heavy-duty equipment mechanic",
+			"latitude": 48.16388835,
+			"expiration_date": "2025-09-01",
+			"employeur": "SOUDEX INC",
+			"ide_affch": 496391,
+			"longitude": -65.83296536
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "truck driver",
+			"latitude": 45.44138316,
+			"expiration_date": "2025-08-22",
+			"employeur": "9318-6468 QUEBEC INC.",
+			"ide_affch": 496388,
+			"longitude": -73.63155863
+		},
+		{
+			"nom_ville": "Sainte-Julienne",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.9318066,
+			"expiration_date": "2025-08-26",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496387,
+			"longitude": -73.71666766
+		},
+		{
+			"nom_ville": "Saint-Jean-sur-Richelieu",
+			"titre": "administrative assistant",
+			"latitude": 45.28830029,
+			"expiration_date": "2025-08-31",
+			"employeur": "Mère en action",
+			"ide_affch": 496386,
+			"longitude": -73.25508204
+		},
+		{
+			"nom_ville": "Saint-Alexis",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.93757131,
+			"expiration_date": "2025-08-26",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496385,
+			"longitude": -73.64304513
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "engine mechanic - motor vehicle",
+			"latitude": 48.23721339,
+			"expiration_date": "2025-09-05",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496383,
+			"longitude": -79.01334962
+		},
+		{
+			"nom_ville": "Lachute",
+			"titre": "administrative assistant - legal",
+			"latitude": 45.63856374,
+			"expiration_date": "2025-08-15",
+			"employeur": "VALOIS BOUTIN & BESNER        S.E.N.C.",
+			"ide_affch": 496381,
+			"longitude": -74.32555698
+		},
+		{
+			"nom_ville": "La Malbaie",
+			"titre": "content creator - writing",
+			"latitude": 47.65174014,
+			"expiration_date": "2025-08-06",
+			"employeur": "Tourisme Charlevoix",
+			"ide_affch": 496380,
+			"longitude": -70.14950864
+		},
+		{
+			"nom_ville": "Lanoraie",
+			"titre": "farm labourer - harvesting",
+			"latitude": 45.94719795,
+			"expiration_date": "2025-08-26",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496379,
+			"longitude": -73.30442551
+		},
+		{
+			"nom_ville": "Les Îles-de-la-Madeleine",
+			"titre": "environmental group director",
+			"latitude": 47.37782733,
+			"expiration_date": "2025-08-01",
+			"employeur": "Comité ZIP des Îles-de-la-Madeleine",
+			"ide_affch": 496378,
+			"longitude": -61.86529375
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "supervising chef",
+			"latitude": 46.87827539,
+			"expiration_date": "2025-08-31",
+			"employeur": "AQUA FIBRE INNOVATION INC.",
+			"ide_affch": 496377,
+			"longitude": -71.36162887
+		},
+		{
+			"nom_ville": "Matapédia",
+			"titre": "reception clerk",
+			"latitude": 47.97498061,
+			"expiration_date": "2025-08-25",
+			"employeur": "Centre d'action bénévole Ascension-Escuminac",
+			"ide_affch": 496376,
+			"longitude": -66.95339662
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "truck driver OR trucker",
+			"latitude": 45.44138316,
+			"expiration_date": "2025-09-05",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496375,
+			"longitude": -73.63155863
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "highway technician OR road technician",
+			"latitude": 48.46470144,
+			"expiration_date": "2025-08-27",
+			"employeur": "BETON PROVINCIAL LTEE",
+			"ide_affch": 496374,
+			"longitude": -68.49040845
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "administrative assistant",
+			"latitude": 45.58085182,
+			"expiration_date": "2025-09-05",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496373,
+			"longitude": -73.7478564
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "labour relations consultant",
+			"latitude": 48.25358001,
+			"expiration_date": "2025-08-15",
+			"employeur": "TAKTIK, AGENCE DE PLACEMENT DE MAIN D'OEUVRE INC.",
+			"ide_affch": 496372,
+			"longitude": -79.01192803
+		},
+		{
+			"nom_ville": "Saint-Eustache",
+			"titre": "crop farm labourer - harvesting",
+			"latitude": 45.59802711,
+			"expiration_date": "2025-09-05",
+			"employeur": "Fédération UPA Outaouais-Laurentides (CEA) (Voir le nom de l'employeur dans le titre du poste)",
+			"ide_affch": 496370,
+			"longitude": -73.92643348
+		},
+		{
+			"nom_ville": "Saint-Roch-Ouest",
+			"titre": "farm labourer - harvesting",
+			"latitude": 45.84904584,
+			"expiration_date": "2025-08-26",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496369,
+			"longitude": -73.6721092
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "production operations manager",
+			"latitude": 48.25358001,
+			"expiration_date": "2025-08-15",
+			"employeur": "TAKTIK, AGENCE DE PLACEMENT DE MAIN D'OEUVRE INC.",
+			"ide_affch": 496368,
+			"longitude": -79.01192803
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "environmental program manager",
+			"latitude": 48.25358001,
+			"expiration_date": "2025-08-15",
+			"employeur": "TAKTIK, AGENCE DE PLACEMENT DE MAIN D'OEUVRE INC.",
+			"ide_affch": 496367,
+			"longitude": -79.01192803
+		},
+		{
+			"nom_ville": "Lachute",
+			"titre": "receptionist-secretary",
+			"latitude": 45.63856374,
+			"expiration_date": "2025-08-11",
+			"employeur": "VALOIS BOUTIN & BESNER        S.E.N.C.",
+			"ide_affch": 496366,
+			"longitude": -74.32555698
+		},
+		{
+			"nom_ville": "Cookshire-Eaton",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.44607468,
+			"expiration_date": "2025-08-31",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496365,
+			"longitude": -71.62807014
+		},
+		{
+			"nom_ville": "Beloeil",
+			"titre": "environmental project manager",
+			"latitude": 45.56135724,
+			"expiration_date": "2025-08-05",
+			"employeur": "Nature-Action Québec",
+			"ide_affch": 496363,
+			"longitude": -73.20625074
+		},
+		{
+			"nom_ville": "Val-d'Or",
+			"titre": "bus ticket agent OR ticket agent - bus line",
+			"latitude": 48.08330993,
+			"expiration_date": "2025-09-05",
+			"employeur": "LES AUTOBUS MAHEUX LTEE",
+			"ide_affch": 496360,
+			"longitude": -77.79305893
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "housekeeping attendant",
+			"latitude": 46.35352743,
+			"expiration_date": "2025-07-31",
+			"employeur": "CARPE DIEM - CENTRE DE        RESSOURCES ALZHEIMER",
+			"ide_affch": 496357,
+			"longitude": -72.55660542
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "communication officer (except emergency services)",
+			"latitude": 45.38730791,
+			"expiration_date": "2025-08-29",
+			"employeur": "CORPORATION DE DEVELOPPEMENT  COMMUNAUTAIRE DE SHERBROOKE",
+			"ide_affch": 496356,
+			"longitude": -71.90708314
+		},
+		{
+			"nom_ville": "Lévis",
+			"titre": "display advertising sales representative",
+			"latitude": 46.80394201,
+			"expiration_date": "2025-08-22",
+			"employeur": "Le Journal de Lévis, coopérative de solidarité",
+			"ide_affch": 496355,
+			"longitude": -71.17932271
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.89707168,
+			"expiration_date": "2025-09-02",
+			"employeur": "LE CENTRE DE LA PETITE ENFANCE GRAND-MERE DOUCEUR",
+			"ide_affch": 496354,
+			"longitude": -72.47319294
+		},
+		{
+			"nom_ville": "Saint-Camille",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.68206716,
+			"expiration_date": "2025-08-31",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496353,
+			"longitude": -71.66558616
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.87982813,
+			"expiration_date": "2025-09-02",
+			"employeur": "LE CENTRE DE LA PETITE ENFANCE GRAND-MERE DOUCEUR",
+			"ide_affch": 496352,
+			"longitude": -72.47509189
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "community social development officer",
+			"latitude": 45.406235,
+			"expiration_date": "2025-08-03",
+			"employeur": "MOMENTHOM CENTRE D'ENTRAIDE   POUR HOMMES DE L'ESTRIE",
+			"ide_affch": 496351,
+			"longitude": -71.8956903
+		},
+		{
+			"nom_ville": "Coaticook",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.15209049,
+			"expiration_date": "2025-08-31",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496350,
+			"longitude": -71.83059783
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.89217863,
+			"expiration_date": "2025-09-02",
+			"employeur": "LE CENTRE DE LA PETITE ENFANCE GRAND-MERE DOUCEUR",
+			"ide_affch": 496349,
+			"longitude": -72.48413451
+		},
+		{
+			"nom_ville": "Saint-Eustache",
+			"titre": "farm labourer - harvesting",
+			"latitude": 45.54776488,
+			"expiration_date": "2025-09-05",
+			"employeur": "Fédération UPA Outaouais-Laurentides (CEA) (Voir le nom de l'employeur dans le titre du poste)",
+			"ide_affch": 496348,
+			"longitude": -73.96282899
+		},
+		{
+			"nom_ville": "Rougemont",
+			"titre": "production supervisor - food and beverage processing",
+			"latitude": 45.4402074,
+			"expiration_date": "2025-08-26",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496347,
+			"longitude": -73.05800366
+		},
+		{
+			"nom_ville": "Les Îles-de-la-Madeleine",
+			"titre": "human resources coordinator",
+			"latitude": 47.3551821,
+			"expiration_date": "2025-08-10",
+			"employeur": "PECHERIES LEOMAR INC.",
+			"ide_affch": 496346,
+			"longitude": -61.8761533
+		},
+		{
+			"nom_ville": "Boisbriand",
+			"titre": "journeyman/woman construction electrician",
+			"latitude": 45.62496022,
+			"expiration_date": "2025-08-15",
+			"employeur": "Kilo Électrique Inc. / Groupe Kilo",
+			"ide_affch": 496345,
+			"longitude": -73.83104552
+		},
+		{
+			"nom_ville": "Pont-Rouge",
+			"titre": "public works labourer",
+			"latitude": 46.76088634,
+			"expiration_date": "2025-08-04",
+			"employeur": "Ville de Pont-Rouge",
+			"ide_affch": 496343,
+			"longitude": -71.70053674
+		},
+		{
+			"nom_ville": "Baie-Comeau",
+			"titre": "specialized cleaner - automobile aesthetics",
+			"latitude": 49.19447955,
+			"expiration_date": "2025-09-03",
+			"employeur": "ROUTHIER AUTOMOBILES INC.",
+			"ide_affch": 496342,
+			"longitude": -68.28161208
+		},
+		{
+			"nom_ville": "Sacré-Coeur",
+			"titre": "industrial mechanic",
+			"latitude": 48.28121116,
+			"expiration_date": "2025-08-31",
+			"employeur": "COOPERATIVE DES TRAVAILLEURS  (EUSES) SACRE-COEUR (UNISACO)",
+			"ide_affch": 496341,
+			"longitude": -69.88222948
+		},
+		{
+			"nom_ville": "Baie-Comeau",
+			"titre": "specialized cleaner - automobile aesthetics",
+			"latitude": 49.19447955,
+			"expiration_date": "2025-08-31",
+			"employeur": "ROUTHIER AUTOMOBILES INC.",
+			"ide_affch": 496340,
+			"longitude": -68.28161208
+		},
+		{
+			"nom_ville": "Mirabel",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.57661911,
+			"expiration_date": "2025-09-05",
+			"employeur": "Fédération UPA Outaouais-Laurentides (CEA) (Voir le nom de l'employeur dans le titre du poste)",
+			"ide_affch": 496339,
+			"longitude": -74.08784265
+		},
+		{
+			"nom_ville": "Sacré-Coeur",
+			"titre": "labourer - wood processing OR wood processing labourer",
+			"latitude": 48.28121116,
+			"expiration_date": "2025-08-31",
+			"employeur": "COOPERATIVE DES TRAVAILLEURS  (EUSES) SACRE-COEUR (UNISACO)",
+			"ide_affch": 496338,
+			"longitude": -69.88222948
+		},
+		{
+			"nom_ville": "L'Assomption",
+			"titre": "industrial mechanic",
+			"latitude": 45.82330453,
+			"expiration_date": "2025-08-05",
+			"employeur": "USI-POMPES INC.",
+			"ide_affch": 496337,
+			"longitude": -73.45337675
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "accounting clerk",
+			"latitude": 48.46278894,
+			"expiration_date": "2025-08-14",
+			"employeur": "JMP Consultants",
+			"ide_affch": 496336,
+			"longitude": -68.50577923
+		},
+		{
+			"nom_ville": "Shawinigan",
+			"titre": "water treatment plant foreman/woman",
+			"latitude": 46.54109972,
+			"expiration_date": "2025-08-11",
+			"employeur": "Ville de Shawinigan",
+			"ide_affch": 496335,
+			"longitude": -72.74506777
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "medical secretary",
+			"latitude": 48.4456186,
+			"expiration_date": "2025-08-22",
+			"employeur": "Services Plus",
+			"ide_affch": 496334,
+			"longitude": -68.52827327
+		},
+		{
+			"nom_ville": "Joliette",
+			"titre": "labourer - warehousing and storage",
+			"latitude": 46.03812958,
+			"expiration_date": "2025-08-31",
+			"employeur": "VIATEUR GOYET & FILS INC",
+			"ide_affch": 496332,
+			"longitude": -73.42219868
+		},
+		{
+			"nom_ville": "Compton",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.23691863,
+			"expiration_date": "2025-08-13",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496331,
+			"longitude": -71.89396128
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "administration officer OR administrative officer",
+			"latitude": 46.79711028,
+			"expiration_date": "2025-07-28",
+			"employeur": "CLINIQUE DE MEDECINE DE       FAMILLE S.E.N.C.R.L.",
+			"ide_affch": 496330,
+			"longitude": -71.25043805
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "maintenance person - building",
+			"latitude": 48.46323334,
+			"expiration_date": "2025-08-22",
+			"employeur": "Centre du camion Denis",
+			"ide_affch": 496329,
+			"longitude": -68.50432754
+		},
+		{
+			"nom_ville": "Thurso",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.59411105,
+			"expiration_date": "2025-08-29",
+			"employeur": "CENTRE DE LA PETITE ENFANCE DE LA PETITE-NATION",
+			"ide_affch": 496328,
+			"longitude": -75.24400471
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "assistant buyer",
+			"latitude": 48.40662585,
+			"expiration_date": "2025-08-22",
+			"employeur": "GROUPE LD INC.",
+			"ide_affch": 496327,
+			"longitude": -71.16111184
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 46.86041963,
+			"expiration_date": "2025-09-05",
+			"employeur": "Étape emploi",
+			"ide_affch": 496326,
+			"longitude": -71.22220098
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "material handler",
+			"latitude": 48.46323334,
+			"expiration_date": "2025-08-22",
+			"employeur": "Centre du camion Denis",
+			"ide_affch": 496325,
+			"longitude": -68.50432754
+		},
+		{
+			"nom_ville": "Sainte-Hélène-de-Bagot",
+			"titre": "tank car cleaner",
+			"latitude": 45.73587451,
+			"expiration_date": "2025-07-31",
+			"employeur": "TRANSPORT PETIT 1997 INC.",
+			"ide_affch": 496324,
+			"longitude": -72.73994404
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "career development counsellor",
+			"latitude": 46.81269805,
+			"expiration_date": "2025-08-24",
+			"employeur": "Institut national de la recherche scientifique",
+			"ide_affch": 496323,
+			"longitude": -71.22439235
+		},
+		{
+			"nom_ville": "Val-d'Or",
+			"titre": "dancer",
+			"latitude": 48.10383355,
+			"expiration_date": "2025-09-01",
+			"employeur": "ECOLE DE DANSE LATINE DANSE   AVEC MOI S.E.N.C.",
+			"ide_affch": 496321,
+			"longitude": -77.7943705
+		},
+		{
+			"nom_ville": "Sainte-Hélène-de-Bagot",
+			"titre": "truck dispatcher",
+			"latitude": 45.73587451,
+			"expiration_date": "2025-07-31",
+			"employeur": "TRANSPORT PETIT 1997 INC.",
+			"ide_affch": 496320,
+			"longitude": -72.73994404
+		},
+		{
+			"nom_ville": "Price",
+			"titre": "cook's helper",
+			"latitude": 48.60363075,
+			"expiration_date": "2025-09-05",
+			"employeur": "casse-croute la bonne bouffe 62 rue st-rémi price",
+			"ide_affch": 496319,
+			"longitude": -68.12376935
+		},
+		{
+			"nom_ville": "Grande-Rivière",
+			"titre": "electrical mechanic helper",
+			"latitude": 48.39356146,
+			"expiration_date": "2025-08-03",
+			"employeur": "Merinov",
+			"ide_affch": 496318,
+			"longitude": -64.48960969
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "cook",
+			"latitude": 46.83434362,
+			"expiration_date": "2025-08-22",
+			"employeur": "LA SOCIÉTÉ DE ST-VINCENT DE PAUL DE QUEBEC",
+			"ide_affch": 496317,
+			"longitude": -71.27781447
+		},
+		{
+			"nom_ville": "Amos",
+			"titre": "social worker",
+			"latitude": 48.57092628,
+			"expiration_date": "2025-09-05",
+			"employeur": "SUPPORT AUX AINÉS DE L'HARRICANA",
+			"ide_affch": 496316,
+			"longitude": -78.11820028
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "office administration clerk",
+			"latitude": 45.62568504,
+			"expiration_date": "2025-08-18",
+			"employeur": "PATISSERIE LE FRAISIER INC",
+			"ide_affch": 496315,
+			"longitude": -73.65143728
+		},
+		{
+			"nom_ville": "Notre-Dame-de-l'Île-Perrot",
+			"titre": "maintenance person - building",
+			"latitude": 45.35672091,
+			"expiration_date": "2025-08-05",
+			"employeur": "CENTRE NOTRE-DAME DE FATIMA",
+			"ide_affch": 496314,
+			"longitude": -73.92080961
+		},
+		{
+			"nom_ville": "Malartic",
+			"titre": "administration officer OR administrative officer",
+			"latitude": 48.13639204,
+			"expiration_date": "2025-08-11",
+			"employeur": "VILLE DE MALARTIC",
+			"ide_affch": 496313,
+			"longitude": -78.12739929
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "environmental technician",
+			"latitude": 48.44731863,
+			"expiration_date": "2025-08-11",
+			"employeur": "COMITE ZIP SUD-DE-L'ESTUAIRE",
+			"ide_affch": 496312,
+			"longitude": -68.53627042
+		},
+		{
+			"nom_ville": "Saint-Roch-de-l'Achigan",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.89079004,
+			"expiration_date": "2025-08-26",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496311,
+			"longitude": -73.57373186
+		},
+		{
+			"nom_ville": "Ormstown",
+			"titre": "mechanic helper",
+			"latitude": 45.12744833,
+			"expiration_date": "2025-08-31",
+			"employeur": "LAC-MATIC INC",
+			"ide_affch": 496310,
+			"longitude": -73.99717996
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "tire changer - automotive service",
+			"latitude": 48.46323334,
+			"expiration_date": "2025-08-15",
+			"employeur": "Centre du camion Denis",
+			"ide_affch": 496309,
+			"longitude": -68.50432754
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "cook's helper",
+			"latitude": 46.80683689,
+			"expiration_date": "2025-08-15",
+			"employeur": "Cuisine centrale Piazzetta",
+			"ide_affch": 496308,
+			"longitude": -71.24747873
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "pastry maker",
+			"latitude": 46.80683689,
+			"expiration_date": "2025-08-15",
+			"employeur": "Cuisine centrale Piazzetta",
+			"ide_affch": 496307,
+			"longitude": -71.24747873
+		},
+		{
+			"nom_ville": "Alma",
+			"titre": "administrative assistant",
+			"latitude": 48.56428286,
+			"expiration_date": "2025-08-25",
+			"employeur": "LES DENEIGEMENTS SERGEMARC    INC.",
+			"ide_affch": 496306,
+			"longitude": -71.64662088
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "construction labourer",
+			"latitude": 46.78531781,
+			"expiration_date": "2025-08-22",
+			"employeur": "BILDRAIN 2010 INC.",
+			"ide_affch": 496305,
+			"longitude": -71.32220172
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "construction labourer",
+			"latitude": 46.78531781,
+			"expiration_date": "2025-08-22",
+			"employeur": "BILDRAIN 2010 INC.",
+			"ide_affch": 496304,
+			"longitude": -71.32220172
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "fence installer",
+			"latitude": 45.6455778,
+			"expiration_date": "2025-08-21",
+			"employeur": "CLOTURES ST-MARTIN INC.",
+			"ide_affch": 496303,
+			"longitude": -73.67696101
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "social worker",
+			"latitude": 45.5384653,
+			"expiration_date": "2025-08-31",
+			"employeur": "MOTIVATION-JEUNESSE 16/18 INC.",
+			"ide_affch": 496302,
+			"longitude": -73.63361059
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "employment assistance officer",
+			"latitude": 45.5384653,
+			"expiration_date": "2025-09-01",
+			"employeur": "MOTIVATION-JEUNESSE 16/18 INC.",
+			"ide_affch": 496301,
+			"longitude": -73.63361059
+		},
+		{
+			"nom_ville": "Saint-François-Xavier-de-Brompton",
+			"titre": "crop farm labourer - harvesting",
+			"latitude": 45.49514423,
+			"expiration_date": "2025-08-01",
+			"employeur": "LES JARDINS DU HARICOT MAGIQUE",
+			"ide_affch": 496300,
+			"longitude": -72.04697257
+		},
+		{
+			"nom_ville": "Saint-Modeste",
+			"titre": "housekeeping attendant",
+			"latitude": 47.83285435,
+			"expiration_date": "2025-08-15",
+			"employeur": "ENTRETIEN MENAGER PC INC.",
+			"ide_affch": 496299,
+			"longitude": -69.40128823
+		},
+		{
+			"nom_ville": "Saint-Mathieu-de-Rioux",
+			"titre": "general farm worker - harvesting",
+			"latitude": 48.18359553,
+			"expiration_date": "2025-08-20",
+			"employeur": "JARDINS BEAUX-LIEUX S.E.N.C.",
+			"ide_affch": 496298,
+			"longitude": -68.98707055
+		},
+		{
+			"nom_ville": "Sorel-Tracy",
+			"titre": "property rentals manager",
+			"latitude": 46.02315237,
+			"expiration_date": "2025-08-22",
+			"employeur": "MESKLEY INC.",
+			"ide_affch": 496297,
+			"longitude": -73.12574752
+		},
+		{
+			"nom_ville": "Sorel-Tracy",
+			"titre": "property rentals manager",
+			"latitude": 46.02315237,
+			"expiration_date": "2025-08-22",
+			"employeur": "MESKLEY INC.",
+			"ide_affch": 496296,
+			"longitude": -73.12574752
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "dental hygienist",
+			"latitude": 45.52284982,
+			"expiration_date": "2025-09-04",
+			"employeur": "Carrière Dentaire",
+			"ide_affch": 496295,
+			"longitude": -73.78250754
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "dental office receptionist OR dental receptionist",
+			"latitude": 45.59002159,
+			"expiration_date": "2025-08-20",
+			"employeur": "Carrière Dentaire",
+			"ide_affch": 496294,
+			"longitude": -73.78760209
+		},
+		{
+			"nom_ville": "Ham-Sud",
+			"titre": "first cook",
+			"latitude": 45.75791985,
+			"expiration_date": "2025-08-31",
+			"employeur": "MAISON NOUVELLE VIE",
+			"ide_affch": 496293,
+			"longitude": -71.60200933
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "dental hygienist",
+			"latitude": 45.5390046,
+			"expiration_date": "2025-08-25",
+			"employeur": "CENTRE DENTAIRE PPM",
+			"ide_affch": 496292,
+			"longitude": -73.60887318
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "chair-side assistant - dental",
+			"latitude": 45.5390046,
+			"expiration_date": "2025-08-25",
+			"employeur": "CENTRE DENTAIRE PPM",
+			"ide_affch": 496291,
+			"longitude": -73.60887318
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "general labourer - public works",
+			"latitude": 45.55942561,
+			"expiration_date": "2025-08-29",
+			"employeur": "PARC OLYMPIQUE",
+			"ide_affch": 496290,
+			"longitude": -73.55203155
+		},
+		{
+			"nom_ville": "Saint-Camille",
+			"titre": "administrative assistant",
+			"latitude": 45.73501348,
+			"expiration_date": "2025-08-11",
+			"employeur": "PROJET COLLECTIF QUEBEC",
+			"ide_affch": 496289,
+			"longitude": -71.6777422
+		},
+		{
+			"nom_ville": "Gatineau",
+			"titre": "carpenter",
+			"latitude": 45.45530944,
+			"expiration_date": "2025-08-22",
+			"employeur": "LES RAMPES MIRIK INC.",
+			"ide_affch": 496288,
+			"longitude": -75.73216406
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "sports coach",
+			"latitude": 45.46803001,
+			"expiration_date": "2025-08-31",
+			"employeur": "3805191 CANADA INC.",
+			"ide_affch": 496286,
+			"longitude": -73.54913387
+		},
+		{
+			"nom_ville": "Pointe-Claire",
+			"titre": "stationary engineer \"B\" and refrigeration plant operator",
+			"latitude": 45.47460229,
+			"expiration_date": "2025-09-01",
+			"employeur": "VANTAGE DATA CENTERS CANADA   MANAGEMENT,LIMITED PARTNERSHIP",
+			"ide_affch": 496284,
+			"longitude": -73.8000433
+		},
+		{
+			"nom_ville": "Pointe-Claire",
+			"titre": "electrical technician",
+			"latitude": 45.47460229,
+			"expiration_date": "2025-09-01",
+			"employeur": "VANTAGE DATA CENTERS CANADA   MANAGEMENT,LIMITED PARTNERSHIP",
+			"ide_affch": 496283,
+			"longitude": -73.8000433
+		},
+		{
+			"nom_ville": "Montmagny",
+			"titre": "dining establishment managing supervisor",
+			"latitude": 46.98248405,
+			"expiration_date": "2025-08-30",
+			"employeur": "RESTAURANT NORMANDIN (2014)   INC.",
+			"ide_affch": 496282,
+			"longitude": -70.56241957
+		},
+		{
+			"nom_ville": "Pointe-Claire",
+			"titre": "refrigeration technician",
+			"latitude": 45.47460229,
+			"expiration_date": "2025-09-01",
+			"employeur": "VANTAGE DATA CENTERS CANADA   MANAGEMENT,LIMITED PARTNERSHIP",
+			"ide_affch": 496281,
+			"longitude": -73.8000433
+		},
+		{
+			"nom_ville": "Saint-Jean-Port-Joli",
+			"titre": "chef OR chef de cuisine",
+			"latitude": 47.19296196,
+			"expiration_date": "2025-08-29",
+			"employeur": "RESTAURANT NORMANDIN (2014)   INC.",
+			"ide_affch": 496280,
+			"longitude": -70.24241662
+		},
+		{
+			"nom_ville": "Saint-Félicien",
+			"titre": "drying machine tender - textile manufacturing",
+			"latitude": 48.6451632,
+			"expiration_date": "2025-09-02",
+			"employeur": "NETTOYEUR INDUSTRIEL F.B. INC",
+			"ide_affch": 496279,
+			"longitude": -72.45166111
+		},
+		{
+			"nom_ville": "Pont-Rouge",
+			"titre": "custodian OR janitor",
+			"latitude": 46.75152203,
+			"expiration_date": "2025-08-04",
+			"employeur": "Ville de Pont-Rouge",
+			"ide_affch": 496278,
+			"longitude": -71.69593407
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "computer network technician",
+			"latitude": 45.57380925,
+			"expiration_date": "2025-08-29",
+			"employeur": "9986782 CANADA INC.",
+			"ide_affch": 496277,
+			"longitude": -73.60982471
+		},
+		{
+			"nom_ville": "Saint-Félicien",
+			"titre": "delivery driver OR route driver",
+			"latitude": 48.6451632,
+			"expiration_date": "2025-09-02",
+			"employeur": "NETTOYEUR INDUSTRIEL F.B. INC",
+			"ide_affch": 496276,
+			"longitude": -72.45166111
+		},
+		{
+			"nom_ville": "Saint-Jean-Port-Joli",
+			"titre": "dining establishment managing supervisor",
+			"latitude": 47.19296196,
+			"expiration_date": "2025-08-27",
+			"employeur": "RESTAURANT NORMANDIN (2014)   INC.",
+			"ide_affch": 496275,
+			"longitude": -70.24241662
+		},
+		{
+			"nom_ville": "Saint-Félicien",
+			"titre": "dressmaker OR seamstress",
+			"latitude": 48.6451632,
+			"expiration_date": "2025-09-02",
+			"employeur": "NETTOYEUR INDUSTRIEL F.B. INC",
+			"ide_affch": 496274,
+			"longitude": -72.45166111
+		},
+		{
+			"nom_ville": "Saint-Tite",
+			"titre": "food service attendant",
+			"latitude": 46.72807786,
+			"expiration_date": "2025-08-01",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496272,
+			"longitude": -72.55707883
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "customer service adviser",
+			"latitude": 45.48114446,
+			"expiration_date": "2025-08-31",
+			"employeur": "HERCULES SLR INC.",
+			"ide_affch": 496269,
+			"longitude": -73.69108081
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "billing clerk OR invoice clerk",
+			"latitude": 48.24010252,
+			"expiration_date": "2025-08-21",
+			"employeur": "TAKTIK, AGENCE DE PLACEMENT DE MAIN D'OEUVRE INC.",
+			"ide_affch": 496268,
+			"longitude": -79.01903097
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "dental technician",
+			"latitude": 45.53644182,
+			"expiration_date": "2025-08-14",
+			"employeur": "SERVICE D'IMMIGRATION DJP DU QUÉBEC",
+			"ide_affch": 496266,
+			"longitude": -73.67868904
+		},
+		{
+			"nom_ville": "Pont-Rouge",
+			"titre": "office building concierge",
+			"latitude": 46.75676346,
+			"expiration_date": "2025-08-04",
+			"employeur": "Ville de Pont-Rouge",
+			"ide_affch": 496265,
+			"longitude": -71.69540854
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "computer engineering project manager",
+			"latitude": 45.57380925,
+			"expiration_date": "2025-08-29",
+			"employeur": "9986782 CANADA INC.",
+			"ide_affch": 496264,
+			"longitude": -73.60982471
+		},
+		{
+			"nom_ville": "Boucherville",
+			"titre": "assistant accountant",
+			"latitude": 45.55397715,
+			"expiration_date": "2025-08-27",
+			"employeur": "LES SPECIALISTES AVA INC.",
+			"ide_affch": 496263,
+			"longitude": -73.42403509
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "personal aide - home support",
+			"latitude": 45.54251913,
+			"expiration_date": "2025-09-04",
+			"employeur": "MINISTERE DE LA SANTE ET DES SERVICES SOCIAUX",
+			"ide_affch": 496262,
+			"longitude": -73.56207818
+		},
+		{
+			"nom_ville": "Racine",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.5185344,
+			"expiration_date": "2025-08-25",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496261,
+			"longitude": -72.23523823
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "computer systems development coordinator",
+			"latitude": 45.57380925,
+			"expiration_date": "2025-08-29",
+			"employeur": "9986782 CANADA INC.",
+			"ide_affch": 496260,
+			"longitude": -73.60982471
+		},
+		{
+			"nom_ville": "Compton",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.18548773,
+			"expiration_date": "2025-08-04",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496258,
+			"longitude": -71.89867487
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "settlement practitioner",
+			"latitude": 45.40049572,
+			"expiration_date": "2025-08-21",
+			"employeur": "CENTRE COMMUNAUTAIRE PARTAGE  ST-FRANCOIS",
+			"ide_affch": 496257,
+			"longitude": -71.91091952
+		},
+		{
+			"nom_ville": "Nominingue",
+			"titre": "dump truck driver",
+			"latitude": 46.39256199,
+			"expiration_date": "2025-08-31",
+			"employeur": "RECYCLAGE JORG INC",
+			"ide_affch": 496255,
+			"longitude": -75.0280346
+		},
+		{
+			"nom_ville": "Blainville",
+			"titre": "leisure coordinator OR recreation coordinator",
+			"latitude": 45.67951968,
+			"expiration_date": "2025-08-03",
+			"employeur": "VILLE DE BLAINVILLE",
+			"ide_affch": 496254,
+			"longitude": -73.8739158
+		},
+		{
+			"nom_ville": "Saint-Lin–Laurentides",
+			"titre": "plastic products manufacturing machine operator helper",
+			"latitude": 45.81594242,
+			"expiration_date": "2025-08-27",
+			"employeur": "FLEX A FAB CANADA INC.",
+			"ide_affch": 496253,
+			"longitude": -73.7645794
+		},
+		{
+			"nom_ville": "Longueuil",
+			"titre": "maintenance person - building",
+			"latitude": 45.49466609,
+			"expiration_date": "2025-08-20",
+			"employeur": "9175-3608 Quebec Inc",
+			"ide_affch": 496252,
+			"longitude": -73.39761715
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "parts delivery driver",
+			"latitude": 46.87707294,
+			"expiration_date": "2025-08-22",
+			"employeur": "9293-1849 QUEBEC INC. /  Pièces d'auto Guill-Beauport",
+			"ide_affch": 496251,
+			"longitude": -71.15627581
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "chief executive officer (CEO) - health, education, social and community services and membership organizations",
+			"latitude": 45.59965613,
+			"expiration_date": "2025-08-22",
+			"employeur": "CENTRE DE LA PETITE ENFANCE DU BOISE VIMONT",
+			"ide_affch": 496250,
+			"longitude": -73.71754656
+		},
+		{
+			"nom_ville": "New Richmond",
+			"titre": "naturalist",
+			"latitude": 48.16649387,
+			"expiration_date": "2025-08-01",
+			"employeur": "L'ASSOCIATION FORESTIERE DE LA GASPESIE",
+			"ide_affch": 496249,
+			"longitude": -65.86760924
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "early childhood educator (ECE) assistant",
+			"latitude": 46.79554443,
+			"expiration_date": "2025-08-08",
+			"employeur": "LA PETITE ECOLE VISION        SILLERY INC.",
+			"ide_affch": 496248,
+			"longitude": -71.25223053
+		},
+		{
+			"nom_ville": "Sept-Îles",
+			"titre": "content creator - graphic design",
+			"latitude": 50.21251149,
+			"expiration_date": "2025-08-31",
+			"employeur": "EKI-LIB SANTE COTE-NORD",
+			"ide_affch": 496247,
+			"longitude": -66.3892451
+		},
+		{
+			"nom_ville": "Matane",
+			"titre": "taxi driver OR taxicab driver",
+			"latitude": 48.84685528,
+			"expiration_date": "2025-08-31",
+			"employeur": "TAXI MATANE INC.",
+			"ide_affch": 496246,
+			"longitude": -67.52929742
+		},
+		{
+			"nom_ville": "Sept-Îles",
+			"titre": "mental health proctor OR mental health support worker",
+			"latitude": 50.21251149,
+			"expiration_date": "2025-08-29",
+			"employeur": "EKI-LIB SANTE COTE-NORD",
+			"ide_affch": 496245,
+			"longitude": -66.3892451
+		},
+		{
+			"nom_ville": "Sorel-Tracy",
+			"titre": "call centre agent - customer service",
+			"latitude": 46.02422718,
+			"expiration_date": "2025-08-03",
+			"employeur": "Société de transport collectif de Pierre-De Saurel",
+			"ide_affch": 496244,
+			"longitude": -73.10433004
+		},
+		{
+			"nom_ville": "Saint-Venant-de-Paquette",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.12595318,
+			"expiration_date": "2025-08-31",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496243,
+			"longitude": -71.46396256
+		},
+		{
+			"nom_ville": "Saint-Félix-de-Valois",
+			"titre": "farm labourer - harvesting",
+			"latitude": 46.14168231,
+			"expiration_date": "2025-08-25",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496242,
+			"longitude": -73.42067379
+		},
+		{
+			"nom_ville": "Saint-Félix-de-Valois",
+			"titre": "farm labourer - harvesting",
+			"latitude": 46.14168231,
+			"expiration_date": "2025-08-25",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496241,
+			"longitude": -73.42067379
+		},
+		{
+			"nom_ville": "Saint-Jérôme",
+			"titre": "fence installer",
+			"latitude": 45.81759169,
+			"expiration_date": "2025-08-31",
+			"employeur": "CLOTURES DES HAUTEURS S.E.N.C.",
+			"ide_affch": 496240,
+			"longitude": -74.04212154
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "dental hygienist",
+			"latitude": 48.43248392,
+			"expiration_date": "2025-09-04",
+			"employeur": "DR JULIEN LEBEL, DENTISTE INC.",
+			"ide_affch": 496239,
+			"longitude": -68.53967187
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "supermarket produce clerk",
+			"latitude": 45.66942062,
+			"expiration_date": "2025-08-29",
+			"employeur": "MARCHÉ DE LA ROUSSELIÈRE INC.",
+			"ide_affch": 496238,
+			"longitude": -73.50648446
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "psychological assistant",
+			"latitude": 45.53016057,
+			"expiration_date": "2025-07-26",
+			"employeur": "MISSION FRELON INC.",
+			"ide_affch": 496237,
+			"longitude": -73.55685678
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.53016057,
+			"expiration_date": "2025-07-26",
+			"employeur": "MISSION FRELON INC.",
+			"ide_affch": 496236,
+			"longitude": -73.55685678
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "medical clinic receptionist",
+			"latitude": 45.55105782,
+			"expiration_date": "2025-08-21",
+			"employeur": "Clinique vétérinaire Villeray-Papineau Inc.",
+			"ide_affch": 496235,
+			"longitude": -73.61351995
+		},
+		{
+			"nom_ville": "L'Isle-aux-Coudres",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 47.42021273,
+			"expiration_date": "2025-09-04",
+			"employeur": "L'ANCRAGE DE                  L'ISLE-AUX-COUDRES",
+			"ide_affch": 496234,
+			"longitude": -70.38118592
+		},
+		{
+			"nom_ville": "Bois-des-Filion",
+			"titre": "truck driver",
+			"latitude": 45.67929938,
+			"expiration_date": "2025-07-31",
+			"employeur": "CREMANIMO INC.",
+			"ide_affch": 496233,
+			"longitude": -73.76597581
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "assistant cook",
+			"latitude": 45.3760443,
+			"expiration_date": "2025-08-21",
+			"employeur": "9404-8691 QUEBEC INC.",
+			"ide_affch": 496232,
+			"longitude": -71.95205622
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "administrative assistant",
+			"latitude": 45.50266991,
+			"expiration_date": "2025-08-31",
+			"employeur": "TECHNOLOGIES KAAYU INC.",
+			"ide_affch": 496231,
+			"longitude": -73.57356692
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "telephone sales agent",
+			"latitude": 45.62568504,
+			"expiration_date": "2025-08-18",
+			"employeur": "PATISSERIE LE FRAISIER INC",
+			"ide_affch": 496230,
+			"longitude": -73.65143728
+		},
+		{
+			"nom_ville": "Coaticook",
+			"titre": "crop farm labourer - harvesting",
+			"latitude": 45.13643823,
+			"expiration_date": "2025-08-31",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496229,
+			"longitude": -71.80677579
+		},
+		{
+			"nom_ville": "Boisbriand",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.6267741,
+			"expiration_date": "2025-08-31",
+			"employeur": "Garderie éducative La Coccinelle Inc",
+			"ide_affch": 496228,
+			"longitude": -73.85630319
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "sales consultant - retail",
+			"latitude": 46.82654218,
+			"expiration_date": "2025-08-31",
+			"employeur": "Artisans du Vitrail",
+			"ide_affch": 496226,
+			"longitude": -71.23026677
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "industrial truck mechanic",
+			"latitude": 46.81378913,
+			"expiration_date": "2025-08-31",
+			"employeur": "TECHNOLOGIES KAAYU INC.",
+			"ide_affch": 496225,
+			"longitude": -71.20818409
+		},
+		{
+			"nom_ville": "La Pocatière",
+			"titre": "computer analyst",
+			"latitude": 47.35732799,
+			"expiration_date": "2025-08-22",
+			"employeur": "Solutions Novika",
+			"ide_affch": 496223,
+			"longitude": -70.06566101
+		},
+		{
+			"nom_ville": "New Carlisle",
+			"titre": "cook's helper",
+			"latitude": 48.0125582,
+			"expiration_date": "2025-08-22",
+			"employeur": "Ministère de la Sécurité publique",
+			"ide_affch": 496222,
+			"longitude": -65.31735773
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "dishwasher",
+			"latitude": 45.62568504,
+			"expiration_date": "2025-08-18",
+			"employeur": "PATISSERIE LE FRAISIER INC",
+			"ide_affch": 496221,
+			"longitude": -73.65143728
+		},
+		{
+			"nom_ville": "Montmagny",
+			"titre": "production planner",
+			"latitude": 46.97846181,
+			"expiration_date": "2025-08-31",
+			"employeur": "Service de placement du C.A.R.E. Montmagny-L'Islet",
+			"ide_affch": 496220,
+			"longitude": -70.55846377
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "baker helper",
+			"latitude": 45.62568504,
+			"expiration_date": "2025-08-18",
+			"employeur": "PATISSERIE LE FRAISIER INC",
+			"ide_affch": 496219,
+			"longitude": -73.65143728
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "bread baker",
+			"latitude": 45.62568504,
+			"expiration_date": "2025-08-18",
+			"employeur": "PATISSERIE LE FRAISIER INC",
+			"ide_affch": 496218,
+			"longitude": -73.65143728
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "delivery driver OR route driver",
+			"latitude": 45.62568504,
+			"expiration_date": "2025-08-18",
+			"employeur": "PATISSERIE LE FRAISIER INC",
+			"ide_affch": 496217,
+			"longitude": -73.65143728
+		},
+		{
+			"nom_ville": "Saint-Jean-sur-Richelieu",
+			"titre": "auto body repairer",
+			"latitude": 45.31257512,
+			"expiration_date": "2025-09-03",
+			"employeur": "9034-2841 QUEBEC INC.",
+			"ide_affch": 496215,
+			"longitude": -73.21025803
+		},
+		{
+			"nom_ville": "Montmagny",
+			"titre": "office clerk",
+			"latitude": 46.97846181,
+			"expiration_date": "2025-08-31",
+			"employeur": "Service de placement du C.A.R.E. Montmagny-L'Islet",
+			"ide_affch": 496214,
+			"longitude": -70.55846377
+		},
+		{
+			"nom_ville": "Saint-Ambroise-de-Kildare",
+			"titre": "farm labourer - livestock",
+			"latitude": 46.0957268,
+			"expiration_date": "2025-08-25",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496213,
+			"longitude": -73.58422233
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "delivery driver OR route driver",
+			"latitude": 45.62568504,
+			"expiration_date": "2025-08-18",
+			"employeur": "PATISSERIE LE FRAISIER INC",
+			"ide_affch": 496212,
+			"longitude": -73.65143728
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "security agent OR security officer",
+			"latitude": 48.33486083,
+			"expiration_date": "2025-08-21",
+			"employeur": "SOCIETE DES ETABLISSEMENTS DE PLEIN AIR DU QUEBEC",
+			"ide_affch": 496211,
+			"longitude": -71.43924438
+		},
+		{
+			"nom_ville": "Normandin",
+			"titre": "retail butcher",
+			"latitude": 48.8372888,
+			"expiration_date": "2025-08-17",
+			"employeur": "GESTION TREMBLAY &amp; LEBOEUF    INC",
+			"ide_affch": 496209,
+			"longitude": -72.53044933
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "charworker",
+			"latitude": 46.80679443,
+			"expiration_date": "2025-08-16",
+			"employeur": "9402-2043 QUEBEC INC. (Exode bnb)",
+			"ide_affch": 496208,
+			"longitude": -71.24016695
+		},
+		{
+			"nom_ville": "Matane",
+			"titre": "live-in caretaker",
+			"latitude": 48.84277368,
+			"expiration_date": "2025-09-01",
+			"employeur": "HAN-LOGEMENT",
+			"ide_affch": 496206,
+			"longitude": -67.53845892
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "cook",
+			"latitude": 46.74731899,
+			"expiration_date": "2025-07-28",
+			"employeur": "Desormeaux Prés et Marées",
+			"ide_affch": 496205,
+			"longitude": -71.36027414
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "butcher - butcher shop",
+			"latitude": 46.74731899,
+			"expiration_date": "2025-07-28",
+			"employeur": "Desormeaux Prés et Marées",
+			"ide_affch": 496204,
+			"longitude": -71.36027414
+		},
+		{
+			"nom_ville": "Gaspé",
+			"titre": "live-in caretaker",
+			"latitude": 48.81541561,
+			"expiration_date": "2025-09-01",
+			"employeur": "HAN-LOGEMENT",
+			"ide_affch": 496203,
+			"longitude": -64.44105246
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "sales consultant - retail",
+			"latitude": 45.58429855,
+			"expiration_date": "2025-08-21",
+			"employeur": "ICI SPORT LA SOURCE DU SPORT",
+			"ide_affch": 496202,
+			"longitude": -73.58037573
+		},
+		{
+			"nom_ville": "Princeville",
+			"titre": "re-upholsterer OR upholsterer",
+			"latitude": 46.15037956,
+			"expiration_date": "2025-08-31",
+			"employeur": "CONVERTEX INC.",
+			"ide_affch": 496201,
+			"longitude": -71.88859371
+		},
+		{
+			"nom_ville": "Repentigny",
+			"titre": "cook",
+			"latitude": 45.7444926,
+			"expiration_date": "2025-08-01",
+			"employeur": "COOPERATIVE DE SOLIDARITE     HAVRE DU PETIT VILLAGE",
+			"ide_affch": 496200,
+			"longitude": -73.48033707
+		},
+		{
+			"nom_ville": "Princeville",
+			"titre": "supervising chef",
+			"latitude": 46.15037956,
+			"expiration_date": "2025-08-31",
+			"employeur": "CONVERTEX INC.",
+			"ide_affch": 496199,
+			"longitude": -71.88859371
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "data entry clerk OR data input clerk",
+			"latitude": 45.59495829,
+			"expiration_date": "2025-08-31",
+			"employeur": "9128-4422 QUEBEC INC.",
+			"ide_affch": 496198,
+			"longitude": -73.73207882
+		},
+		{
+			"nom_ville": "Amos",
+			"titre": "material handler",
+			"latitude": 48.56835054,
+			"expiration_date": "2025-08-23",
+			"employeur": "LA PETITE BOUTIQUE (D'AMOS)",
+			"ide_affch": 496197,
+			"longitude": -78.11641378
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "payment entry clerk OR payment input clerk",
+			"latitude": 45.59495829,
+			"expiration_date": "2025-08-31",
+			"employeur": "9128-4422 QUEBEC INC.",
+			"ide_affch": 496196,
+			"longitude": -73.73207882
+		},
+		{
+			"nom_ville": "Ville-Marie",
+			"titre": "school crossing guard",
+			"latitude": 47.32841658,
+			"expiration_date": "2025-07-31",
+			"employeur": "VILLE DE VILLE-MARIE",
+			"ide_affch": 496195,
+			"longitude": -79.43656624
+		},
+		{
+			"nom_ville": "Joliette",
+			"titre": "exhibit technician",
+			"latitude": 46.02420992,
+			"expiration_date": "2025-08-15",
+			"employeur": "MUSEE D'ART DE JOLIETTE",
+			"ide_affch": 496194,
+			"longitude": -73.43623242
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "bus and truck mechanic",
+			"latitude": 46.83882108,
+			"expiration_date": "2025-08-26",
+			"employeur": "Centre du camion Desharnais inc.",
+			"ide_affch": 496192,
+			"longitude": -71.28743639
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "truck dispatcher",
+			"latitude": 45.39762231,
+			"expiration_date": "2025-09-01",
+			"employeur": "9140-1752 QUEBEC INC.",
+			"ide_affch": 496189,
+			"longitude": -71.8605792
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "furniture mover",
+			"latitude": 48.43978917,
+			"expiration_date": "2025-09-01",
+			"employeur": "DEMENAGEMENT VILLENEUVE INC.",
+			"ide_affch": 496188,
+			"longitude": -71.07952563
+		},
+		{
+			"nom_ville": "Magog",
+			"titre": "child care worker assistant OR daycare worker assistant",
+			"latitude": 45.26310537,
+			"expiration_date": "2025-07-31",
+			"employeur": "La Cigogne, centre de Ressources Familiales",
+			"ide_affch": 496187,
+			"longitude": -72.15071176
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 45.89042456,
+			"expiration_date": "2025-08-20",
+			"employeur": "RESIDENCE CORMIER INC.",
+			"ide_affch": 496186,
+			"longitude": -72.51971098
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 46.03591814,
+			"expiration_date": "2025-08-20",
+			"employeur": "RESIDENCE CHATEAU BELLY SENC.",
+			"ide_affch": 496185,
+			"longitude": -71.91534144
+		},
+		{
+			"nom_ville": "Montmagny",
+			"titre": "administration officer OR administrative officer",
+			"latitude": 46.96930798,
+			"expiration_date": "2025-09-03",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496184,
+			"longitude": -70.57356492
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "draftsperson - computer-assisted design",
+			"latitude": 45.53016057,
+			"expiration_date": "2025-07-26",
+			"employeur": "MISSION FRELON INC.",
+			"ide_affch": 496183,
+			"longitude": -73.55685678
+		},
+		{
+			"nom_ville": "Brossard",
+			"titre": "integrated logistics programs director",
+			"latitude": 45.4668745,
+			"expiration_date": "2025-08-31",
+			"employeur": "EXPERT SHIPPING INC.",
+			"ide_affch": 496181,
+			"longitude": -73.46540751
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "client service clerk OR customer service clerk",
+			"latitude": 45.50266991,
+			"expiration_date": "2025-08-31",
+			"employeur": "TECHNOLOGIES KAAYU INC.",
+			"ide_affch": 496180,
+			"longitude": -73.57356692
+		},
+		{
+			"nom_ville": "Malartic",
+			"titre": "mental health proctor OR mental health support worker",
+			"latitude": 48.13588521,
+			"expiration_date": "2025-08-23",
+			"employeur": "BESOIN D'AIDE 24/7",
+			"ide_affch": 496179,
+			"longitude": -78.12612301
+		},
+		{
+			"nom_ville": "Malartic",
+			"titre": "occupational safety officer",
+			"latitude": 48.13588521,
+			"expiration_date": "2025-08-23",
+			"employeur": "BESOIN D'AIDE 24/7",
+			"ide_affch": 496178,
+			"longitude": -78.12612301
+		},
+		{
+			"nom_ville": "Saint-Joachim-de-Shefford",
+			"titre": "shotblaster OR shotblaster - metal fabrication",
+			"latitude": 45.40611681,
+			"expiration_date": "2025-08-29",
+			"employeur": "9196-6366 QUEBEC INC.",
+			"ide_affch": 496177,
+			"longitude": -72.46715322
+		},
+		{
+			"nom_ville": "Saint-Joachim-de-Shefford",
+			"titre": "production helper",
+			"latitude": 45.40611681,
+			"expiration_date": "2025-08-31",
+			"employeur": "9196-6366 QUEBEC INC.",
+			"ide_affch": 496176,
+			"longitude": -72.46715322
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "draftsperson - computer-assisted design",
+			"latitude": 45.53016057,
+			"expiration_date": "2025-07-26",
+			"employeur": "MISSION FRELON INC.",
+			"ide_affch": 496175,
+			"longitude": -73.55685678
+		},
+		{
+			"nom_ville": "Saint-Félicien",
+			"titre": "cook's helper",
+			"latitude": 48.653371,
+			"expiration_date": "2025-08-02",
+			"employeur": "9289-6471 QUEBEC INC.  (Aki Sushi Aki Thai)",
+			"ide_affch": 496174,
+			"longitude": -72.45822367
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "office clerks supervisor",
+			"latitude": 45.52677216,
+			"expiration_date": "2025-08-04",
+			"employeur": "9131-1688 QUEBEC INC.",
+			"ide_affch": 496173,
+			"longitude": -73.66431283
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "health and safety instructor",
+			"latitude": 48.22243923,
+			"expiration_date": "2025-08-18",
+			"employeur": "Julie-Anne Drolet immigration au Canada",
+			"ide_affch": 496172,
+			"longitude": -79.02572114
+		},
+		{
+			"nom_ville": "L'Ancienne-Lorette",
+			"titre": "truck mechanic",
+			"latitude": 46.79677883,
+			"expiration_date": "2025-09-01",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496171,
+			"longitude": -71.34183531
+		},
+		{
+			"nom_ville": "Repentigny",
+			"titre": "cook",
+			"latitude": 45.7443392,
+			"expiration_date": "2025-09-01",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496170,
+			"longitude": -73.48019341
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "dental assistant",
+			"latitude": 45.55564404,
+			"expiration_date": "2025-08-21",
+			"employeur": "CLINIQUE DENTAIRE DRE MARIE   MADELEINE BALLA INC.",
+			"ide_affch": 496169,
+			"longitude": -73.58618318
+		},
+		{
+			"nom_ville": "Gatineau",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.49944691,
+			"expiration_date": "2025-08-22",
+			"employeur": "CPE de l'Érablière",
+			"ide_affch": 496168,
+			"longitude": -75.75111625
+		},
+		{
+			"nom_ville": "Gatineau",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.49944691,
+			"expiration_date": "2025-08-22",
+			"employeur": "CPE de l'Érablière",
+			"ide_affch": 496167,
+			"longitude": -75.75111625
+		},
+		{
+			"nom_ville": "Gatineau",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.49944691,
+			"expiration_date": "2025-08-22",
+			"employeur": "CPE de l'Érablière",
+			"ide_affch": 496166,
+			"longitude": -75.75111625
+		},
+		{
+			"nom_ville": "Gatineau",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.49944691,
+			"expiration_date": "2025-08-22",
+			"employeur": "CPE de l'Érablière",
+			"ide_affch": 496165,
+			"longitude": -75.75111625
+		},
+		{
+			"nom_ville": "Gatineau",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.49944691,
+			"expiration_date": "2025-08-22",
+			"employeur": "CPE de l'Érablière",
+			"ide_affch": 496164,
+			"longitude": -75.75111625
+		},
+		{
+			"nom_ville": "Longueuil",
+			"titre": "nurse OR registered nurse (R.N.)",
+			"latitude": 45.53667091,
+			"expiration_date": "2025-08-01",
+			"employeur": "SUPEXCEL INC",
+			"ide_affch": 496163,
+			"longitude": -73.51274015
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.55090413,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496162,
+			"longitude": -73.65670006
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.59660437,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496161,
+			"longitude": -73.53418514
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.5311499,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496160,
+			"longitude": -73.59757116
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "drugstore clerk OR pharmacy clerk",
+			"latitude": 46.8209308,
+			"expiration_date": "2025-09-01",
+			"employeur": "PHARMACIE MARIE-CHRISTINE     BEAULIEU-MAILLOUX INC.",
+			"ide_affch": 496159,
+			"longitude": -71.24913594
+		},
+		{
+			"nom_ville": "Mascouche",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.74292765,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496157,
+			"longitude": -73.61481571
+		},
+		{
+			"nom_ville": "Deux-Montagnes",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.54060684,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496156,
+			"longitude": -73.89217194
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.47957294,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496155,
+			"longitude": -73.61977727
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.56581785,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496154,
+			"longitude": -73.78641875
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.52945156,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496153,
+			"longitude": -73.58383853
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.45912815,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496152,
+			"longitude": -73.57152229
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.50390472,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496151,
+			"longitude": -73.57039491
+		},
+		{
+			"nom_ville": "Saint-Jérôme",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.78118572,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496149,
+			"longitude": -73.99936801
+		},
+		{
+			"nom_ville": "Saint-Jérôme",
+			"titre": "cook",
+			"latitude": 45.78118572,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496148,
+			"longitude": -73.99936801
+		},
+		{
+			"nom_ville": "Deux-Montagnes",
+			"titre": "cook",
+			"latitude": 45.54060684,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496147,
+			"longitude": -73.89217194
+		},
+		{
+			"nom_ville": "Mirabel",
+			"titre": "cook",
+			"latitude": 45.69776817,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496146,
+			"longitude": -73.9260006
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "cook",
+			"latitude": 45.52945156,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496145,
+			"longitude": -73.58383853
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "cook",
+			"latitude": 45.56581785,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496144,
+			"longitude": -73.78641875
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "cook",
+			"latitude": 45.52945156,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496143,
+			"longitude": -73.58383853
+		},
+		{
+			"nom_ville": "Repentigny",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.71880223,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496142,
+			"longitude": -73.47558026
+		},
+		{
+			"nom_ville": "Sainte-Thérèse",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 45.64251978,
+			"expiration_date": "2025-08-18",
+			"employeur": "SREPE INC. - Remplacement en CPE",
+			"ide_affch": 496141,
+			"longitude": -73.84360654
+		},
+		{
+			"nom_ville": "Ormstown",
+			"titre": "accounting clerk",
+			"latitude": 45.12744833,
+			"expiration_date": "2025-08-16",
+			"employeur": "LAC-MATIC INC",
+			"ide_affch": 496140,
+			"longitude": -73.99717996
+		},
+		{
+			"nom_ville": "Saint-Jean-sur-Richelieu",
+			"titre": "accounting clerk",
+			"latitude": 45.28830029,
+			"expiration_date": "2025-08-31",
+			"employeur": "Mère en action",
+			"ide_affch": 496139,
+			"longitude": -73.25508204
+		},
+		{
+			"nom_ville": "Saint-Stanislas",
+			"titre": "truck and transport mechanic OR truck and transport service technician",
+			"latitude": 46.59224305,
+			"expiration_date": "2025-09-01",
+			"employeur": "EXCAVATION &amp; LOCATION S.      MONGRAIN ET FILS INC.",
+			"ide_affch": 496138,
+			"longitude": -72.3932315
+		},
+		{
+			"nom_ville": "Mirabel",
+			"titre": "interior finish joiner",
+			"latitude": 45.70651167,
+			"expiration_date": "2025-08-31",
+			"employeur": "LES CONSTRUCTIONS S. GAGNE    INC.",
+			"ide_affch": 496137,
+			"longitude": -73.92606943
+		},
+		{
+			"nom_ville": "Mirabel",
+			"titre": "demolition worker",
+			"latitude": 45.70651167,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES CONSTRUCTIONS S. GAGNE    INC.",
+			"ide_affch": 496136,
+			"longitude": -73.92606943
+		},
+		{
+			"nom_ville": "Potton",
+			"titre": "hotel housekeeper",
+			"latitude": 45.07411052,
+			"expiration_date": "2025-09-01",
+			"employeur": "DESTINATION OWL'S HEAD INC.",
+			"ide_affch": 496135,
+			"longitude": -72.29794704
+		},
+		{
+			"nom_ville": "Potton",
+			"titre": "domestic housekeeper OR housekeeper",
+			"latitude": 45.07411052,
+			"expiration_date": "2025-09-01",
+			"employeur": "DESTINATION OWL'S HEAD INC.",
+			"ide_affch": 496134,
+			"longitude": -72.29794704
+		},
+		{
+			"nom_ville": "Montmagny",
+			"titre": "mental health proctor OR mental health support worker",
+			"latitude": 46.97922769,
+			"expiration_date": "2025-08-29",
+			"employeur": "L'ANCRE, REGROUPEMENT PARENTS AMIS PERS. ATTEINTES MAL. MENT",
+			"ide_affch": 496132,
+			"longitude": -70.55410433
+		},
+		{
+			"nom_ville": "Potton",
+			"titre": "golf course worker",
+			"latitude": 45.0660199,
+			"expiration_date": "2025-09-01",
+			"employeur": "DESTINATION OWL'S HEAD INC.",
+			"ide_affch": 496131,
+			"longitude": -72.3173372
+		},
+		{
+			"nom_ville": "Sainte-Clotilde-de-Beauce",
+			"titre": "Christmas tree shearer OR Christmas tree trimmer",
+			"latitude": 46.11350318,
+			"expiration_date": "2025-08-22",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496130,
+			"longitude": -71.0157545
+		},
+		{
+			"nom_ville": "Potton",
+			"titre": "grounds maintenance labourer",
+			"latitude": 45.07411052,
+			"expiration_date": "2025-09-01",
+			"employeur": "DESTINATION OWL'S HEAD INC.",
+			"ide_affch": 496129,
+			"longitude": -72.29794704
+		},
+		{
+			"nom_ville": "Potton",
+			"titre": "cook",
+			"latitude": 45.0660199,
+			"expiration_date": "2025-09-01",
+			"employeur": "DESTINATION OWL'S HEAD INC.",
+			"ide_affch": 496128,
+			"longitude": -72.3173372
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "child care live-in caregiver OR live-in nanny",
+			"latitude": 45.49496159,
+			"expiration_date": "2025-08-18",
+			"employeur": "LES SERVICES REGENCY NANNIES",
+			"ide_affch": 496127,
+			"longitude": -73.63812621
+		},
+		{
+			"nom_ville": "Notre-Dame-du-Bon-Conseil",
+			"titre": "accounting clerk",
+			"latitude": 45.99387418,
+			"expiration_date": "2025-08-16",
+			"employeur": "CLINIQUE VETERINAIRE CENTRE DU QUEBEC INC.",
+			"ide_affch": 496125,
+			"longitude": -72.35185817
+		},
+		{
+			"nom_ville": "East Hereford",
+			"titre": "crop farm labourer - harvesting",
+			"latitude": 45.09128821,
+			"expiration_date": "2025-08-31",
+			"employeur": "Fédération de l’UPA-Estrie",
+			"ide_affch": 496123,
+			"longitude": -71.54172211
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "legal technician OR paralegal",
+			"latitude": 46.84214883,
+			"expiration_date": "2025-08-31",
+			"employeur": "EMILIE GIGUERE, NOTAIRE INC.",
+			"ide_affch": 496122,
+			"longitude": -71.2875637
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "computer-assisted machinist",
+			"latitude": 46.3398487,
+			"expiration_date": "2025-08-31",
+			"employeur": "MF2 AÉRO",
+			"ide_affch": 496121,
+			"longitude": -72.57194258
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "computer-assisted machinist",
+			"latitude": 46.3398487,
+			"expiration_date": "2025-08-31",
+			"employeur": "MF2 AÉRO",
+			"ide_affch": 496120,
+			"longitude": -72.57194258
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "machinist",
+			"latitude": 46.3398487,
+			"expiration_date": "2025-07-31",
+			"employeur": "MF2 AÉRO",
+			"ide_affch": 496119,
+			"longitude": -72.57194258
+		},
+		{
+			"nom_ville": "Saint-Alban",
+			"titre": "grounds maintenance labourer",
+			"latitude": 46.70273716,
+			"expiration_date": "2025-08-22",
+			"employeur": "TRANSPORT GILLES TESSIER INC",
+			"ide_affch": 496118,
+			"longitude": -72.07570717
+		},
+		{
+			"nom_ville": "Sainte-Agathe-des-Monts",
+			"titre": "retail merchandiser",
+			"latitude": 46.06786804,
+			"expiration_date": "2025-07-31",
+			"employeur": "J.L. BRISSETTE LTEE",
+			"ide_affch": 496117,
+			"longitude": -74.28711057
+		},
+		{
+			"nom_ville": "Pikogan",
+			"titre": "fitness centre manager OR fitness club manager OR health club manager OR health studio manager",
+			"latitude": 48.59749054,
+			"expiration_date": "2025-08-03",
+			"employeur": "CONSEIL DE LA PREMIERE NATION ABITIBIWINNI",
+			"ide_affch": 496116,
+			"longitude": -78.12072338
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "ambassador",
+			"latitude": 45.40833943,
+			"expiration_date": "2025-08-08",
+			"employeur": "MOSAIC SALES SOLUTIONS CANADA OPERATING CO.",
+			"ide_affch": 496114,
+			"longitude": -71.87874403
+		},
+		{
+			"nom_ville": "Saint-Jean-Port-Joli",
+			"titre": "plastic products manufacturing machine operator helper",
+			"latitude": 47.20115881,
+			"expiration_date": "2025-08-19",
+			"employeur": "PLASTIQUES GAGNON INC",
+			"ide_affch": 496113,
+			"longitude": -70.26860365
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "ambassador",
+			"latitude": 45.59211511,
+			"expiration_date": "2025-08-08",
+			"employeur": "MOSAIC SALES SOLUTIONS CANADA OPERATING CO.",
+			"ide_affch": 496112,
+			"longitude": -73.57118446
+		},
+		{
+			"nom_ville": "Lévis",
+			"titre": "greenhouse labourer",
+			"latitude": 46.68155806,
+			"expiration_date": "2025-08-31",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496111,
+			"longitude": -71.34373039
+		},
+		{
+			"nom_ville": "Sainte-Marie",
+			"titre": "farm labourer - livestock",
+			"latitude": 46.45737058,
+			"expiration_date": "2025-08-31",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496110,
+			"longitude": -71.03940109
+		},
+		{
+			"nom_ville": "Sainte-Marie",
+			"titre": "farm labourer - livestock",
+			"latitude": 46.45737058,
+			"expiration_date": "2025-08-31",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496109,
+			"longitude": -71.03940109
+		},
+		{
+			"nom_ville": "Sainte-Marie",
+			"titre": "farm labourer - livestock",
+			"latitude": 46.45737058,
+			"expiration_date": "2025-08-30",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496108,
+			"longitude": -71.03940109
+		},
+		{
+			"nom_ville": "Sainte-Marie",
+			"titre": "construction labourer",
+			"latitude": 46.45737058,
+			"expiration_date": "2025-08-30",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496107,
+			"longitude": -71.03940109
+		},
+		{
+			"nom_ville": "Saint-Georges",
+			"titre": "assistant manager - food services",
+			"latitude": 46.12730972,
+			"expiration_date": "2025-08-30",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496106,
+			"longitude": -70.6524243
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "general office clerk",
+			"latitude": 45.46640176,
+			"expiration_date": "2025-08-17",
+			"employeur": "PRESENTOIRS POINT 1 INC.",
+			"ide_affch": 496105,
+			"longitude": -73.7083591
+		},
+		{
+			"nom_ville": "Clermont",
+			"titre": "truck and transport mechanic OR truck and transport service technician",
+			"latitude": 47.68671861,
+			"expiration_date": "2025-08-31",
+			"employeur": "F. MARTEL ET FILS INC.",
+			"ide_affch": 496104,
+			"longitude": -70.21026462
+		},
+		{
+			"nom_ville": "Sainte-Marie",
+			"titre": "general farm worker - livestock",
+			"latitude": 46.45737058,
+			"expiration_date": "2025-08-30",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496103,
+			"longitude": -71.03940109
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "refrigeration technician",
+			"latitude": 45.50266991,
+			"expiration_date": "2025-08-30",
+			"employeur": "TECHNOLOGIES KAAYU INC.",
+			"ide_affch": 496102,
+			"longitude": -73.57356692
+		},
+		{
+			"nom_ville": "Saint-Léonard-d'Aston",
+			"titre": "storekeeper OR storeman/woman",
+			"latitude": 46.10872031,
+			"expiration_date": "2025-08-29",
+			"employeur": "LAMBERT RESSOURCES HUMAINES",
+			"ide_affch": 496101,
+			"longitude": -72.3808123
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "civil engineering project manager",
+			"latitude": 45.86655092,
+			"expiration_date": "2025-08-29",
+			"employeur": "LAMBERT RESSOURCES HUMAINES",
+			"ide_affch": 496100,
+			"longitude": -72.52189331
+		},
+		{
+			"nom_ville": "Pierreville",
+			"titre": "truck mechanic",
+			"latitude": 46.10687693,
+			"expiration_date": "2025-08-20",
+			"employeur": "LAMBERT RESSOURCES HUMAINES",
+			"ide_affch": 496099,
+			"longitude": -72.87923799
+		},
+		{
+			"nom_ville": "Nicolet",
+			"titre": "assistant accountant",
+			"latitude": 46.22632422,
+			"expiration_date": "2025-08-28",
+			"employeur": "LAMBERT RESSOURCES HUMAINES",
+			"ide_affch": 496098,
+			"longitude": -72.61608651
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "store manager - retail",
+			"latitude": 48.46797412,
+			"expiration_date": "2025-08-18",
+			"employeur": "LES PLACEMENTS ARDEN INC",
+			"ide_affch": 496097,
+			"longitude": -68.51271223
+		},
+		{
+			"nom_ville": "Shawinigan",
+			"titre": "social services worker",
+			"latitude": 46.56806104,
+			"expiration_date": "2025-08-28",
+			"employeur": "LAMBERT RESSOURCES HUMAINES",
+			"ide_affch": 496096,
+			"longitude": -72.76547421
+		},
+		{
+			"nom_ville": "Saint-Hyacinthe",
+			"titre": "environmental project manager",
+			"latitude": 45.62490017,
+			"expiration_date": "2025-08-27",
+			"employeur": "LAMBERT RESSOURCES HUMAINES",
+			"ide_affch": 496095,
+			"longitude": -72.94507177
+		},
+		{
+			"nom_ville": "Sainte-Marie",
+			"titre": "safety practitioner",
+			"latitude": 46.43822748,
+			"expiration_date": "2025-08-10",
+			"employeur": "VILLE DE SAINTE-MARIE",
+			"ide_affch": 496094,
+			"longitude": -71.02142226
+		},
+		{
+			"nom_ville": "Lévis",
+			"titre": "market garden worker",
+			"latitude": 46.68155806,
+			"expiration_date": "2025-08-22",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496093,
+			"longitude": -71.34373039
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "dental assistant",
+			"latitude": 45.53051804,
+			"expiration_date": "2025-08-19",
+			"employeur": "Carrière Dentaire",
+			"ide_affch": 496092,
+			"longitude": -73.57722112
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "restaurant cashier",
+			"latitude": 46.80682753,
+			"expiration_date": "2025-08-17",
+			"employeur": "MAJE+CIE INC.",
+			"ide_affch": 496091,
+			"longitude": -71.28772862
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "restaurant manager",
+			"latitude": 46.7827314,
+			"expiration_date": "2025-08-24",
+			"employeur": "MAJE+CIE INC.",
+			"ide_affch": 496090,
+			"longitude": -71.28699792
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "assistant waiter/waitress - food and beverage services",
+			"latitude": 46.7827314,
+			"expiration_date": "2025-08-17",
+			"employeur": "MAJE+CIE INC.",
+			"ide_affch": 496089,
+			"longitude": -71.28699792
+		},
+		{
+			"nom_ville": "La Tuque",
+			"titre": "town clerk",
+			"latitude": 47.44071087,
+			"expiration_date": "2025-09-01",
+			"employeur": "CLAUDE GRENIER: RESSOURCES HUMAINES INC.",
+			"ide_affch": 496088,
+			"longitude": -72.78148897
+		},
+		{
+			"nom_ville": "Amos",
+			"titre": "truck driver",
+			"latitude": 48.57212141,
+			"expiration_date": "2025-08-18",
+			"employeur": "TAKTIK, AGENCE DE PLACEMENT DE MAIN D'OEUVRE INC.",
+			"ide_affch": 496087,
+			"longitude": -78.11766901
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "housekeeping attendant",
+			"latitude": 46.76564038,
+			"expiration_date": "2025-08-17",
+			"employeur": "MAJE+CIE INC.",
+			"ide_affch": 496086,
+			"longitude": -71.29228014
+		},
+		{
+			"nom_ville": "Vaudreuil-Dorion",
+			"titre": "administrative technician",
+			"latitude": 45.37694926,
+			"expiration_date": "2025-07-31",
+			"employeur": "Polyclinique Médicale Vaudreuil Inc",
+			"ide_affch": 496085,
+			"longitude": -74.02306483
+		},
+		{
+			"nom_ville": "Dolbeau-Mistassini",
+			"titre": "assistant manager - retail",
+			"latitude": 48.86718158,
+			"expiration_date": "2025-08-30",
+			"employeur": "FERLAC INC.",
+			"ide_affch": 496084,
+			"longitude": -72.23274934
+		},
+		{
+			"nom_ville": "Salaberry-de-Valleyfield",
+			"titre": "auto body repairer",
+			"latitude": 45.27015062,
+			"expiration_date": "2025-08-20",
+			"employeur": "LES CARROSSERIES C.Z.P. INC.",
+			"ide_affch": 496083,
+			"longitude": -74.13706475
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "project administration officer",
+			"latitude": 46.30927001,
+			"expiration_date": "2025-08-29",
+			"employeur": "CLAUDE GRENIER: RESSOURCES HUMAINES INC.",
+			"ide_affch": 496082,
+			"longitude": -72.58226523
+		},
+		{
+			"nom_ville": "Mont-Joli",
+			"titre": "finance officer OR financial officer",
+			"latitude": 48.58702489,
+			"expiration_date": "2025-09-01",
+			"employeur": "CAISSE DESJARDINS DE MONT-JOLI -EST DE LA MITIS",
+			"ide_affch": 496081,
+			"longitude": -68.18890565
+		},
+		{
+			"nom_ville": "Port-Cartier",
+			"titre": "production supervisor - machine shop",
+			"latitude": 50.02570549,
+			"expiration_date": "2025-08-29",
+			"employeur": "ARBEC, BOIS D'OEUVRE INC.",
+			"ide_affch": 496080,
+			"longitude": -66.82688946
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "door-to-door salesperson",
+			"latitude": 45.50882669,
+			"expiration_date": "2025-08-29",
+			"employeur": "GESTION VIGILANCE ET PERFORMANCE INC.",
+			"ide_affch": 496075,
+			"longitude": -73.55410944
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "office administrator",
+			"latitude": 45.55239231,
+			"expiration_date": "2025-08-31",
+			"employeur": "BERTRAND, DESLAURIERS AVOCATS INC.",
+			"ide_affch": 496074,
+			"longitude": -73.66927476
+		},
+		{
+			"nom_ville": "Saint-Damien-de-Buckland",
+			"titre": "machine builder-fitter",
+			"latitude": 46.6214063,
+			"expiration_date": "2025-08-29",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496073,
+			"longitude": -70.67423237
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "jeweller",
+			"latitude": 45.53100148,
+			"expiration_date": "2025-08-29",
+			"employeur": "123JOB INC.",
+			"ide_affch": 496072,
+			"longitude": -73.65796951
+		},
+		{
+			"nom_ville": "Lac-au-Saumon",
+			"titre": "administrative assistant",
+			"latitude": 48.44206402,
+			"expiration_date": "2025-08-15",
+			"employeur": "DVM CONSTRUCTION INC.",
+			"ide_affch": 496071,
+			"longitude": -67.35219807
+		},
+		{
+			"nom_ville": "Saint-Gabriel",
+			"titre": "forklift operator OR forklift truck operator",
+			"latitude": 46.29407126,
+			"expiration_date": "2025-08-31",
+			"employeur": "SÉCHOIRS ST-GABRIEL",
+			"ide_affch": 496070,
+			"longitude": -73.37412421
+		},
+		{
+			"nom_ville": "Saint-Gabriel",
+			"titre": "material handler",
+			"latitude": 46.29407126,
+			"expiration_date": "2025-08-31",
+			"employeur": "SÉCHOIRS ST-GABRIEL",
+			"ide_affch": 496068,
+			"longitude": -73.37412421
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "design engineer - mechanical OR mechanical design engineer",
+			"latitude": 46.09021806,
+			"expiration_date": "2025-08-20",
+			"employeur": "ALTITUDE RESSOURCES HUMAINES  INC.",
+			"ide_affch": 496067,
+			"longitude": -71.94820969
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "environmental project manager",
+			"latitude": 48.23561161,
+			"expiration_date": "2025-08-07",
+			"employeur": "LE CONSEIL REGIONAL DE L'ENVIR. ABITIBI-TEMIS.(CREAT)",
+			"ide_affch": 496066,
+			"longitude": -79.01955774
+		},
+		{
+			"nom_ville": "Rougemont",
+			"titre": "bottling machine operator OR bottling machine operator - food and beverage processing",
+			"latitude": 45.4402074,
+			"expiration_date": "2025-08-21",
+			"employeur": "Centre d'emploi agricole de Lanaudière (voir nom de l'employeur dans titre du poste)",
+			"ide_affch": 496065,
+			"longitude": -73.05800366
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "plumber",
+			"latitude": 45.58542308,
+			"expiration_date": "2025-07-30",
+			"employeur": "SOCIETE DES ALCOOLS DU QUEBEC",
+			"ide_affch": 496064,
+			"longitude": -73.51838993
+		},
+		{
+			"nom_ville": "Lac-au-Saumon",
+			"titre": "seasonal worker - public works",
+			"latitude": 48.42053701,
+			"expiration_date": "2025-08-17",
+			"employeur": "MUNICIPALITE DE LAC-AU-SAUMON",
+			"ide_affch": 496063,
+			"longitude": -67.345317
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "call centre agent supervisor",
+			"latitude": 45.53709925,
+			"expiration_date": "2025-08-19",
+			"employeur": "SERVICES RESIDENCIA INC.",
+			"ide_affch": 496062,
+			"longitude": -73.62419611
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "crisis intervention worker",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496061,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "health educator",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496060,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "rehabilitation teacher",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496059,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "accountant",
+			"latitude": 46.37459594,
+			"expiration_date": "2025-08-31",
+			"employeur": "SCF CONSEILS MAURICIE INC.",
+			"ide_affch": 496058,
+			"longitude": -72.55132342
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "housekeeping attendant",
+			"latitude": 48.42425749,
+			"expiration_date": "2025-08-17",
+			"employeur": "Entretien ménager F.L. Inc.",
+			"ide_affch": 496057,
+			"longitude": -71.1815177
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "communication officer (except emergency services)",
+			"latitude": 45.50330459,
+			"expiration_date": "2025-08-11",
+			"employeur": "Université de Montréal",
+			"ide_affch": 496056,
+			"longitude": -73.61853076
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "respiratory therapist",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496055,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "dispensary assistant OR pharmacy aide",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496054,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "cook",
+			"latitude": 45.38730791,
+			"expiration_date": "2025-08-08",
+			"employeur": "LA GRANDE TABLE",
+			"ide_affch": 496053,
+			"longitude": -71.90708314
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "accounting clerk",
+			"latitude": 46.37459594,
+			"expiration_date": "2025-08-31",
+			"employeur": "SCF CONSEILS MAURICIE INC.",
+			"ide_affch": 496052,
+			"longitude": -72.55132342
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "druggist OR pharmacist",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496051,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "trade contractor estimator - construction",
+			"latitude": 46.81197046,
+			"expiration_date": "2025-08-31",
+			"employeur": "ENERIA",
+			"ide_affch": 496050,
+			"longitude": -71.31264908
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "druggist OR pharmacist",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496049,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Saint-Pierre-les-Becquets",
+			"titre": "clinical nurse",
+			"latitude": 46.50664531,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496048,
+			"longitude": -72.20432403
+		},
+		{
+			"nom_ville": "Saint-Pierre-les-Becquets",
+			"titre": "nursing assistant (registered - Québec)",
+			"latitude": 46.50664531,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496047,
+			"longitude": -72.20432403
+		},
+		{
+			"nom_ville": "Fortierville",
+			"titre": "nursing assistant (registered - Québec)",
+			"latitude": 46.48635736,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496046,
+			"longitude": -72.03037862
+		},
+		{
+			"nom_ville": "Fortierville",
+			"titre": "clinical nurse",
+			"latitude": 46.48635736,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496045,
+			"longitude": -72.03037862
+		},
+		{
+			"nom_ville": "Fortierville",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 46.48635736,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496043,
+			"longitude": -72.03037862
+		},
+		{
+			"nom_ville": "Fortierville",
+			"titre": "nursing assistant (non-registered)",
+			"latitude": 46.48635736,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496042,
+			"longitude": -72.03037862
+		},
+		{
+			"nom_ville": "Irlande",
+			"titre": "environmental technician",
+			"latitude": 46.04804242,
+			"expiration_date": "2025-08-25",
+			"employeur": "MD ENVIRONNEMENT INC.",
+			"ide_affch": 496041,
+			"longitude": -71.42521655
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "clinical nurse",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496040,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "nursing assistant (registered - Québec)",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496039,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496038,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Nicolet",
+			"titre": "hotel guest services attendant",
+			"latitude": 46.23411679,
+			"expiration_date": "2025-08-18",
+			"employeur": "HOTEL MONTFORT INC.",
+			"ide_affch": 496037,
+			"longitude": -72.63315424
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496036,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "nursing assistant (non-registered)",
+			"latitude": 46.04081765,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE INTÉGRÉ UNIVERSITAIRE DE SANTÉ ET DE SERVICES SOCIAUX DE LA MAURICIE-ET-DU-CENTRE-DU-QUÉBEC",
+			"ide_affch": 496035,
+			"longitude": -71.916168
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "box office cashier",
+			"latitude": 46.81251097,
+			"expiration_date": "2025-08-19",
+			"employeur": "FUNICULAIRE DU VIEUX QUEBEC   INC",
+			"ide_affch": 496034,
+			"longitude": -71.20390859
+		},
+		{
+			"nom_ville": "Saint-Antonin",
+			"titre": "marketing project manager",
+			"latitude": 47.77128562,
+			"expiration_date": "2025-08-31",
+			"employeur": "OUELLET MODULAIRE INC.",
+			"ide_affch": 496033,
+			"longitude": -69.44630577
+		},
+		{
+			"nom_ville": "Sept-Îles",
+			"titre": "maintenance coordinator",
+			"latitude": 50.20636194,
+			"expiration_date": "2025-08-15",
+			"employeur": "HABITAT METIS DU NORD",
+			"ide_affch": 496032,
+			"longitude": -66.38659694
+		},
+		{
+			"nom_ville": "Notre-Dame-des-Neiges",
+			"titre": "surveyor helper",
+			"latitude": 48.10720148,
+			"expiration_date": "2025-08-31",
+			"employeur": "GERVAIS DUBE INC./LES CARRIÈRES DUBÉ ET FILS INC.",
+			"ide_affch": 496031,
+			"longitude": -69.14488259
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "kitchen manager",
+			"latitude": 48.41211164,
+			"expiration_date": "2025-08-31",
+			"employeur": "MACWILL INC.",
+			"ide_affch": 496030,
+			"longitude": -71.05011444
+		},
+		{
+			"nom_ville": "Saint-Ubalde",
+			"titre": "farm machinery mechanic",
+			"latitude": 46.73928986,
+			"expiration_date": "2025-08-17",
+			"employeur": "PATATES DOLBEC INC.",
+			"ide_affch": 496029,
+			"longitude": -72.26845058
+		},
+		{
+			"nom_ville": "Saint-Antonin",
+			"titre": "administrative clerk",
+			"latitude": 47.77128562,
+			"expiration_date": "2025-08-30",
+			"employeur": "OUELLET MODULAIRE INC.",
+			"ide_affch": 496028,
+			"longitude": -69.44630577
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 46.35352743,
+			"expiration_date": "2025-07-24",
+			"employeur": "CARPE DIEM - CENTRE DE        RESSOURCES ALZHEIMER",
+			"ide_affch": 496027,
+			"longitude": -72.55660542
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "technical sales consultant",
+			"latitude": 45.59331616,
+			"expiration_date": "2025-08-15",
+			"employeur": "GROUPE LD INC.",
+			"ide_affch": 496026,
+			"longitude": -73.75884431
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "medical orderly OR nursing orderly",
+			"latitude": 46.35352743,
+			"expiration_date": "2025-07-24",
+			"employeur": "CARPE DIEM - CENTRE DE        RESSOURCES ALZHEIMER",
+			"ide_affch": 496025,
+			"longitude": -72.55660542
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "social services worker",
+			"latitude": 46.35352743,
+			"expiration_date": "2025-07-24",
+			"employeur": "CARPE DIEM - CENTRE DE        RESSOURCES ALZHEIMER",
+			"ide_affch": 496024,
+			"longitude": -72.55660542
+		},
+		{
+			"nom_ville": "Saint-Irénée",
+			"titre": "farm labourer - livestock",
+			"latitude": 47.57532714,
+			"expiration_date": "2025-08-31",
+			"employeur": "FÉDÉRATION DE L'UPA DE LA CAPITALE-NATIONALE-COTE-NORD",
+			"ide_affch": 496023,
+			"longitude": -70.21074788
+		},
+		{
+			"nom_ville": "Amqui",
+			"titre": "chiropractic assistant OR chiropractic health assistant",
+			"latitude": 48.46517248,
+			"expiration_date": "2025-08-16",
+			"employeur": "AXE CHIROPRATIQUE INC.",
+			"ide_affch": 496022,
+			"longitude": -67.42613394
+		},
+		{
+			"nom_ville": "Saint-Joseph-de-Beauce",
+			"titre": "accounting clerk",
+			"latitude": 46.3359756,
+			"expiration_date": "2025-08-31",
+			"employeur": "FROMAGERIE GILBERT INC",
+			"ide_affch": 496021,
+			"longitude": -70.90869136
+		},
+		{
+			"nom_ville": "Matane",
+			"titre": "custodian OR janitor",
+			"latitude": 48.85150126,
+			"expiration_date": "2025-08-08",
+			"employeur": "IMMOSTAR INC",
+			"ide_affch": 496020,
+			"longitude": -67.50744401
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "cook's helper",
+			"latitude": 48.41211164,
+			"expiration_date": "2025-08-31",
+			"employeur": "MACWILL INC.",
+			"ide_affch": 496019,
+			"longitude": -71.05011444
+		},
+		{
+			"nom_ville": "L'Ancienne-Lorette",
+			"titre": "crop farm labourer - harvesting",
+			"latitude": 46.79859769,
+			"expiration_date": "2025-08-31",
+			"employeur": "FÉDÉRATION DE L'UPA DE LA CAPITALE-NATIONALE-COTE-NORD",
+			"ide_affch": 496018,
+			"longitude": -71.33939533
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "shipping and receiving clerk",
+			"latitude": 45.86901594,
+			"expiration_date": "2025-08-17",
+			"employeur": "LES IMPRESSIONS 2001 INC.",
+			"ide_affch": 496017,
+			"longitude": -72.52289334
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "marketing consultant",
+			"latitude": 48.22252012,
+			"expiration_date": "2025-08-30",
+			"employeur": "Technosub",
+			"ide_affch": 496016,
+			"longitude": -78.99452383
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "computer graphics design technician OR computer graphics technician",
+			"latitude": 45.86901594,
+			"expiration_date": "2025-08-17",
+			"employeur": "LES IMPRESSIONS 2001 INC.",
+			"ide_affch": 496015,
+			"longitude": -72.52289334
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "digital printing technician",
+			"latitude": 45.86901594,
+			"expiration_date": "2025-08-17",
+			"employeur": "LES IMPRESSIONS 2001 INC.",
+			"ide_affch": 496014,
+			"longitude": -72.52289334
+		},
+		{
+			"nom_ville": "Saint-Ubalde",
+			"titre": "farm labourer - harvesting",
+			"latitude": 46.74204772,
+			"expiration_date": "2025-08-31",
+			"employeur": "FÉDÉRATION DE L'UPA DE LA CAPITALE-NATIONALE-COTE-NORD",
+			"ide_affch": 496013,
+			"longitude": -72.26564373
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "flexographic press operator OR flexographic pressman/woman",
+			"latitude": 45.86901594,
+			"expiration_date": "2025-08-17",
+			"employeur": "LES IMPRESSIONS 2001 INC.",
+			"ide_affch": 496012,
+			"longitude": -72.52289334
+		},
+		{
+			"nom_ville": "Saint-Basile",
+			"titre": "farm labourer - harvesting",
+			"latitude": 46.79666545,
+			"expiration_date": "2025-08-31",
+			"employeur": "FÉDÉRATION DE L'UPA DE LA CAPITALE-NATIONALE-COTE-NORD",
+			"ide_affch": 496011,
+			"longitude": -71.87542009
+		},
+		{
+			"nom_ville": "Drummondville",
+			"titre": "press operator - printing OR pressman/woman - printing",
+			"latitude": 45.86901594,
+			"expiration_date": "2025-08-11",
+			"employeur": "LES IMPRESSIONS 2001 INC.",
+			"ide_affch": 496010,
+			"longitude": -72.52289334
+		},
+		{
+			"nom_ville": "Saint-Basile",
+			"titre": "farm labourer - harvesting",
+			"latitude": 46.79666545,
+			"expiration_date": "2025-08-31",
+			"employeur": "FÉDÉRATION DE L'UPA DE LA CAPITALE-NATIONALE-COTE-NORD",
+			"ide_affch": 496009,
+			"longitude": -71.87542009
+		},
+		{
+			"nom_ville": "Mirabel",
+			"titre": "farm labourer - livestock",
+			"latitude": 45.66607787,
+			"expiration_date": "2025-08-31",
+			"employeur": "Fédération UPA Outaouais-Laurentides (CEA) (Voir le nom de l'employeur dans le titre du poste)",
+			"ide_affch": 496008,
+			"longitude": -74.12644605
+		},
+		{
+			"nom_ville": "Saint-Roch-des-Aulnaies",
+			"titre": "farm labourer - livestock",
+			"latitude": 47.32656968,
+			"expiration_date": "2025-08-17",
+			"employeur": "LA FEDERATION DE L'UPA DE LA  CHAUDIERE-APPALACHES",
+			"ide_affch": 496007,
+			"longitude": -70.10990131
+		},
+		{
+			"nom_ville": "Pikogan",
+			"titre": "social worker",
+			"latitude": 48.59749054,
+			"expiration_date": "2025-07-31",
+			"employeur": "CONSEIL DE LA PREMIERE NATION ABITIBIWINNI",
+			"ide_affch": 496004,
+			"longitude": -78.12072338
+		},
+		{
+			"nom_ville": "Gaspé",
+			"titre": "instructor of persons with special needs",
+			"latitude": 48.81336073,
+			"expiration_date": "2025-08-31",
+			"employeur": "CPE DES BUTINEURS",
+			"ide_affch": 496002,
+			"longitude": -64.4940902
+		},
+		{
+			"nom_ville": "La Conception",
+			"titre": "inspector - by-law enforcement OR inspector - municipal law enforcement",
+			"latitude": 46.15336072,
+			"expiration_date": "2025-08-02",
+			"employeur": "MUNICIPALITE DE LA CONCEPTION",
+			"ide_affch": 496001,
+			"longitude": -74.69458224
+		},
+		{
+			"nom_ville": "Gaspé",
+			"titre": "early childhood educator (ECE)",
+			"latitude": 48.83417822,
+			"expiration_date": "2025-08-31",
+			"employeur": "CPE DES BUTINEURS",
+			"ide_affch": 496000,
+			"longitude": -64.48494748
+		},
+		{
+			"nom_ville": "Pont-Rouge",
+			"titre": "farm labourer - livestock",
+			"latitude": 46.76747484,
+			"expiration_date": "2025-08-31",
+			"employeur": "FÉDÉRATION DE L'UPA DE LA CAPITALE-NATIONALE-COTE-NORD",
+			"ide_affch": 495997,
+			"longitude": -71.77887627
+		},
+		{
+			"nom_ville": "Longueuil",
+			"titre": "daycare teacher",
+			"latitude": 45.49914209,
+			"expiration_date": "2025-08-31",
+			"employeur": "ENFANTS FLEUR SOLEIL INC.",
+			"ide_affch": 495996,
+			"longitude": -73.40761527
+		},
+		{
+			"nom_ville": "Les Éboulements",
+			"titre": "farm labourer - livestock",
+			"latitude": 47.47794936,
+			"expiration_date": "2025-08-31",
+			"employeur": "FÉDÉRATION DE L'UPA DE LA CAPITALE-NATIONALE-COTE-NORD",
+			"ide_affch": 495995,
+			"longitude": -70.31739116
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "storekeeper OR storeman/woman",
+			"latitude": 48.22252012,
+			"expiration_date": "2025-08-23",
+			"employeur": "Technosub",
+			"ide_affch": 495993,
+			"longitude": -78.99452383
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "assistant press operator - printing OR assistant pressman/woman OR assistant pressman/woman - printing",
+			"latitude": 48.21619475,
+			"expiration_date": "2025-08-15",
+			"employeur": "Technosub",
+			"ide_affch": 495992,
+			"longitude": -79.01314059
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "instructional assistant - primary and secondary school OR paraprofessional educator",
+			"latitude": 45.555057,
+			"expiration_date": "2025-08-31",
+			"employeur": "LE BOULOT VERS...",
+			"ide_affch": 495990,
+			"longitude": -73.54265689
+		},
+		{
+			"nom_ville": "Havre-Saint-Pierre",
+			"titre": "assistant principal OR school vice-principal",
+			"latitude": 50.24617352,
+			"expiration_date": "2025-08-16",
+			"employeur": "CENTRE DE LA PETITE ENFANCE   PICASSOU INC.",
+			"ide_affch": 495988,
+			"longitude": -63.59097093
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "paint department foreman/woman - metal products manufacturing",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495987,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Gatineau",
+			"titre": "mystery shopper",
+			"latitude": 45.48114049,
+			"expiration_date": "2025-08-15",
+			"employeur": "C3 CLIENT SATISFACTION INC.",
+			"ide_affch": 495986,
+			"longitude": -75.67735933
+		},
+		{
+			"nom_ville": "Victoriaville",
+			"titre": "production welder",
+			"latitude": 46.06891161,
+			"expiration_date": "2025-08-18",
+			"employeur": "ALTITUDE RESSOURCES HUMAINES  INC.",
+			"ide_affch": 495985,
+			"longitude": -71.96235006
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "shotblasting machine operator - metal products manufacturing",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495984,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "welder-assembler",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495983,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "production day labourer - tire industry",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495980,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "steel frame draftsman/woman OR steel frame draftsperson",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495979,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "computer numerical control (CNC) machining tool operator",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495978,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "receptionist-secretary",
+			"latitude": 45.406235,
+			"expiration_date": "2025-08-03",
+			"employeur": "MOMENTHOM CENTRE D'ENTRAIDE   POUR HOMMES DE L'ESTRIE",
+			"ide_affch": 495977,
+			"longitude": -71.8956903
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "heating specialist engineer",
+			"latitude": 46.80707504,
+			"expiration_date": "2025-08-25",
+			"employeur": "Des Jardins Services Conseils",
+			"ide_affch": 495976,
+			"longitude": -71.30141723
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "heating specialist engineer",
+			"latitude": 48.35042207,
+			"expiration_date": "2025-08-18",
+			"employeur": "Des Jardins Services Conseils",
+			"ide_affch": 495975,
+			"longitude": -71.03901555
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "spray painter",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495974,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Trois-Rivières",
+			"titre": "heating specialist engineer",
+			"latitude": 46.34449688,
+			"expiration_date": "2025-08-18",
+			"employeur": "Des Jardins Services Conseils",
+			"ide_affch": 495973,
+			"longitude": -72.54596691
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "structural steel inspector",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495972,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Sainte-Marie",
+			"titre": "heating specialist engineer",
+			"latitude": 46.4607354,
+			"expiration_date": "2025-08-18",
+			"employeur": "Des Jardins Services Conseils",
+			"ide_affch": 495971,
+			"longitude": -71.0394213
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "cook",
+			"latitude": 46.83075486,
+			"expiration_date": "2025-09-01",
+			"employeur": "9085-2583 QUEBEC INC.",
+			"ide_affch": 495970,
+			"longitude": -71.3214919
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "structural engineer",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495969,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "warehouse clerk - parts and equipment OR warehouse person - parts and equipment",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495968,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "human resources officer",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495967,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "pastry maker",
+			"latitude": 46.80683689,
+			"expiration_date": "2025-08-10",
+			"employeur": "Cuisine centrale Piazzetta",
+			"ide_affch": 495966,
+			"longitude": -71.24747873
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "senior press operator - printing OR senior pressman/woman - printing",
+			"latitude": 45.4793296,
+			"expiration_date": "2025-08-18",
+			"employeur": "EXCEL PERSONNEL INC.",
+			"ide_affch": 495965,
+			"longitude": -73.5822293
+		},
+		{
+			"nom_ville": "Montréal",
+			"titre": "storage worker - material handling OR warehouse worker - material handling",
+			"latitude": 45.59697444,
+			"expiration_date": "2025-08-27",
+			"employeur": "123JOB INC.",
+			"ide_affch": 495964,
+			"longitude": -73.62364128
+		},
+		{
+			"nom_ville": "Sherbrooke",
+			"titre": "cook",
+			"latitude": 45.39909357,
+			"expiration_date": "2025-08-17",
+			"employeur": "CENTRE DE LA PETITE ENFANCE JEUNESTRIE",
+			"ide_affch": 495963,
+			"longitude": -71.92090583
+		},
+		{
+			"nom_ville": "Saguenay",
+			"titre": "dining establishment managing supervisor",
+			"latitude": 48.43929329,
+			"expiration_date": "2025-08-28",
+			"employeur": "MAGALI GENDRON - RECRUTER DIFFÉREMMENT",
+			"ide_affch": 495961,
+			"longitude": -71.06167211
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "furniture cabinetmaker",
+			"latitude": 46.88994761,
+			"expiration_date": "2025-08-29",
+			"employeur": "Pierre Levesque Meubles",
+			"ide_affch": 495960,
+			"longitude": -71.32318261
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "cook's helper",
+			"latitude": 45.52522284,
+			"expiration_date": "2025-08-30",
+			"employeur": "SERVICE CUISINE VALLERAND INC.",
+			"ide_affch": 495959,
+			"longitude": -73.78354863
+		},
+		{
+			"nom_ville": "Princeville",
+			"titre": "motorcycle mechanic",
+			"latitude": 46.16734504,
+			"expiration_date": "2025-08-07",
+			"employeur": "EUGENE FORTIER &amp; FILS INC",
+			"ide_affch": 495958,
+			"longitude": -71.8725889
+		},
+		{
+			"nom_ville": "Saint-Pie",
+			"titre": "administrative assistant",
+			"latitude": 45.50916677,
+			"expiration_date": "2025-07-25",
+			"employeur": "CENTRE DE LA PETITE ENFANCE   LES P'TITES PIES",
+			"ide_affch": 495957,
+			"longitude": -72.90599612
+		},
+		{
+			"nom_ville": "Princeville",
+			"titre": "sales clerk",
+			"latitude": 46.16734504,
+			"expiration_date": "2025-08-29",
+			"employeur": "EUGENE FORTIER &amp; FILS INC",
+			"ide_affch": 495955,
+			"longitude": -71.8725889
+		},
+		{
+			"nom_ville": "Sainte-Agathe-des-Monts",
+			"titre": "delivery driver OR route driver",
+			"latitude": 46.05178346,
+			"expiration_date": "2025-08-31",
+			"employeur": "TRANSPORT ROLLAND MENARD INC",
+			"ide_affch": 495954,
+			"longitude": -74.26706413
+		},
+		{
+			"nom_ville": "Terrebonne",
+			"titre": "accounting clerk",
+			"latitude": 45.72310229,
+			"expiration_date": "2025-08-15",
+			"employeur": "RECY-BAC INC.",
+			"ide_affch": 495953,
+			"longitude": -73.68863852
+		},
+		{
+			"nom_ville": "Rimouski",
+			"titre": "buyer - purchasing OR purchaser",
+			"latitude": 48.4650556,
+			"expiration_date": "2025-08-29",
+			"employeur": "LES STRUCTURES G.B. LTEE",
+			"ide_affch": 495952,
+			"longitude": -68.50986766
+		},
+		{
+			"nom_ville": "Saint-Chrysostome",
+			"titre": "truck driver OR trucker",
+			"latitude": 45.11944913,
+			"expiration_date": "2025-08-29",
+			"employeur": "TRANSPORT JOCELYN BOURDEAU    INC.",
+			"ide_affch": 495951,
+			"longitude": -73.73775533
+		},
+		{
+			"nom_ville": "Malartic",
+			"titre": "restaurant cook",
+			"latitude": 48.14278152,
+			"expiration_date": "2025-08-31",
+			"employeur": "6173306 CANADA INC.",
+			"ide_affch": 495950,
+			"longitude": -78.12683812
+		},
+		{
+			"nom_ville": "Magog",
+			"titre": "auto body repairer",
+			"latitude": 45.29598513,
+			"expiration_date": "2025-08-17",
+			"employeur": "9183-8920 QUEBEC INC.",
+			"ide_affch": 495949,
+			"longitude": -72.10484913
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "receiving clerk",
+			"latitude": 46.82297493,
+			"expiration_date": "2025-08-15",
+			"employeur": "9230-3460 QUEBEC INC.",
+			"ide_affch": 495947,
+			"longitude": -71.28269643
+		},
+		{
+			"nom_ville": "La Sarre",
+			"titre": "restaurant cashier",
+			"latitude": 48.79172132,
+			"expiration_date": "2025-08-31",
+			"employeur": "6173306 CANADA INC.",
+			"ide_affch": 495946,
+			"longitude": -79.2011313
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "cook",
+			"latitude": 46.79760225,
+			"expiration_date": "2025-07-31",
+			"employeur": "Le Croquignolet",
+			"ide_affch": 495945,
+			"longitude": -71.27649882
+		},
+		{
+			"nom_ville": "Shawinigan",
+			"titre": "property management operations coordinator",
+			"latitude": 46.54109972,
+			"expiration_date": "2025-07-31",
+			"employeur": "VILLE DE SHAWINIGAN",
+			"ide_affch": 495943,
+			"longitude": -72.74506777
+		},
+		{
+			"nom_ville": "Laval",
+			"titre": "lottery kiosk clerk",
+			"latitude": 45.55953458,
+			"expiration_date": "2025-08-17",
+			"employeur": "LA SOCIETE NATIONALE DES QUEBECOISES/OIS REG. DES LAUR.",
+			"ide_affch": 495942,
+			"longitude": -73.75330965
+		},
+		{
+			"nom_ville": "Québec",
+			"titre": "cook's helper",
+			"latitude": 46.76564038,
+			"expiration_date": "2025-08-17",
+			"employeur": "MAJE+CIE INC.",
+			"ide_affch": 495941,
+			"longitude": -71.29228014
+		},
+		{
+			"nom_ville": "Rouyn-Noranda",
+			"titre": "swim coach OR swimming coach",
+			"latitude": 48.22906169,
+			"expiration_date": "2025-08-15",
+			"employeur": "LES DAUPHINS DE ROUYN-NORANDA INC.",
+			"ide_affch": 495940,
+			"longitude": -79.00744136
+		},
+		{
+			"nom_ville": "Longueuil",
+			"titre": "audiovisual (AV) technician",
+			"latitude": 45.51383681,
+			"expiration_date": "2025-08-28",
+			"employeur": "SCE - Ressource de collaboration humaine",
+			"ide_affch": 495939,
+			"longitude": -73.43150128
+		},
+		{
+			"nom_ville": "Amos",
+			"titre": "restaurant cook",
+			"latitude": 48.57152166,
+			"expiration_date": "2025-08-31",
+			"employeur": "6173306 CANADA INC.",
+			"ide_affch": 495938,
+			"longitude": -78.11535159
+		},
+		{
+			"nom_ville": "Lavaltrie",
+			"titre": "automobile mechanic OR automotive mechanic",
+			"latitude": 45.8869018,
+			"expiration_date": "2025-08-15",
+			"employeur": "ALLIANCE RESSOURCES HUMAINES  INC.",
+			"ide_affch": 495937,
+			"longitude": -73.27488977
+		},
+		{
+			"nom_ville": "Val-d'Or",
+			"titre": "restaurant cashier",
+			"latitude": 48.09717799,
+			"expiration_date": "2025-08-31",
+			"employeur": "6173306 CANADA INC.",
+			"ide_affch": 495936,
+			"longitude": -77.82415708
+		},
+		{
+			"nom_ville": "Amos",
+			"titre": "restaurant cashier",
+			"latitude": 48.57152166,
+			"expiration_date": "2025-08-31",
+			"employeur": "6173306 CANADA INC.",
+			"ide_affch": 495935,
+			"longitude": -78.11535159
+		},
+		{
+			"nom_ville": "Val-d'Or",
+			"titre": "restaurant cashier",
+			"latitude": 48.09717799,
+			"expiration_date": "2025-08-31",
+			"employeur": "6173306 CANADA INC.",
+			"ide_affch": 495934,
+			"longitude": -77.82415708
+		},
+		{
+			"nom_ville": "Blainville",
+			"titre": "accounting clerk",
+			"latitude": 45.67361777,
+			"expiration_date": "2025-08-31",
+			"employeur": "PISCINES P. MASSIE INC.",
+			"ide_affch": 495933,
+			"longitude": -73.90699975
+		}
+	]
+}

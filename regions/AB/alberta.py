@@ -1,5 +1,4 @@
-import ab_agencies
-import ab_ministries
+from regions.AB import ab_agencies, ab_ministries
 
 import requests
 from bs4 import BeautifulSoup
@@ -8,12 +7,11 @@ import pandas as pd
 import time
 
 def main() -> None:
-    # agencies website is down
-    # agencies = create_directory("", )
-    # ab_agencies.scrape_agencies()
 
+    ab_agencies.scrape_agencies()
     ministries = create_directory("https://www.alberta.ca/ministries", ".goa-title", ".goa-text")
     ab_ministries.scrape_ministries_from_directory(ministries)
+
     
 
 def create_directory(url, title_selector, description_selector, base_url=None):
