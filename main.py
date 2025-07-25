@@ -8,6 +8,7 @@ sys.path.append(str(Path(__file__).resolve().parent))
 # List of provincial modules
 modules = [
     "regions.AB.alberta",
+    "regions.NU.nunavut"
 ]
 
 def main():

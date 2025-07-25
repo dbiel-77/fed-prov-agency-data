@@ -9,6 +9,7 @@ import time
 def main() -> None:
 
     ab_agencies.scrape_agencies()
+    
     ministries = create_directory("https://www.alberta.ca/ministries", ".goa-title", ".goa-text")
     ab_ministries.scrape_ministries_from_directory(ministries)
 
