@@ -4,7 +4,7 @@ import time
 
 from urllib.parse import urlparse, parse_qs, unquote
 
-# Sample input list
+# input searc hterms
 AGENCIES = [
     "Accessibility Advisory Council",
     "Adult Abuse Registry Committee",
