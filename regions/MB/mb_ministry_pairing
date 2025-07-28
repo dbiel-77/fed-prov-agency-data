@@ -1,0 +1,34 @@
+import csv
+
+ministers_file = "mb_ministers.csv"
+ministries_file = "mb_ministry_names.csv"
+output_file = "mb_ministers_tagged.csv"
+
+def load_ministries(file_path):
+    with open(file_path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        return [row['Ministry Name'].strip() for row in reader]
+
+def tag_ministers(ministers_file, ministry_names, output_file):
+    with open(ministers_file, newline='', encoding='utf-8') as f_in, \
+         open(output_file, 'w', newline='', encoding='utf-8') as f_out:
+
+        reader = csv.DictReader(f_in)
+        fieldnames = reader.fieldnames + ['ministry']
+        writer = csv.DictWriter(f_out, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for row in reader:
+            original_ministry_field = row.get('Ministry Name', '').lower()
+            match = ''
+            for ministry in ministry_names:
+                if ministry.lower() in original_ministry_field:
+                    match = ministry
+                    break
+            row['ministry'] = match
+            writer.writerow(row)
+
+if __name__ == "__main__":
+    ministries = load_ministries(ministries_file)
+    tag_ministers(ministers_file, ministries, output_file)
+    print(f"Tagged data saved to {output_file}")
