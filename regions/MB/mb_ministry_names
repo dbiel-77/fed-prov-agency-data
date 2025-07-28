@@ -1,0 +1,49 @@
+# The purpose of this file is to correctly grab the Ministry names instead of relying on text splicing in mb_ministries.py
+import requests
+from bs4 import BeautifulSoup
+import csv
+
+url = "https://www.gov.mb.ca/government/departments.html"
+output_file = "mb_ministry_names.csv"
+
+def scrape_ministries(url):
+    response = requests.get(url)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    ministries = []
+
+    # Only target the div with class 'col-inside-3'
+    content_div = soup.find('div', class_='col-inside-3')
+    if not content_div:
+        print("No div with class 'col-inside-3' found.")
+        return ministries
+
+    # Find all top-level <ul> elements inside the target div
+    for ul in content_div.find_all('ul'):
+        for li in ul.find_all('li', recursive=False):
+            a_tag = li.find('a')
+            if a_tag:
+                ministries.append(a_tag.get_text(strip=True))
+
+            # Handle nested <ul> lists
+            nested_ul = li.find('ul')
+            if nested_ul:
+                for sub_li in nested_ul.find_all('li'):
+                    sub_a = sub_li.find('a')
+                    if sub_a:
+                        ministries.append(sub_a.get_text(strip=True))
+
+    return ministries
+
+def save_to_csv(data, filename):
+    with open(filename, 'w', encoding='utf-8', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Ministry Name'])
+        for item in data:
+            writer.writerow([item])
+
+if __name__ == "__main__":
+    ministries = scrape_ministries(url)
+    save_to_csv(ministries, output_file)
+    print(f"Saved {len(ministries)} ministry names to {output_file}")
