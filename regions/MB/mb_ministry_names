@@ -1,4 +1,3 @@
-# The purpose of this file is to correctly grab the Ministry names instead of relying on text splicing in mb_ministries.py
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -19,31 +18,36 @@ def scrape_ministries(url):
         print("No div with class 'col-inside-3' found.")
         return ministries
 
-    # Find all top-level <ul> elements inside the target div
+    # Loop through all <ul> elements inside the target div
     for ul in content_div.find_all('ul'):
         for li in ul.find_all('li', recursive=False):
-            a_tag = li.find('a')
+            a_tag = li.find('a', href=True)
             if a_tag:
-                ministries.append(a_tag.get_text(strip=True))
+                name = a_tag.get_text(strip=True)
+                href = a_tag['href']
+                full_url = "https:" + href if href.startswith("//") else href
+                ministries.append((name, full_url))
 
-            # Handle nested <ul> lists
+            # Handle nested <ul> lists (e.g., Francophone Affairs Secretariat)
             nested_ul = li.find('ul')
             if nested_ul:
                 for sub_li in nested_ul.find_all('li'):
-                    sub_a = sub_li.find('a')
+                    sub_a = sub_li.find('a', href=True)
                     if sub_a:
-                        ministries.append(sub_a.get_text(strip=True))
+                        sub_name = sub_a.get_text(strip=True)
+                        sub_href = sub_a['href']
+                        sub_url = "https:" + sub_href if sub_href.startswith("//") else sub_href
+                        ministries.append((sub_name, sub_url))
 
     return ministries
 
 def save_to_csv(data, filename):
     with open(filename, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['Ministry Name'])
-        for item in data:
-            writer.writerow([item])
+        writer.writerow(['Ministry Name', 'Ministry URL'])
+        writer.writerows(data)
 
 if __name__ == "__main__":
     ministries = scrape_ministries(url)
     save_to_csv(ministries, output_file)
-    print(f"Saved {len(ministries)} ministry names to {output_file}")
+    print(f"Saved {len(ministries)} ministries to {output_file}")
