@@ -1,4 +1,6 @@
-from regions.AB import ab_agencies, ab_ministries
+# from regions.AB import ab_agencies, ab_ministries
+import ab_agencies
+import ab_ministries
 
 import requests
 from bs4 import BeautifulSoup

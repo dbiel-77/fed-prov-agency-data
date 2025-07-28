@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
+from urllib.parse import urlparse, parse_qs, unquote
 
 def scrape_agencies(save_agency_csv="data/ab/agencies_ab.csv",
                         save_minister_csv="data/ab/agency_members_ab.csv"):
@@ -59,8 +60,18 @@ def scrape_agencies(save_agency_csv="data/ab/agencies_ab.csv",
                 li = cls_h4.find_next("ul").find("li")
                 classification = li.get_text(strip=True) if li else None
 
+
+            query = f"{agency_name} alberta site"
+            raw_url = search_duckduckgo(query)
+            if raw_url:
+                clean_url = url_extractinator(raw_url)
+            else:
+                print("No site found.")
+            time.sleep(1)
+
             agency_rows.append({
                 "agency_name": agency_name,
+                "agency_url": clean_url if raw_url else None,
                 "classification": classification,
                 "description": description
             })
@@ -95,3 +106,24 @@ def scrape_agencies(save_agency_csv="data/ab/agencies_ab.csv",
     print(f"Saved {len(agency_df)} agencies to '{save_agency_csv}'")
     print(f"Saved {len(ministers_df)} minister records to '{save_minister_csv}'")
 
+
+def url_extractinator(ddg_url):
+    parsed = urlparse(ddg_url)
+    qs = parse_qs(parsed.query)
+    if "uddg" in qs:
+        return unquote(qs["uddg"][0])
+    return ddg_url
+
+def search_duckduckgo(query):
+    base_url = "https://duckduckgo.com/html/"
+    params = {"q": query}
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        response = requests.get(base_url, params=params, headers=headers, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        result = soup.select_one("a.result__a")
+        return result["href"] if result else None
+    except Exception as e:
+        print(f"Error for '{query}': {e}")
+        return None
