@@ -8,7 +8,7 @@ base_url = 'https://www.gov.mb.ca/minister/' #used to splict contact URLs
 
 def extract_ministry_name(info):
     # Extracts which ministry the minister is associated with. Some will have to be manually checked but most follow standardized format
-    pattern = r"Minister of (.*?) on"
+    pattern = r"(Minister of .*?)(?: on|$)"
     match = re.search(pattern, info)
     if match:
         return match.group(1).strip()
@@ -57,7 +57,7 @@ def scrape_minister(url):
 
     return records
 
-def save_csv(data, path="ministers.csv"):
+def save_csv(data, path="mb_ministers.csv"):
     with open(path, "w", encoding="utf-8", newline='') as f:
         writer = csv.writer(f)
         writer.writerow(["Minister Name", "Ministry Name", "Contact Info URL"])

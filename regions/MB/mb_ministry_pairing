@@ -1,0 +1,42 @@
+import csv
+
+ministers_file = "mb_ministers.csv"
+ministries_file = "mb_ministry_names.csv"
+output_file = "mb_ministers_tagged.csv"
+
+def load_ministries(file_path):
+    ministries = []
+    with open(file_path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            name = row['Ministry Name'].strip()
+            url = row['Ministry URL'].strip()
+            ministries.append((name, url))
+    return ministries
+
+def tag_ministers(ministers_file, ministries, output_file):
+    with open(ministers_file, newline='', encoding='utf-8') as f_in, \
+         open(output_file, 'w', newline='', encoding='utf-8') as f_out:
+
+        reader = csv.DictReader(f_in)
+        fieldnames = reader.fieldnames + ['ministry', 'WEBSITE']
+        writer = csv.DictWriter(f_out, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for row in reader:
+            original_ministry_field = row.get('Ministry Name', '').lower()
+            match_name = ''
+            match_url = ''
+            for ministry_name, ministry_url in ministries:
+                if ministry_name.lower() in original_ministry_field:
+                    match_name = ministry_name
+                    match_url = ministry_url
+                    break
+            row['ministry'] = match_name
+            row['WEBSITE'] = match_url
+            writer.writerow(row)
+
+if __name__ == "__main__":
+    ministries = load_ministries(ministries_file)
+    tag_ministers(ministers_file, ministries, output_file)
+    print(f"Tagged data with URLs saved to {output_file}")
