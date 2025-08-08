@@ -1,8 +1,8 @@
 # Source I referenced: GLOCAL-scraping-guide/glocal-scraping-guideline/scraping
 
 #following GLOCAL scraping guide
-from ast import If
-from pickle import APPEND
+#from ast import If : NOT USED
+#from pickle import APPEND: NOT USED
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -18,42 +18,82 @@ BASE_URL = "https://www2.gov.bc.ca/gov/content/governments/organizational-struct
 # function to scrape through the ministries page for each ministry hyperlink
 def scrape_ministries(url):
 # retrieving raw HTML of "Ministries" page from official BC Government page
-    response = requests.get(BASE_URL)
+    response = requests.get(url) #not url, check
     response.raise_for_status()
-    html = response.text
-
-    #feeding soup my HTML and choosing BeautifulSoup parser
-    soup = BeautifulSoup(html, "html.parser")
+    soup = BeautifulSoup(response.text, "html.parser")
     
-    ministries = []
+    ministry_links = []
+    
+    ministry_list=soup.find("div", id="ministrylistcontainer") #div with all ministry <a>s
+    if not ministry_list:
+        print("Could not find ministry list")
+        return []
+    
+    
+    
+    
     # found the list of ministries under <div id="body" class="styled-h2"><ul>
-    for div in soup.find_all("div", id="body", class_= "styled-h2"):
+    for a in ministry_list.find_all("a", href=True):
         # NOTES: check if 'a' works, exists in this format: <a href="url" target="_self"> ministry_name </a>
-        name = div.find("a").get_text(strip=True)
+        name = a.get_text(strip=True)
+        link = a["href"]
         
-        # Loop to scrape through each hyperlink to a ministry
-         # NOTES: Refered to glocal-scraping-guide -> web-fundamentals -> http-fundamentals on how to scrape through identical links on a page: 
-        for link in soup.find_all("a"): # goes from 1st to 23rd ministry hyperlink
-            URL = link.get("href")
-            scraped_mini = scrape_one_ministry(url)
-            if scraped_mini != None:
-                ministries.append(scraped_mini)
+        if link.startswith("/"):
+            link="https://www2.gov.bc.ca" + link
+        ministry_links.append({"name": name, "url":link})
+        
+    return ministry_links
        
 
-def scrape_one_ministry(url):
-    init_scrape()
-    data = []
-    #to be continued..
-    
-    
-    
-    
-def init_scrape(): 
-    response = requests.get(BASE_URL)
+def scrape_one_ministry(ministry):
+    response = requests.get(ministry["url"])
     response.raise_for_status()
-    html = response.text
+    soup = BeautifulSoup(response.text, "html.parser")
+    
+    data = {}
+    data["name"] = ministry["name"]
+    data["url"] = ministry["url"]
+    
+    desc = soup.find("meta", attrs={"name": "description"})
+    
+    if desc:
+        data["description"] = desc["content"]
+    else: 
+        data["description"] = "N/A"
+        
+    return data
+    
+    
+    #to be continued..
+
+def scrape_all():
+    ministries = scrape_ministries(BASE_URL)
+    final_data = []
+
+    for ministry in ministries:
+        try:
+            print(f"Scraping: {ministry['name']}")
+            scraped = scrape_one_ministry(ministry)
+            final_data.append(scraped)
+            
+        except Exception as e:
+            print(f"Failed to scrape {ministry['name']}: {e}")
+            
+    with open("ministries_data.json", "w", encoding="utf-8") as f:
+        json.dump(final_data,f, indent=5, ensure_ascii=False)
+        
+        
+if __name__ == "__main__":
+    scrape_all()
+
+
+
+#def init_scrape(): 
+ #   response = requests.get(BASE_URL)
+  #  response.raise_for_status()
+   # html = response.text
 
     #feeding soup my HTML and choosing BeautifulSoup parser
-    soup = BeautifulSoup(html, "html.parser")
+    #soup = BeautifulSoup(html, "html.parser")
     
     
