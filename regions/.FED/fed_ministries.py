@@ -491,7 +491,7 @@ def get_minister_data(session, name, ministry_url, minister_url):
         "minister_url": minister_url
     }
 
-def scrape_ministries(output_file="../../data/FED/ministries.csv"):
+def scrape_ministries(output_file="data/FED/ministries_fed.csv"):
     os.makedirs(os.path.dirname(output_file) or ".", exist_ok=True)
     session = requests.Session()
     headers = FIELDNAMES
