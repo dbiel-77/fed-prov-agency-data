@@ -1,350 +1,310 @@
 #!/usr/bin/env python3
-# civicinfo_agencies_scraper.py — curl_cffi + strict "(Provincial Central Agency)" filter
+# agency_scraper.py — CivicInfo BC detail crawler (follows "Next >", extracts robustly)
 
 import argparse
 import csv
 import json
 import random
 import time
-import itertools
 import re
-from urllib.parse import urljoin, urlparse
-import re
-from bs4.element import NavigableString, Tag
-
-AGENCY_PHRASE = "Provincial Central Agency"  # keep it strict
-LINE_BLOCKS = {"li","p","td","th","div","section","article"}
+from urllib.parse import urljoin, urlparse, parse_qs
 
 from bs4 import BeautifulSoup
-from curl_cffi import requests  # single requests import (Chrome impersonation)
+from bs4.element import NavigableString, Tag
+from curl_cffi import requests  # HTTP/2 + Chrome JA3, avoids most 403s
 
-# --- Config ---
-BASE = "https://www.civicinfo.bc.ca"
-LIST_URL = f"{BASE}/ministries-and-crowns"
+BASE        = "https://www.civicinfo.bc.ca"
+DETAIL_BASE = f"{BASE}/ministries-and-crowns"
 
 OUT_JSON = "agencies_data.json"
-OUT_CSV = "agencies_data.csv"
+OUT_CSV  = "agencies_data.csv"
 
-SLEEP_MIN = 0.8
-SLEEP_MAX = 1.8
-TIMEOUT = 25
+SLEEP_MIN = 0.6
+SLEEP_MAX = 1.4
+TIMEOUT   = 25
 
+# Keep only items whose classification CONTAINS this phrase (case-insensitive)
+ONLY_AGENCIES = True
+AGENCY_MATCH  = "provincial central agency"
 
-AGENCY_PHRASE = "Provincial Central Agency"  # current ask: exactly these
+# Label variants 
+LABELS = {
+    "mail":   ("mail:", "mailing:", "mailing address:"),
+    "street": ("street:",),
+    "phone":  ("phone:", "ph:", "tel:"),
+    "fax":    ("fax:", "fx:"),
+}
 
-# --- UA pool + headers ---
-UA_POOL = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
-    "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
-]
-_UA_ITER = itertools.cycle(UA_POOL)
+TITLE_PARENS = re.compile(r"\(([^)]+)\)")
 
+def _norm(s: str) -> str:
+    return " ".join((s or "").split())
 
-# HELPER
-def _closest_anchor_for_label(node, stop_at):
-    """
-    Given a text node that equals "(Provincial Central Agency)",
-    find the nearest <a> in the same block or immediate siblings.
-    """
-    # 1) same parent block
-    parent = node.parent
-    while parent and parent != stop_at and parent.name not in LINE_BLOCKS:
-        parent = parent.parent
-
-    # try in the block first
-    if parent:
-        a = parent.find("a", href=True)
-        if a and a.get_text(strip=True):
-            return a
-
-    # 2) search a few previous siblings for an <a>
-    cur = parent.previous_sibling if parent else node.previous_sibling
-    hops = 0
-    while cur and hops < 8:
-        if getattr(cur, "name", None) in ("a",):
-            a = cur if cur.has_attr("href") else None
-            if a and a.get_text(strip=True):
-                return a
-        a = cur.find("a", href=True) if hasattr(cur, "find") else None
-        if a and a.get_text(strip=True):
-            return a
-        cur = cur.previous_sibling
-        hops += 1
-
-    # 3) try next siblings (some markup puts label before/after link)
-    cur = parent.next_sibling if parent else node.next_sibling
-    hops = 0
-    while cur and hops < 8:
-        if getattr(cur, "name", None) in ("a",):
-            a = cur if cur.has_attr("href") else None
-            if a and a.get_text(strip=True):
-                return a
-        a = cur.find("a", href=True) if hasattr(cur, "find") else None
-        if a and a.get_text(strip=True):
-            return a
-        cur = cur.next_sibling
-        hops += 1
-
-    return None
-
-
-
-
-def _default_headers(url: str, referer: str):
-    host = urlparse(url).netloc
-    return {
-        "User-Agent": next(_UA_ITER),
-        "Referer": referer,
-        "Host": host,
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-CA,en;q=0.9",
-        "Connection": "keep-alive",
-        "Upgrade-Insecure-Requests": "1",
-        "Cache-Control": "no-cache",
-        "Pragma": "no-cache",
-    }
-
+#  HTTP 
 def make_session() -> requests.Session:
     return requests.Session(impersonate="chrome")
 
 SESSION = make_session()
 
-def warm_up_session():
-    try:
-        SESSION.get(
-            "https://www.civicinfo.bc.ca/",
-            headers=_default_headers("https://www.civicinfo.bc.ca/", "https://www.civicinfo.bc.ca/"),
-            timeout=TIMEOUT, allow_redirects=True,
-        )
-        time.sleep(random.uniform(0.6, 1.2))
-        SESSION.get(
-            LIST_URL,
-            headers=_default_headers(LIST_URL, "https://www.civicinfo.bc.ca/"),
-            timeout=TIMEOUT, allow_redirects=True,
-        )
-        time.sleep(random.uniform(0.6, 1.2))
-    except requests.RequestsError:
-        pass  # non-fatal
-
-def get_html(url: str, referer: str = "https://www.civicinfo.bc.ca/") -> str:
+def get_html(url: str, referer: str) -> str:
     time.sleep(random.uniform(SLEEP_MIN, SLEEP_MAX))
-    headers = _default_headers(url, referer)
-    attempts = 5
-    last_err = None
+    headers = {
+        "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/126.0.0.0 Safari/537.36"),
+        "Referer": referer,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-CA,en;q=0.9",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Host": urlparse(url).netloc,
+    }
+    attempts, last = 5, None
     for i in range(1, attempts + 1):
         try:
             r = SESSION.get(url, headers=headers, timeout=TIMEOUT, allow_redirects=True)
             if r.status_code in (403, 429) and i < attempts:
-                headers["User-Agent"] = next(_UA_ITER)
-                time.sleep((1.4 ** i) + random.uniform(0.2, 0.8))
+                time.sleep((1.35 ** i) + random.uniform(0.2, 0.7))
                 continue
             r.raise_for_status()
             return r.text
         except (requests.HTTPError, requests.RequestsError) as e:
-            last_err = e
+            last = e
             if i < attempts:
-                time.sleep((1.4 ** i) + random.uniform(0.2, 0.8))
+                time.sleep((1.35 ** i) + random.uniform(0.2, 0.7))
                 continue
             raise
-    raise last_err or RuntimeError("Failed to fetch URL")
+    raise last or RuntimeError("Failed to fetch")
 
-# --- Agency extraction helpers ---
+# Parsing helpers 
+def _is_mail_label(text: str) -> bool:
+    """True if text starts with any Mail/Mailing label variant."""
+    low = (text or "").strip().lower()
+    return any(low.startswith(v) for v in LABELS["mail"])
 
-AGENCY_IN_PARENS = re.compile(r"\((?:[^)]*?)agency[^)]*\)", re.I)
-# Strip trailing "(...)" from the name
-TRAILING_PARENS = re.compile(r"\s*\([^)]*\)\s*$")
-
-BLOCK_BREAKS = {"div","section","article","header","footer","nav","table","thead","tbody","tfoot","tr"}
-
-def _norm(s: str) -> str:
-    return " ".join((s or "").split())
-
-def _line_around_anchor(a, stop_at):
+def _best_header(main: Tag) -> Tag | None:
     """
-    Build a 'line' by concatenating:
-      - immediate previous siblings (until a block break / another <a> / <br>)
-      - the anchor text
-      - immediate next siblings (until a block break / another <a> / <br>)
-    Captures cases where "(Provincial Central Agency)" is a sibling text node.
+    Find the REAL agency header by locating the first 'Mail:' label and walking
+    backward to the nearest H1/H2/H3. This avoids the page chrome header.
     """
-    parts_before = []
-    cur = a.previous_sibling
-    hops = 0
-    while cur and hops < 12:
-        name = getattr(cur, "name", None)
-        if name in BLOCK_BREAKS or name == "a" or name == "br":
+    mail_node = main.find(string=lambda s: isinstance(s, str) and _is_mail_label(s))
+    if mail_node:
+        anchor = mail_node if isinstance(mail_node, Tag) else mail_node.parent
+        hdr = anchor.find_previous(lambda t: isinstance(t, Tag) and t.name in ("h1", "h2", "h3"))
+        if hdr:
+            return hdr
+
+    # Fallback: pick  first H1/H2 with section contains a Mail label
+    for hdr in main.find_all(["h1", "h2"]):
+        for el in hdr.next_elements:
+            if isinstance(el, Tag) and el.name in ("h1", "h2", "h3") and el is not hdr:
+                break
+            if isinstance(el, NavigableString) and _is_mail_label(str(el)):
+                return hdr
+            if isinstance(el, Tag) and _is_mail_label(el.get_text(" ", strip=True)):
+                return hdr
+
+    # Last-ditch fallback
+    hs2 = main.find_all("h2")
+    if hs2:
+        return hs2[-1]
+    hs1 = main.find_all("h1")
+    if hs1:
+        return hs1[-1]
+    return None
+
+def _pick_description(hdr: Tag) -> str:
+    """First substantial <p> after the header, before the next header."""
+    for el in hdr.next_elements:
+        if isinstance(el, Tag) and el.name in ("h1", "h2", "h3") and el is not hdr:
             break
-        text = cur.get_text(" ", strip=True) if hasattr(cur, "get_text") else str(cur)
-        if text.strip():
-            parts_before.append(text.strip())
-        cur = cur.previous_sibling
-        hops += 1
-    parts_before.reverse()
+        if isinstance(el, Tag) and el.name == "p":
+            txt = _norm(el.get_text(" ", strip=True))
+            if len(txt) >= 60:
+                return txt
+    return ""
 
-    link_text = a.get_text(" ", strip=True)
-
-    parts_after = []
-    cur = a.next_sibling
-    hops = 0
-    while cur and hops < 12:
-        name = getattr(cur, "name", None)
-        if name in BLOCK_BREAKS or name == "a" or name == "br":
+def _extract_classification(soup: BeautifulSoup, hdr: Tag) -> str:
+    """
+    1) Scan forward from H1/H2 until 'Mail:' line; take a short line with
+       'agency/corporation/ministry/office' as classification.
+    2) Fallback to last (...) in <title>.
+    """
+    for el in hdr.next_elements:
+        if isinstance(el, Tag) and el.name in ("h1", "h2", "h3") and el is not hdr:
             break
-        text = cur.get_text(" ", strip=True) if hasattr(cur, "get_text") else str(cur)
-        if text.strip():
-            parts_after.append(text.strip())
-        cur = cur.next_sibling
-        hops += 1
+        text = ""
+        if isinstance(el, NavigableString):
+            text = _norm(str(el))
+        elif isinstance(el, Tag):
+            text = _norm(el.get_text(" ", strip=True))
+        if not text:
+            continue
+        if _is_mail_label(text):
+            break
+        low = text.lower()
+        if any(k in low for k in ("agency", "corporation", "ministry", "office")) and len(text) <= 80:
+            return text.strip()
 
-    return _norm(" ".join(parts_before + [link_text] + parts_after)), link_text
+    t = soup.find("title")
+    if t and t.get_text(strip=True):
+        m_all = TITLE_PARENS.findall(t.get_text(strip=True))
+        if m_all:
+            return _norm(m_all[-1])
+    return "N/A"
 
-#
-def scrape_agencies():
-    html = get_html(LIST_URL, referer="https://www.civicinfo.bc.ca/")
+#  Detail page 
+def parse_detail(detail_url: str, referer: str) -> tuple[dict, str | None]:
+    html = get_html(detail_url, referer=referer)
     soup = BeautifulSoup(html, "html.parser")
     main = soup.find("main") or soup.find(id="main") or soup
 
-    seen = set()
-    agencies = []
+    hdr = _best_header(main) or main.find(["h1", "h2"])
+    name = _norm(hdr.get_text(strip=True)) if hdr else "N/A"
+    classification = _extract_classification(soup, hdr) if hdr else "N/A"
 
-    phrase_rx = re.compile(r"\(\s*"+re.escape(AGENCY_PHRASE)+r"\s*\)", re.I)
+    mailing_address = street_address = phone = fax = email = website = region = "N/A"
 
-    last_anchor = None
+    if hdr:
+        for el in hdr.next_elements:
+            # stop at next header block
+            if isinstance(el, Tag) and el.name in ("h1", "h2", "h3") and el is not hdr:
+                break
 
-    for node in main.descendants:
-        # Track last good <a>
-        if isinstance(node, Tag) and node.name == "a" and node.has_attr("href"):
-            txt = node.get_text(" ", strip=True)
-            href = (node.get("href") or "").strip()
-            if txt and href and not href.startswith("#"):
-                last_anchor = node
-            else:
-                continue
+            if isinstance(el, Tag) and el.name == "a" and el.has_attr("href"):
+                href = (el["href"] or "").strip()
+                txt  = _norm(el.get_text(" ", strip=True))
+                if href.lower().startswith("mailto:") and email == "N/A":
+                    email = href.split(":", 1)[1]
+                elif href.lower().startswith("http") and website == "N/A":
+                    host = urlparse(href).netloc.lower()
+                    if host and "civicinfo.bc.ca" not in host:
+                        website = href
+                if region == "N/A" and txt and "," in txt and "bc" in txt.lower():
+                    region = txt
 
-
-        elif isinstance(node, NavigableString):
-            s = " ".join(str(node).split())
-            if not s:
-                continue
-            if phrase_rx.search(s) and last_anchor:
-                name = last_anchor.get_text(" ", strip=True)
-                href = (last_anchor.get("href") or "").strip()
-                if not name or not href:
+            if isinstance(el, NavigableString):
+                line = _norm(str(el))
+                if not line:
                     continue
+                low = line.lower()
+                for key, variants in LABELS.items():
+                    for v in variants:
+                        if low.startswith(v):
+                            val = line[len(v):].strip()
+                            if key == "mail"   and mailing_address == "N/A": mailing_address = val
+                            if key == "street" and street_address == "N/A":  street_address  = val
+                            if key == "phone"  and phone == "N/A":           phone           = val
+                            if key == "fax"    and fax == "N/A":             fax             = val
 
-                abs_url = href if bool(urlparse(href).netloc) else urljoin(BASE, href)
-                low = abs_url.lower().rstrip("/")
+    description = _pick_description(hdr) if hdr else "N/A"
+    if not description:
+        description = "N/A"
 
-                # Skip chrome/self
-                if low in (LIST_URL.lower().rstrip("/"), BASE.lower().rstrip("/")):
-                    continue
-                if any(x in low for x in ("/contact", "/login", "/privacy", "/terms", "/sitemap")):
-                    continue
-                if low in seen:
-                    continue
-
-                seen.add(low)
-                agencies.append({
-                    "name": name.strip(),
-                    "url": abs_url,
-                    "section": AGENCY_PHRASE,
-                })
-
-                
-                last_anchor = None
-
-    if not agencies:
-
-        samples = []
-        for node in main.strings:
-            st = " ".join(str(node).split())
-            if AGENCY_PHRASE.lower() in st.lower():
-                samples.append(st)
-                if len(samples) >= 10:
-                    break
-        hint = "\n- ".join(samples) if samples else "(no matching text nodes)"
-        raise RuntimeError("No agencies found via streaming match. Sample texts:\n- " + hint)
-
-    return agencies
-
-
-
-
-def scrape_one_agency(item: dict) -> dict:
-    record = {
-        "name": item.get("name", "").strip(),
-        "url": item.get("url", "").strip(),
-        "section": item.get("section", "N/A").strip(),
-        "title": "N/A",
-        "description": "N/A",
+    rec = {
+        "name": name,
+        "classification": classification,
+        "mailing_address": mailing_address,
+        "street_address": street_address,
+        "phone": phone,
+        "fax": fax,
+        "email": email,
+        "website": website,
+        "region": region,
+        "description": description,
+        "url": detail_url,
     }
 
-    try:
-        html = get_html(record["url"], referer=LIST_URL)
-    except (requests.RequestsError, requests.HTTPError) as e:
-        record["description"] = f"ERROR: {type(e).__name__}: {e}"
-        return record
+    # Find “Next >” link
+    next_url = None
+    for a in soup.select("a[href]"):
+        txt = (a.get_text(" ", strip=True) or "").lower()
+        if "next" in txt:  # matches "Next >"
+            href = a.get("href") or ""
+            if href:
+                next_url = href if bool(urlparse(href).netloc) else urljoin(BASE, href)
+            break
 
-    soup = BeautifulSoup(html, "html.parser")
+    return rec, next_url
 
-    h1 = soup.find("h1")
-    if h1 and h1.get_text(strip=True):
-        record["title"] = h1.get_text(strip=True)
-    else:
-        t = soup.find("title")
-        if t and t.get_text(strip=True):
-            record["title"] = t.get_text(strip=True)
-
-    desc = soup.find("meta", attrs={"name": "description"}) or soup.find("meta", attrs={"property": "og:description"})
-    if desc and desc.get("content"):
-        record["description"] = desc["content"].strip()
-    else:
-        p = soup.find("p")
-        if p and p.get_text(strip=True):
-            record["description"] = " ".join(p.get_text(" ", strip=True).split())[:500]
-
-    return record
-
-
-def write_json(rows):
-    with open(OUT_JSON, "w", encoding="utf-8") as f:
+#  Writers 
+def write_json(rows, path=OUT_JSON):
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(rows, f, indent=2, ensure_ascii=False)
 
-def write_csv(rows):
-    fieldnames = set()
-    for r in rows:
-        fieldnames.update(r.keys())
-    fieldnames = sorted(fieldnames)
-    with open(OUT_CSV, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
+def write_csv(rows, path=OUT_CSV):
+    cols = [
+        "name","classification","mailing_address","street_address",
+        "phone","fax","email","website","region","description","url"
+    ]
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
         for r in rows:
-            writer.writerow(r)
+            w.writerow({k: r.get(k, "") for k in cols})
 
+#
+def crawl_details(start_id: int, limit: int | None, only_agencies: bool) -> list[dict]:
+    """
+    Start from ?id=<start_id>, follow “Next >” links until exhausted or `limit`.
+    `limit` = pages visited (not kept). De-dupe by id.
+    """
+    start_url = f"{DETAIL_BASE}?id={start_id}"
+    referer   = BASE
+    visited   = set()
+    out       = []
+    url       = start_url
+    steps     = 0
 
-def scrape_all(limit=None):
-    warm_up_session()
-    agencies = scrape_agencies()
-    if limit is not None:
-        agencies = agencies[: int(limit)]
+    while url:
+        p  = urlparse(url)
+        qs = parse_qs(p.query or "")
+        cur_id = int(qs.get("id", ["0"])[0]) if "id" in qs and qs["id"][0].isdigit() else None
+        if cur_id is not None:
+            if cur_id in visited:
+                break
+            visited.add(cur_id)
 
-    out = []
-    for a in agencies:
-        print(f"Scraping: {a['name']} ({a.get('section','N/A')})")
-        out.append(scrape_one_agency(a))
+        rec, next_url = parse_detail(url, referer=referer)
 
-    print(f"\nScraped {len(out)} agencies.")
-    write_json(out)
-    write_csv(out)
+        # Filter: contains, not strict equality (handles spacing/case)
+        keep = (not only_agencies) or (AGENCY_MATCH in rec.get("classification","").strip().lower())
+        if keep:
+            out.append(rec)
+            print(f"Scraped: {rec['name']}  [{rec['classification']}]")
+        else:
+            
+            
+            pass
+
+        steps += 1
+        if limit and steps >= limit:
+            break
+
+        referer = url
+        url     = next_url
+
+    return out
 
 def main():
-    parser = argparse.ArgumentParser(description="Scrape CivicInfo BC Ministries & Crowns agencies list & details.")
-    parser.add_argument("--limit", type=int, default=None, help="Limit number of agencies (debug)")
-    args = parser.parse_args()
-    scrape_all(limit=args.limit)
+    ap = argparse.ArgumentParser(description="CivicInfo BC — crawl details via Next, extract fields.")
+    ap.add_argument("--start-id", type=int, default=812, help="Seed detail id (default: 812 = ALC)")
+    ap.add_argument("--limit", type=int, default=None, help="Max detail pages to visit (safety cap)")
+    ap.add_argument("--all", action="store_true", help="Do NOT filter; include all classifications")
+    ap.add_argument("--out-json", default=OUT_JSON)
+    ap.add_argument("--out-csv",  default=OUT_CSV)
+    args = ap.parse_args()
+
+    rows = crawl_details(
+        start_id=args.start_id,
+        limit=args.limit,
+        only_agencies=(not args.all),
+    )
+    print(f"\nTotal kept: {len(rows)}")
+    write_json(rows, path=args.out_json)
+    write_csv(rows,  path=args.out_csv)
 
 if __name__ == "__main__":
     main()
-
-

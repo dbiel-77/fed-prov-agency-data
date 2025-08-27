@@ -1,2 +1,5 @@
-description,name,section,title,url
-I would like to:,Agricultural Land Commission (Provincial Central Agency),Provincial Central Agency,"Provincial Ministries, Crowns & Agencies",https://www.civicinfo.bc.ca/ministries-and-crowns?id=812
+name,classification,mailing_address,street_address,phone,fax,email,website,region,description,url
+Agricultural Land Commission,Provincial Central Agency,,,,,N/A,https://www.alc.gov.bc.ca/alc/content/home,"Lower Mainland, BC",N/A,https://www.civicinfo.bc.ca/ministries-and-crowns?id=812
+Environmental Appeal Board/Forest Appeals Commission,Provincial Central Agency,,,,,N/A,http://www.fac.gov.bc.ca/,"South Vancouver Island, BC",N/A,https://www.civicinfo.bc.ca/ministries-and-crowns?id=815#showSpace
+Forest Practices Board,Provincial Central Agency,,,,N/A,N/A,https://www.bcfpb.ca/,"South Vancouver Island, BC",N/A,https://www.civicinfo.bc.ca/ministries-and-crowns?id=816#showSpace
+Industry Training Authority,Provincial Central Agency,,,,,N/A,https://www.itabc.ca/,"Lower Mainland, BC","The Industry Training Authority (ITA) is a crown agency that is responsible for leading and coordinating the skilled trades training and credentialing system for the province. ITA provides strategic leadership, policy support and customer services to help apprentices, employers and industry. ITA sets program standards, maintains credential records and issues the highly regarded Interprovincial Red Seal and B.C. Certificate of Qualifications (C of Q) credentials",https://www.civicinfo.bc.ca/ministries-and-crowns?id=930#showSpace

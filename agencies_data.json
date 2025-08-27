@@ -1,9 +1,54 @@
 [
   {
-    "name": "Agricultural Land Commission (Provincial Central Agency)",
-    "url": "https://www.civicinfo.bc.ca/ministries-and-crowns?id=812",
-    "section": "Provincial Central Agency",
-    "title": "Provincial Ministries, Crowns & Agencies",
-    "description": "I would like to:"
+    "name": "Agricultural Land Commission",
+    "classification": "Provincial Central Agency",
+    "mailing_address": "",
+    "street_address": "",
+    "phone": "",
+    "fax": "",
+    "email": "N/A",
+    "website": "https://www.alc.gov.bc.ca/alc/content/home",
+    "region": "Lower Mainland, BC",
+    "description": "N/A",
+    "url": "https://www.civicinfo.bc.ca/ministries-and-crowns?id=812"
+  },
+  {
+    "name": "Environmental Appeal Board/Forest Appeals Commission",
+    "classification": "Provincial Central Agency",
+    "mailing_address": "",
+    "street_address": "",
+    "phone": "",
+    "fax": "",
+    "email": "N/A",
+    "website": "http://www.fac.gov.bc.ca/",
+    "region": "South Vancouver Island, BC",
+    "description": "N/A",
+    "url": "https://www.civicinfo.bc.ca/ministries-and-crowns?id=815#showSpace"
+  },
+  {
+    "name": "Forest Practices Board",
+    "classification": "Provincial Central Agency",
+    "mailing_address": "",
+    "street_address": "",
+    "phone": "",
+    "fax": "N/A",
+    "email": "N/A",
+    "website": "https://www.bcfpb.ca/",
+    "region": "South Vancouver Island, BC",
+    "description": "N/A",
+    "url": "https://www.civicinfo.bc.ca/ministries-and-crowns?id=816#showSpace"
+  },
+  {
+    "name": "Industry Training Authority",
+    "classification": "Provincial Central Agency",
+    "mailing_address": "",
+    "street_address": "",
+    "phone": "",
+    "fax": "",
+    "email": "N/A",
+    "website": "https://www.itabc.ca/",
+    "region": "Lower Mainland, BC",
+    "description": "The Industry Training Authority (ITA) is a crown agency that is responsible for leading and coordinating the skilled trades training and credentialing system for the province. ITA provides strategic leadership, policy support and customer services to help apprentices, employers and industry. ITA sets program standards, maintains credential records and issues the highly regarded Interprovincial Red Seal and B.C. Certificate of Qualifications (C of Q) credentials",
+    "url": "https://www.civicinfo.bc.ca/ministries-and-crowns?id=930#showSpace"
   }
 ]
