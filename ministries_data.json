@@ -3,138 +3,184 @@
     "name": "Agriculture and Food",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/agriculture",
     "title": "Find information",
-    "description": "The Ministry of Agriculture and Food is responsible for the production, marketing, processing and merchandising of agriculture and seafood products, as well as supporting our province’s food security, and developing a resilient food system and economy."
+    "description": "The Ministry of Agriculture and Food is responsible for the production, marketing, processing and merchandising of agriculture and seafood products, as well as supporting our province’s food security, and developing a resilient food system and economy.",
+    "minister_name": "Honourable Lana Popham",
+    "minister_title": "Minister of Agriculture and Food"
   },
   {
     "name": "Attorney General",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/attorney-general",
     "title": "Find information",
-    "description": "The Attorney General administers the justice system and provides legal advice to government. It is also responsible for providing British Columbians access to more affordable, safe and appropriate housing."
+    "description": "The Attorney General administers the justice system and provides legal advice to government. It is also responsible for providing British Columbians access to more affordable, safe and appropriate housing.",
+    "minister_name": "Honourable Niki Sharma",
+    "minister_title": "N/A"
   },
   {
     "name": "Children and Family Development",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/children-and-family-development",
     "title": "Find information",
-    "description": "The Ministry of Children and Family Development’s primary focus is to support all children and youth in British Columbia to live in safe, healthy and nurturing families and be strongly connected to their communities and culture. It is also responsible for developing universal, affordable, accessible, quality and inclusive child care. The ministry’s approach is to provide inclusive, culturally respectful, responsive and accessible services that support the well-being of children, youth and families in BC"
+    "description": "The Ministry of Children and Family Development’s primary focus is to support all children and youth in British Columbia to live in safe, healthy and nurturing families and be strongly connected to their communities and culture. It is also responsible for developing universal, affordable, accessible, quality and inclusive child care. The ministry’s approach is to provide inclusive, culturally respectful, responsive and accessible services that support the well-being of children, youth and families in BC",
+    "minister_name": "Honourable Jodie Wickens",
+    "minister_title": "Minister of Children and Family Development"
   },
   {
     "name": "Citizens' Services",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services",
     "title": "Find information",
-    "description": "The Ministry of Citizens’ Services provides a wide range of services to British Columbians across the province, both in person and online. From BC Services Cards to freedom of information to information technology infrastructure, we help deliver services that people count on."
+    "description": "The Ministry of Citizens’ Services provides a wide range of services to British Columbians across the province, both in person and online. From BC Services Cards to freedom of information to information technology infrastructure, we help deliver services that people count on.",
+    "minister_name": "Honourable Diana Gibson",
+    "minister_title": "Minister of Citizens' Services"
   },
   {
     "name": "Education and Child Care",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/education",
     "title": "Find information",
-    "description": "The purpose of the British Columbia school system is to enable the approximately 553,000 public school students, 81,000 independent school students, and over 2,200 home-schooled children enrolled each school year, to develop their individual potential and to acquire the knowledge, skills and abilities needed to contribute to a healthy society and a prosperous and sustainable economy."
+    "description": "The purpose of the British Columbia school system is to enable the approximately 553,000 public school students, 81,000 independent school students, and over 2,200 home-schooled children enrolled each school year, to develop their individual potential and to acquire the knowledge, skills and abilities needed to contribute to a healthy society and a prosperous and sustainable economy.",
+    "minister_name": "Honourable Lisa Beare",
+    "minister_title": "Minister of Education and Child Care"
   },
   {
     "name": "Emergency Management and Climate Readiness",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/emergency-management-and-climate-readiness",
     "title": "Find information",
-    "description": "Find information on Emergency Management BC, preparedness, response and recovery, public safety, crime prevention and wildfire services."
+    "description": "Find information on Emergency Management BC, preparedness, response and recovery, public safety, crime prevention and wildfire services.",
+    "minister_name": "Honourable Kelly Greene",
+    "minister_title": "Minister of Emergency Management and Climate Readiness"
   },
   {
     "name": "Energy and Climate Solutions",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/energy",
     "title": "Find information",
-    "description": "The Ministry of Energy and Climate Solutions is responsible for British Columbia’s electricity, alternative energy and petroleum resource sectors, and supporting work to align energy policies with climate goals."
+    "description": "The Ministry of Energy and Climate Solutions is responsible for British Columbia’s electricity, alternative energy and petroleum resource sectors, and supporting work to align energy policies with climate goals.",
+    "minister_name": "Honourable Adrian Dix",
+    "minister_title": "Minister of Energy and Climate Solutions"
   },
   {
     "name": "Environment and Parks",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/environment",
     "title": "Find information",
-    "description": "The Ministry of Environment and Parks is responsible for the effective protection, management and conservation of B.C.’s water, land, air and living resources. It leads work on climate preparedness and adaptation."
+    "description": "The Ministry of Environment and Parks is responsible for the effective protection, management and conservation of B.C.’s water, land, air and living resources. It leads work on climate preparedness and adaptation.",
+    "minister_name": "Honourable Tamara Davidson",
+    "minister_title": "Minister of Environment and Parks"
   },
   {
     "name": "Finance",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/finance",
     "title": "Find information",
-    "description": "The Ministry of Finance plays a key role in establishing, implementing and reviewing government’s economic, fiscal, financial management and taxation policies."
+    "description": "The Ministry of Finance plays a key role in establishing, implementing and reviewing government’s economic, fiscal, financial management and taxation policies.",
+    "minister_name": "Honourable Brenda Bailey",
+    "minister_title": "Minister of Finance"
   },
   {
     "name": "Forests",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/forests",
     "title": "Find information",
-    "description": "The Ministry of Forests, Lands, Natural Resource Operations and Rural Development is responsible for the stewardship of provincial Crown land and ensures the sustainable management of forest, wildlife, water and other land-based resources. The Ministry works with Indigenous and rural communities to strengthen and diversify their economies."
+    "description": "The Ministry of Forests, Lands, Natural Resource Operations and Rural Development is responsible for the stewardship of provincial Crown land and ensures the sustainable management of forest, wildlife, water and other land-based resources. The Ministry works with Indigenous and rural communities to strengthen and diversify their economies.",
+    "minister_name": "Honourable Ravi Parmar",
+    "minister_title": "Minister of Forests"
   },
   {
     "name": "Health",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/health",
     "title": "Find information",
-    "description": "The Ministry of Health has overall responsibility for ensuring that quality, appropriate, cost effective and timely health services are available for all British Columbians."
+    "description": "The Ministry of Health has overall responsibility for ensuring that quality, appropriate, cost effective and timely health services are available for all British Columbians.",
+    "minister_name": "Honourable Josie Osborne",
+    "minister_title": "Minister of Health"
   },
   {
     "name": "Housing and Municipal Affairs",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/housing",
     "title": "Find information",
-    "description": "The Ministry of Housing and Municipal Affairs is responsible for providing British Columbians access to more affordable, safe and appropriate housing, and in supporting local governments and residents to build vibrant and healthy communities."
+    "description": "The Ministry of Housing and Municipal Affairs is responsible for providing British Columbians access to more affordable, safe and appropriate housing, and in supporting local governments and residents to build vibrant and healthy communities.",
+    "minister_name": "HonourableChristine Boyle",
+    "minister_title": "N/A"
   },
   {
     "name": "Indigenous Relations and Reconciliation",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/indigenous-relations-reconciliation",
     "title": "Find information",
-    "description": "The Ministry of Indigenous Relations and Reconciliation leads the B.C. Government in pursuing reconciliation with the First Nations and Indigenous peoples of British Columbia."
+    "description": "The Ministry of Indigenous Relations and Reconciliation leads the B.C. Government in pursuing reconciliation with the First Nations and Indigenous peoples of British Columbia.",
+    "minister_name": "HonourableSpencer Chandra Herbert",
+    "minister_title": "N/A"
   },
   {
     "name": "Infrastructure",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/infrastructure",
     "title": "Find information",
-    "description": "The Ministry of Infrastructure provides capital planning and procurement for major capital projects such as schools, hospitals and other infrastructure to support growing communities."
+    "description": "The Ministry of Infrastructure provides capital planning and procurement for major capital projects such as schools, hospitals and other infrastructure to support growing communities.",
+    "minister_name": "Honourable Bowinn Ma",
+    "minister_title": "Minister of Infrastructure"
   },
   {
     "name": "Jobs and Economic Growth",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/jobs-economic-development-and-innovation",
     "title": "Find information",
-    "description": "Ministry of Jobs, Economic Development and Innovation manages government services that help support and maintain the strong and diverse economy that British Columbians need for long-term prosperity. It supports the growth of BC’s tech sector, champions innovation across the economy, nurtures small businesses, supports economic development throughout the province, and promotes BC internationally as a preferred place to invest and do business."
+    "description": "Ministry of Jobs, Economic Development and Innovation manages government services that help support and maintain the strong and diverse economy that British Columbians need for long-term prosperity. It supports the growth of BC’s tech sector, champions innovation across the economy, nurtures small businesses, supports economic development throughout the province, and promotes BC internationally as a preferred place to invest and do business.",
+    "minister_name": "Honourable Ravi Kahlon",
+    "minister_title": "N/A"
   },
   {
     "name": "Labour",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/labour",
     "title": "Find information",
-    "description": "the Ministry of Labour promotes fair, healthy and safe labour and employment relationships in support of a strong, sustainable and inclusive economy."
+    "description": "the Ministry of Labour promotes fair, healthy and safe labour and employment relationships in support of a strong, sustainable and inclusive economy.",
+    "minister_name": "Honourable Jennifer Whiteside",
+    "minister_title": "Minister of Labour"
   },
   {
     "name": "Mining and Critical Minerals",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/mining",
     "title": "Find information",
-    "description": "The Ministry of Mining and Critical Minerals is responsible for British Columbia’s strategy for mining and critical mineral projects."
+    "description": "The Ministry of Mining and Critical Minerals is responsible for British Columbia’s strategy for mining and critical mineral projects.",
+    "minister_name": "Honourable Jagrup Brar",
+    "minister_title": "Minister of Mining and Critical Minerals"
   },
   {
     "name": "Post-Secondary Education and Future Skills",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/post-secondary-education-and-future-skills",
     "title": "Find information",
-    "description": "The Ministry of Post-Secondary Education and Future Skills provides leadership and direction for post-secondary education and skills training systems in British Columbia, labour market information and programs, and immigration settlement services."
+    "description": "The Ministry of Post-Secondary Education and Future Skills provides leadership and direction for post-secondary education and skills training systems in British Columbia, labour market information and programs, and immigration settlement services.",
+    "minister_name": "HonourableJessie Sunner",
+    "minister_title": "N/A"
   },
   {
     "name": "Public Safety and Solicitor General",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/public-safety-solicitor-general",
     "title": "Find information",
-    "description": "The Ministry of Public Safety & Solicitor General is responsible for delivering public safety services in British Columbia."
+    "description": "The Ministry of Public Safety & Solicitor General is responsible for delivering public safety services in British Columbia.",
+    "minister_name": "HonourableNina Krieger",
+    "minister_title": "N/A"
   },
   {
     "name": "Social Development and Poverty Reduction",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/social-development-poverty-reduction",
     "title": "Find information",
-    "description": "The Ministry of Social Development and Poverty Reduction focuses on providing British Columbians in need with a system of supports to help them achieve their social and economic potential."
+    "description": "The Ministry of Social Development and Poverty Reduction focuses on providing British Columbians in need with a system of supports to help them achieve their social and economic potential.",
+    "minister_name": "Honourable Sheila Malcolmson",
+    "minister_title": "Minister of Social Development and Poverty Reduction"
   },
   {
     "name": "Tourism, Arts, Culture and Sport",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/tourism-arts-culture",
     "title": "Find information",
-    "description": "The Ministry of Tourism, Arts, Culture and Sport integrates the tourism sector with the arts, culture and sport sectors to create a more vibrant British Columbia for residents and visitors."
+    "description": "The Ministry of Tourism, Arts, Culture and Sport integrates the tourism sector with the arts, culture and sport sectors to create a more vibrant British Columbia for residents and visitors.",
+    "minister_name": "HonourableAnne Kang",
+    "minister_title": "N/A"
   },
   {
     "name": "Transportation and Transit",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/transportation",
     "title": "Find information",
-    "description": "The Ministry of Transportation and Transit strives to build and maintain a safe and reliable transportation system and provide affordable, efficient and accessible transportation options for all British Columbians."
+    "description": "The Ministry of Transportation and Transit strives to build and maintain a safe and reliable transportation system and provide affordable, efficient and accessible transportation options for all British Columbians.",
+    "minister_name": "Honourable Mike Farnworth",
+    "minister_title": "Minister of Transportation and Transit"
   },
   {
     "name": "Water, Land and Resource Stewardship",
     "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/water-land-and-resource-stewardship",
     "title": "Find information",
-    "description": "The Ministry of Water, Land and Resource Stewardship is accountable for integrated land and natural resource management, including objective setting for land and marine environments, effectively managing cumulative effects, and advancing reconciliation with Indigenous peoples, environmental sustainability, and economic growth."
+    "description": "The Ministry of Water, Land and Resource Stewardship is accountable for integrated land and natural resource management, including objective setting for land and marine environments, effectively managing cumulative effects, and advancing reconciliation with Indigenous peoples, environmental sustainability, and economic growth.",
+    "minister_name": "Honourable Randene Neill",
+    "minister_title": "Minister of Water, Land and Resource Stewardship"
   }
 ]

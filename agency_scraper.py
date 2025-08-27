@@ -9,12 +9,12 @@ from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-BASE = "https://www2.gov.bc.ca"
+BASE = "https://www.civicinfo.bc.ca/ministries-and-crowns"
 LIST_URL = f"{BASE}/gov/content/governments/organizational-structure/ministries-organizations/ministries"
 MIN_PREFIX = "/gov/content/governments/organizational-structure/ministries-organizations/ministries/"
 
-OUT_JSON = "ministries_data.json"
-OUT_CSV = "ministries_data.csv"
+OUT_JSON = "agencies_data.json"
+OUT_CSV = "agencies_data.csv"
 
 SLEEP_MIN = 0.8
 SLEEP_MAX = 1.8
@@ -56,7 +56,7 @@ def get_html(url: str) -> str:
     r.raise_for_status()
     return r.text
 
-def scrape_ministries():
+def scrape_agencies():
     html = get_html(LIST_URL)
     soup = BeautifulSoup(html, "html.parser")
 
@@ -85,7 +85,7 @@ def scrape_ministries():
     return ministries
 
 
-def scrape_one_ministry(ministry: dict) -> dict:
+def scrape_one_agency(ministry: dict) -> dict:
     record = {
         "name": ministry.get("name", "").strip(),
         "url": ministry.get("url", "").strip(),
@@ -118,8 +118,8 @@ def scrape_one_ministry(ministry: dict) -> dict:
 
     # --- Minister extraction ---
     # Strategy:
-    # 1) Find a heading whose text is exactly "Minister" (case-insensitive).
-    # 2) The next <h3> is typically the minister’s name (e.g., "Honourable ...").
+    # 1) Find a heading whose text is exactly "Agency" (case-insensitive).
+    # 2) The next <h3> is typically the agency name, Note: CivicInfo doesn't include head of agency
     # 3) The following meaningful text often contains the role/title (e.g., "Minister of Health").
     def clean_text(t: str) -> str:
         return " ".join((t or "").split())
@@ -176,23 +176,23 @@ def write_csv(rows):
 
 
 def scrape_all(limit=None):
-    ministries = scrape_ministries()
+    agencies = scrape_agencies()
     if limit is not None:
-        ministries = ministries[: int(limit)]
+        agencies = agencies[: int(limit)]
 
     out = []
-    for m in ministries:
+    for m in agencies:
         print(f"Scraping: {m['name']}")
-        out.append(scrape_one_ministry(m))
+        out.append(scrape_one_agency(m))
 
-    print(f"\nScraped {len(out)} ministries.")
+    print(f"\nScraped {len(out)} agencies.")
     write_json(out)
     write_csv(out)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Scrape BC ministries list & details.")
-    parser.add_argument("--limit", type=int, default=None, help="Limit number of ministries (debug)")
+    parser = argparse.ArgumentParser(description="Scrape BC agencies list & details.")
+    parser.add_argument("--limit", type=int, default=None, help="Limit number of agencies (debug)")
     args = parser.parse_args()
     scrape_all(limit=args.limit)
 
