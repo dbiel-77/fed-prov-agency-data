@@ -29,7 +29,7 @@ SLEEP_MIN = 0.8
 SLEEP_MAX = 1.8
 TIMEOUT = 25
 
-# If you later want *all* agency types, set this to None and we’ll just look for "(...Agency...)"
+
 AGENCY_PHRASE = "Provincial Central Agency"  # current ask: exactly these
 
 # --- UA pool + headers ---
@@ -151,7 +151,6 @@ def get_html(url: str, referer: str = "https://www.civicinfo.bc.ca/") -> str:
 
 # --- Agency extraction helpers ---
 
-# Generic "(...Agency...)" detector (used if AGENCY_PHRASE is None)
 AGENCY_IN_PARENS = re.compile(r"\((?:[^)]*?)agency[^)]*\)", re.I)
 # Strip trailing "(...)" from the name
 TRAILING_PARENS = re.compile(r"\s*\([^)]*\)\s*$")
@@ -200,7 +199,7 @@ def _line_around_anchor(a, stop_at):
 
     return _norm(" ".join(parts_before + [link_text] + parts_after)), link_text
 
-# --- FULL REPLACEMENT FOR scrape_agencies() ---
+#
 def scrape_agencies():
     html = get_html(LIST_URL, referer="https://www.civicinfo.bc.ca/")
     soup = BeautifulSoup(html, "html.parser")
@@ -223,7 +222,7 @@ def scrape_agencies():
             else:
                 continue
 
-        # When we encounter the label text, pair it with the last seen anchor
+
         elif isinstance(node, NavigableString):
             s = " ".join(str(node).split())
             if not s:
@@ -252,11 +251,11 @@ def scrape_agencies():
                     "section": AGENCY_PHRASE,
                 })
 
-                # prevent one link from pairing with multiple nearby labels
+                
                 last_anchor = None
 
     if not agencies:
-        # Debug: show a few doc-order snippets that include the phrase
+
         samples = []
         for node in main.strings:
             st = " ".join(str(node).split())
@@ -271,7 +270,7 @@ def scrape_agencies():
 
 
 
-# --- Detail page (best-effort title/description only) ---
+
 def scrape_one_agency(item: dict) -> dict:
     record = {
         "name": item.get("name", "").strip(),
@@ -307,7 +306,7 @@ def scrape_one_agency(item: dict) -> dict:
 
     return record
 
-# --- Writers ---
+
 def write_json(rows):
     with open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump(rows, f, indent=2, ensure_ascii=False)
@@ -323,7 +322,7 @@ def write_csv(rows):
         for r in rows:
             writer.writerow(r)
 
-# --- Orchestrator ---
+
 def scrape_all(limit=None):
     warm_up_session()
     agencies = scrape_agencies()
@@ -348,5 +347,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# --- REPLACE OR ADD THESE BELOW YOUR OTHER HELPERS ---
 
