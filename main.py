@@ -10,7 +10,7 @@ modules = [
     "regions.AB.alberta",
     "regions.BC.british-columbia",
     "regions.NU.nunavut",
-    ""
+    "regions.FED.federal"
 ]
 
 def main():
