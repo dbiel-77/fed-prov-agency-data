@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Hon. Ken Cheveldayoff",
+    "phone": "306-798-0574",
+    "fax": "306-798-0263",
+    "email": "minister.ae@gov.sk.ca",
+    "office_address": "Room 307, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/ae-universitystudents.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/advanced-education",
+    "ministry_name": "Advanced Education"
+  },
+  {
+    "name": "Hon. Daryl Harrison",
+    "phone": "306-787-0338",
+    "fax": "306-787-0630",
+    "email": "ag.minister@gov.sk.ca",
+    "office_address": "Room 334, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/agriculture.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/agriculture",
+    "ministry_name": "Agriculture"
+  },
+  {
+    "name": "Hon. Tim McLeod, K.C.",
+    "phone": "306-787-5353",
+    "fax": "306-787-1232",
+    "email": "ministercpps@gov.sk.ca",
+    "office_address": "Room 355, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/cp4.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/corrections-policing-and-public-safety",
+    "ministry_name": "Corrections, Policing and Public Safety"
+  },
+  {
+    "name": "Crown Investments Corporation",
+    "phone": "N/A",
+    "fax": "N/A",
+    "email": "N/A",
+    "office_address": "N/A",
+    "image_url": "N/A",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/crown-investments-corporation",
+    "ministry_name": "Crown Investments Corporation"
+  },
+  {
+    "name": "Hon. Everett Hindley",
+    "phone": "306-787-7360",
+    "fax": "306-787-6946",
+    "email": "minister.edu@gov.sk.ca",
+    "office_address": "Room 361, Legislative Building, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/ed.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/education",
+    "ministry_name": "Education"
+  },
+  {
+    "name": "Hon. Colleen Young",
+    "phone": "306-787-0804",
+    "fax": "306-798-2009",
+    "email": "ministerer@gov.sk.ca",
+    "office_address": "Room 302, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/energyresources.jpg?h=460&w=792&hash=469570CB247126B7353CF0C8B244FE31",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/energy-and-resources",
+    "ministry_name": "Energy and Resources"
+  },
+  {
+    "name": "Hon. Travis Keisig",
+    "phone": "306-787-0393",
+    "fax": "306-787-1669",
+    "email": "env.minister@gov.sk.ca",
+    "office_address": "Room 322, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/environment.jpg?h=387&w=792&hash=1649F0681DB5AA61F01EA935CE8D09F0",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/environment",
+    "ministry_name": "Environment"
+  },
+  {
+    "name": "Executive Council and Office of the Premier",
+    "phone": "306-787-7448",
+    "fax": "306-787-0885",
+    "email": "premier@gov.sk.ca",
+    "office_address": "2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/execcouncil.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/executive-council-and-office-of-the-premier",
+    "ministry_name": "Executive Council and Office of the Premier"
+  },
+  {
+    "name": "Hon. Jim Reiter",
+    "phone": "306-787-6060",
+    "fax": "306-787-7155",
+    "email": "fin.minister@gov.sk.ca",
+    "office_address": "Room 312, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/finance.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/finance",
+    "ministry_name": "Finance"
+  },
+  {
+    "name": "Hon. Eric Schmalz",
+    "phone": "306-787-6100",
+    "fax": "306-787-0399",
+    "email": "minister.gr@gov.sk.ca",
+    "office_address": "Room 306, 2405 Legislative Drive, Regina, SK",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/governmentrelations.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/government-relations",
+    "ministry_name": "Government Relations"
+  },
+  {
+    "name": "Hon. Jeremy Cockrill",
+    "phone": "306-787-7345",
+    "fax": "306-787-6946",
+    "email": "he.minister@gov.sk.ca",
+    "office_address": "Room 204, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/health.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/health",
+    "ministry_name": "Health"
+  },
+  {
+    "name": "Hon. David Marit",
+    "phone": "306-787-0942",
+    "fax": "306-787-8677",
+    "email": "hi.minister@gov.sk.ca",
+    "office_address": "Room 340, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/highways.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/highways",
+    "ministry_name": "Highways"
+  },
+  {
+    "name": "Hon. Jim Reiter",
+    "phone": "306-787-6060",
+    "fax": "N/A",
+    "email": "fin.minister@gov.sk.ca",
+    "office_address": "Room 312, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/ict.jpg?la=en&hash=26126CD7B4EC7BCBB9A8120D6A296AE9",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/immigration-and-career-training",
+    "ministry_name": "Immigration and Career Training"
+  },
+  {
+    "name": "Hon. Tim McLeod, K.C.",
+    "phone": "306-787-5353",
+    "fax": "306-787-1232",
+    "email": "jus.minister@gov.sk.ca",
+    "office_address": "Room 355, Legislative Building, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/justice.jpg?h=495&w=792&hash=80A1C708F371B54FAF60FECF9A3E4749",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/justice",
+    "ministry_name": "Justice and Attorney General"
+  },
+  {
+    "name": "Hon. Jim Reiter",
+    "phone": "306-787-6060",
+    "fax": "306-798-5190",
+    "email": "fin.minister@gov.sk.ca",
+    "office_address": "Room 312, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/labourrelationsworkplacesafety.jpg?h=495&w=792&hash=18062E94A76C51C4B2BA91FA5C5444BE",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/labour-relations-and-workplace-safety",
+    "ministry_name": "Labour Relations and Workplace Safety"
+  },
+  {
+    "name": "Hon. Alana Ross",
+    "phone": "306-787-0354",
+    "fax": "306-798-0264",
+    "email": "minister.pcs@gov.sk.ca",
+    "office_address": "Room 315, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/psc.jpg?h=495&w=792&hash=24D0F3B9E5E5DF7430C62FB34006499A",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/parks-culture-and-sport",
+    "ministry_name": "Parks, Culture and Sport"
+  },
+  {
+    "name": "Hon. David Marit",
+    "phone": "306-787-0942",
+    "fax": "306-787-8677",
+    "email": "minister.sbp@gov.sk.ca",
+    "office_address": "Room 340, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/cs.jpg?la=en&h=495&w=792&hash=B675AAA1C1C05E5B612F9B3ECE43A805",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/saskbuilds-and-procurement",
+    "ministry_name": "SaskBuilds and Procurement"
+  },
+  {
+    "name": "Hon. Terry Jenson",
+    "phone": "306-787-3661",
+    "fax": "306-787-0656",
+    "email": "ss.minister@gov.sk.ca",
+    "office_address": "Room 303, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/socialservices.jpg",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/social-services",
+    "ministry_name": "Social Services"
+  },
+  {
+    "name": "Hon. Warren Kaeding",
+    "phone": "306-787-8687",
+    "fax": "N/A",
+    "email": "Minister.TED@gov.sk.ca",
+    "office_address": "Room 346, 2405 Legislative Drive, Regina, SK, S4S 0B3",
+    "image_url": "https://www.saskatchewan.ca/-/media/images/gos/gov/ministries/econ.jpg?la=en&h=495&w=792&hash=FF992F1062636BC0740DC88336DDF62E",
+    "ministry_url": "https://www.saskatchewan.ca/government/government-structure/ministries/trade-and-export-development",
+    "ministry_name": "Trade and Export Development"
+  }
+]
