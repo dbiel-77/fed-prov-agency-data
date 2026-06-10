@@ -1,95 +1,114 @@
-import requests
-from bs4 import BeautifulSoup
-import csv
+"""
+Manitoba — departments scraped from gov.mb.ca/government/departments.html
+"""
+import sys
 import re
+from pathlib import Path
+from urllib.parse import urljoin
 
-url = 'https://www.gov.mb.ca/minister/index.html'
-base_url = 'https://www.gov.mb.ca/minister/'  # used to split contact URLs
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+from scripts.common import (
+    make_session, get_soup, extract_phone, extract_email,
+    extract_socials, open_writer, parallel_scrape, MINISTRY_FIELDS,
+)
 
-def extract_ministry_name(info):
-    # Extract which ministry the minister is associated with
-    pattern = r"(Minister of .*?)(?: on|$)"
-    match = re.search(pattern, info)
-    if match:
-        ministry = match.group(1).strip()
+INDEX_URL = "https://www.gov.mb.ca/government/departments.html"
+BASE = "https://www.gov.mb.ca"
 
-        # Replace only the first "Minister" with "Ministry"
-        ministry = re.sub(r"\bMinister\b", "Ministry", ministry, count=1)
 
-        # Cut off at the second "Minister" (if it exists)
-        ministry = re.split(r"\bMinister\b", ministry)[0].strip()
+def _fix_href(href):
+    if href.startswith("//"):
+        return "https:" + href
+    if href.startswith("/"):
+        return BASE + href
+    return href
 
-        # Remove trailing "and" or commas
-        ministry = re.sub(r"(,|and)$", "", ministry).strip()
 
-        return ministry
-    return ""
-
-def extract_contact_url(td_tag):
-    # Extracts the contact URL for the minister from the td tag then returns the full URL
-    a_tag = td_tag.find("a", href=True)
-    if a_tag:
-        href = a_tag["href"]
-        if href.startswith("../minister/"):
-            slug = href.replace("../minister/", "").strip("/")
-            return base_url + slug + "/"
-    return ""
-
-def scrape_minister(url):
-    # Scrapes the minister page to extract names, ministries, and contact URLs
-    response = requests.get(url)
-    response.raise_for_status()
-    html = response.text
-
-    soup = BeautifulSoup(html, 'html.parser')
-    records = []
-
-    for td in soup.find_all("td", class_="minister-text"):
-        p_tag = td.find("p")
-        if not p_tag:
+def _dept_links(session):
+    soup = get_soup(session, INDEX_URL)
+    if not soup:
+        return []
+    links = []
+    content = soup.find("main") or soup.find("div", {"id": "content"}) or soup
+    for a in content.find_all("a", href=True):
+        href = _fix_href(a["href"])
+        name = a.get_text(strip=True)
+        if not name or len(name) < 5:
             continue
+        if re.search(r"gov\.mb\.ca|manitoba\.ca", href, re.I):
+            if not re.search(r"#|login|search|news|media|feedback", href, re.I):
+                links.append((href, name))
+    seen = set()
+    return [(u, n) for u, n in links if u not in seen and not seen.add(u)]
 
-        full_text = p_tag.get_text(strip=True)
-        words = full_text.split()
 
-        # Extract minister name
-        if len(words) >= 3 and words[0] == "Hon.":
-            minister_name = " ".join(words[:3])
-            remaining_info = " ".join(words[3:])
-        else:
-            minister_name = ""
-            remaining_info = full_text
+def _scrape_dept(session, item):
+    url, name = item
+    row = {
+        "province": "MB", "type": "Department", "name": name,
+        "about": "", "priorities": "", "website": url,
+        "phone": "", "email": "", "address": "",
+        "minister_name": "", "minister_phone": "", "minister_email": "",
+        "minister_url": "", "minister_photo_url": "",
+    }
+    soup = get_soup(session, url)
+    if not soup:
+        return {**row, **{"twitter": "", "facebook": "", "youtube": "", "instagram": ""}}
 
-        # Extract ministry name and contact info URL
-        ministry_name = extract_ministry_name(remaining_info)
-        contact_url = extract_contact_url(td)
+    page_text = soup.get_text(" ", strip=True)
+    content = soup.find("main") or soup.find("div", {"id": "content"}) or soup
+    for p in content.find_all("p"):
+        t = p.get_text(strip=True)
+        if len(t) > 80:
+            row["about"] = t
+            break
 
-        records.append((minister_name, ministry_name, contact_url))
+    row["phone"] = extract_phone(page_text)
+    row["email"] = extract_email(page_text)
 
-    return records
+    for tag in soup.find_all(["h2", "h3", "h4", "strong"]):
+        t = tag.get_text(strip=True)
+        if re.match(r"^(Hon\.|Honourable\s+)?[A-Z][a-z]+ [A-Z][a-z]+", t):
+            row["minister_name"] = t
+            break
 
-def load_about_file(path="ministry_about_hardcode.csv"):
-    about_list = []
-    with open(path, "r", encoding="utf-8") as f:
-        reader = csv.reader(f)
-        for row in reader:
-            if row:  # skip empty rows
-                about_list.append(row[0])  # assume first column has the text
-    return about_list
+    for img in soup.find_all("img"):
+        src, alt = img.get("src", ""), img.get("alt", "")
+        if re.search(r"minister|portrait|headshot", src + alt, re.I):
+            row["minister_photo_url"] = src if src.startswith("http") else BASE + src
+            break
 
-def save_csv(data, about_list, path="mb_ministers.csv"):
-    with open(path, "w", encoding="utf-8", newline='') as f:
-        writer = csv.writer(f)
-        # Reordered header
-        writer.writerow(["Ministry Name", "About", "Minister Name", "Contact Info URL"])
+    for a in soup.find_all("a", href=True):
+        lt = a.get_text(strip=True).lower()
+        if "contact" in lt or "minister" in lt:
+            href = _fix_href(a["href"])
+            full = href if href.startswith("http") else urljoin(BASE + "/", href)
+            if full != url:
+                row["minister_url"] = full
+                cs = get_soup(session, full)
+                if cs:
+                    ct = cs.get_text(" ", strip=True)
+                    row["minister_phone"] = extract_phone(ct)
+                    row["minister_email"] = extract_email(ct)
+                break
 
-        # Combine row-by-row in new order
-        for i, row in enumerate(data):
-            minister_name, ministry_name, contact_url = row
-            about_text = about_list[i] if i < len(about_list) else ""
-            writer.writerow([ministry_name, about_text, minister_name, contact_url])
+    addr = re.search(
+        r"\d+\s+\w[\w\s,]+(?:Street|Ave|Avenue|Drive|Road|St\.?)[^\n]{0,60}(?:MB|Manitoba|Winnipeg)",
+        page_text, re.I,
+    )
+    if addr:
+        row["address"] = addr.group(0).strip()
 
-if __name__ == "__main__":
-    data = scrape_minister(url)
-    about_list = load_about_file("ministry_about_hardcode.csv")
-    save_csv(data, about_list)
+    return {**row, **extract_socials(soup)}
+
+
+def scrape_ministries(output_file="data/MB/ministries.csv"):
+    session = make_session()
+    print("[MB] Fetching department list from gov.mb.ca…")
+    links = _dept_links(session)
+    print(f"[MB] Scraping {len(links)} departments concurrently…")
+    rows = parallel_scrape(session, links, _scrape_dept)
+    f, writer = open_writer(output_file, MINISTRY_FIELDS)
+    writer.writerows(rows)
+    f.close()
+    print(f"[MB] Saved {len(rows)} -> {output_file}")

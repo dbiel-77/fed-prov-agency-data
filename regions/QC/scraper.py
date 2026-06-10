@@ -128,4 +128,5 @@ def main():
     print("Saved to quebec_ministries.csv")
 
 
-main()
+if __name__ == "__main__":
+    main()

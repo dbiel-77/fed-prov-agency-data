@@ -1,129 +1,129 @@
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import time
-from urllib.parse import urlparse, parse_qs, unquote
+"""
+Alberta — public agencies, boards, commissions and Crown corporations.
+Source: https://public-agency-list.alberta.ca/ (paginated, 25/page)
+"""
+import sys
+import re
+from pathlib import Path
+from urllib.parse import urljoin
 
-def scrape_agencies(save_agency_csv="data/ab/agencies_ab.csv",
-                        save_minister_csv="data/ab/agency_members_ab.csv"):
-    agency_rows = []
-    minister_rows = []
-    page_num = 0
-    consecutive_timeouts = 0
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+from scripts.common import (
+    make_session, get_soup, extract_phone, extract_email,
+    open_writer, duckduckgo, parallel_scrape, AGENCY_FIELDS,
+)
 
-    while consecutive_timeouts < 2 and page_num < 15:
-        if page_num == 0:
-            url = "https://public-agency-list.alberta.ca/"
-        else:
-            url = (
-                "https://public-agency-list.alberta.ca/"
-                f"?currentPage={page_num}"
-                f"&selectedPage={page_num+1}"
-                "&AgencyId=All&SearchFor=#frmSearch"
-            )
-
-        try:
-            resp = requests.get(url, timeout=10)
-            resp.raise_for_status()
-            consecutive_timeouts = 0
-        except (requests.exceptions.Timeout, requests.exceptions.RequestException):
-            consecutive_timeouts += 1
-            page_num += 1
-            time.sleep(1)
-            continue
-
-        soup = BeautifulSoup(resp.text, "html.parser")
-        print(url)
-
-        # all <div class="goa-grid-100-100-100"> that contain <input name="agencyIDInput">
-        all_grids = soup.find_all("div", class_="goa-grid-100-100-100")
-        for idx, grid in enumerate(all_grids):
-            if not grid.find("input", attrs={"name": "agencyIDInput"}):
-                continue
-
-            # agency_name comes from the previous goa-grid-100-100-100's <h3><strong>…</strong></h3>
-            agency_name = None
-            if idx > 0:
-                prev_grid = all_grids[idx - 1]
-                strong_tag = prev_grid.select_one("h3 strong")
-                if strong_tag:
-                    agency_name = strong_tag.get_text(strip=True)
-
-            # description = first <p> inside this grid
-            desc_tag = grid.find("p")
-            description = desc_tag.get_text(strip=True) if desc_tag else None
-
-            # next <h4> with text "Classification"
-            classification = None
-            cls_h4 = grid.find_next("h4", string=lambda t: t and t.strip() == "Classification")
-            if cls_h4:
-                li = cls_h4.find_next("ul").find("li")
-                classification = li.get_text(strip=True) if li else None
+BASE_URL = "https://public-agency-list.alberta.ca"
+AB_BASE = "https://www.alberta.ca"
 
 
-            query = f"{agency_name} alberta site"
-            raw_url = search_duckduckgo(query)
-            if raw_url:
-                clean_url = url_extractinator(raw_url)
-            else:
-                print("No site found.")
-            time.sleep(1)
-
-            agency_rows.append({
-                "agency_name": agency_name,
-                "agency_url": clean_url if raw_url else None,
-                "classification": classification,
-                "description": description
-            })
-
-            print(agency_name)
-
-            # ministers: next <table class="boardListing">
-            table = grid.find_next("table", class_="boardListing")
-            if table:
-                for tr in table.find_all("tr")[1:]:
-                    tds = tr.find_all("td")
-                    if len(tds) < 5:
-                        continue
-                    minister_rows.append({
-                        "agency_name":        agency_name,
-                        "position":           tds[0].get_text(strip=True),
-                        "name":               tds[1].get_text(strip=True),
-                        "appointment_date":   tds[2].get_text(strip=True),
-                        "expiry_date":        tds[3].get_text(strip=True),
-                        "appointment_method": tds[4].get_text(strip=True)
-                    })
-
-        page_num += 1
-        time.sleep(0.5)
-
-    # Convert to DataFrame and save CSVs
-    agency_df = pd.DataFrame(agency_rows)
-    ministers_df = pd.DataFrame(minister_rows)
-
-    agency_df.to_csv(save_agency_csv, index=False)
-    ministers_df.to_csv(save_minister_csv, index=False)
-    print(f"Saved {len(agency_df)} agencies to '{save_agency_csv}'")
-    print(f"Saved {len(ministers_df)} minister records to '{save_minister_csv}'")
+def _page_url(page_num):
+    if page_num == 0:
+        return BASE_URL + "/"
+    return (
+        f"{BASE_URL}/?currentPage={page_num}"
+        f"&selectedPage={page_num + 1}"
+        "&AgencyId=All&SearchFor=#frmSearch"
+    )
 
 
-def url_extractinator(ddg_url):
-    parsed = urlparse(ddg_url)
-    qs = parse_qs(parsed.query)
-    if "uddg" in qs:
-        return unquote(qs["uddg"][0])
-    return ddg_url
+def _parse_page(soup):
+    """Extract (name, ministry, description) triples from one listing page."""
+    grids = (soup.find("main") or soup).find_all("div", class_="goa-grid-100-100-100")
+    agencies = []
+    i = 0
+    while i < len(grids):
+        g = grids[i]
+        strong = g.find("strong")
+        if strong and not g.find("input", attrs={"name": "agencyIDInput"}):
+            # This is a name+ministry grid
+            name = strong.get_text(strip=True)
+            h3s = g.find_all("h3")
+            ministry = ""
+            for h3 in h3s:
+                t = h3.get_text(strip=True)
+                if t != name and t:
+                    ministry = t
+                    break
+            # The very next grid with agencyIDInput is the description
+            desc = ""
+            if i + 1 < len(grids):
+                next_g = grids[i + 1]
+                if next_g.find("input", attrs={"name": "agencyIDInput"}):
+                    p = next_g.find("p")
+                    if p:
+                        desc = p.get_text(strip=True)
+            if name:
+                agencies.append((name, ministry, desc))
+        i += 1
+    return agencies
 
-def search_duckduckgo(query):
-    base_url = "https://duckduckgo.com/html/"
-    params = {"q": query}
-    headers = {"User-Agent": "Mozilla/5.0"}
-    try:
-        response = requests.get(base_url, params=params, headers=headers, timeout=10)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        result = soup.select_one("a.result__a")
-        return result["href"] if result else None
-    except Exception as e:
-        print(f"Error for '{query}': {e}")
-        return None
+
+def _collect_all(session):
+    """Walk all pagination pages and return all (name, ministry, desc) triples."""
+    all_agencies = []
+    for page_num in range(20):  # max 20 pages
+        url = _page_url(page_num)
+        soup = get_soup(session, url, timeout=15)
+        if not soup:
+            break
+        batch = _parse_page(soup)
+        if not batch:
+            break
+        all_agencies.extend(batch)
+        print(f"[AB] Page {page_num}: {len(batch)} agencies")
+    return all_agencies
+
+
+def _name_to_slug(name):
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def _enrich(session, item):
+    name, ministry, desc = item
+    row = {
+        "province": "AB", "name": name,
+        "type": "Public Agency",
+        "description": desc,
+        "website": "",
+        "phone": "", "email": "", "address": "",
+        "parent_ministry": ministry,
+    }
+
+    # Try alberta.ca/{slug} first
+    slug = _name_to_slug(name)
+    candidate = f"{AB_BASE}/{slug}"
+    soup = get_soup(session, candidate, timeout=8)
+    if soup and soup.find("h1"):
+        h1 = soup.find("h1").get_text(strip=True)
+        # Confirm it's actually the right page
+        if any(w.lower() in h1.lower() for w in name.split()[:2]):
+            row["website"] = candidate
+            pt = soup.get_text(" ", strip=True)
+            row["phone"] = extract_phone(pt)
+            row["email"] = extract_email(pt)
+            return row
+
+    # Fall back to DuckDuckGo
+    found = duckduckgo(f"{name} Alberta government", session)
+    if found:
+        row["website"] = found
+        s = get_soup(session, found, timeout=10)
+        if s:
+            pt = s.get_text(" ", strip=True)
+            row["phone"] = extract_phone(pt)
+            row["email"] = extract_email(pt)
+
+    return row
+
+
+def scrape_agencies(output_file="data/AB/agencies_ab.csv"):
+    session = make_session()
+    print("[AB] Collecting agencies from public-agency-list.alberta.ca…")
+    triples = _collect_all(session)
+    print(f"[AB] Enriching {len(triples)} agencies concurrently…")
+    enriched = parallel_scrape(session, triples, _enrich, max_workers=6)
+    f, writer = open_writer(output_file, AGENCY_FIELDS)
+    writer.writerows(enriched)
+    f.close()
+    print(f"[AB] Saved {len(enriched)} -> {output_file}")
