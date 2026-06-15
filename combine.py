@@ -111,7 +111,7 @@ def _map_row(raw: dict, province: str, stem: str, legacy_ministry: bool = False)
 
 
 def _iter_csvs():
-    """Yield (Path, province, encoding) for every CSV we want to include."""
+    """Yield (Path, province, encoding) for every CSV under data/."""
     data_dir = ROOT / "data"
     if data_dir.exists():
         for p in sorted(data_dir.rglob("*.csv")):
@@ -119,16 +119,6 @@ def _iter_csvs():
                 continue
             province = _province_from_path(p)
             yield p, province, "utf-8"
-
-    # Root-level legacy files (e.g. quebec_ministries.csv)
-    for p in sorted(ROOT.glob("*.csv")):
-        if p.stem in SKIP_STEMS:
-            continue
-        # Skip files already captured in data/ to avoid duplicates
-        if p.stem in {q.stem for q in (ROOT / "data").rglob("*.csv")}:
-            continue
-        province = "QC" if "quebec" in p.stem.lower() else ""
-        yield p, province, "utf-8-sig"
 
 
 def combine(output="data/all_entities.csv"):

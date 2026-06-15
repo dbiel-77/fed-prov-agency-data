@@ -4,7 +4,7 @@ import os
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-NU_PAGE_DIR = "regions/NU/nunavut_pages"
+NU_PAGE_DIR = "regions/NU/ministry_pages"
 OUTPUT_CSV = "data/NU/ministries.csv"
 
 HEADERS = [
